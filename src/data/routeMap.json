@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Portfolio",
+      "href": "/portfolio"
+    }
+  ]
+}
