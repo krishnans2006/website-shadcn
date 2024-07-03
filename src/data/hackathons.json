@@ -1,0 +1,84 @@
+{
+  "projects": [
+    {
+      "name": "Space Warfare: Jovian Conflict",
+      "summary": "A multiplayer space warfare game with an emphasis on realistic physics.",
+      "description": "In this real time strategy game you can experience space warfare as close to how it would theoretically play out in real life. Command a ﬂeet of warships and battle your friends in unique planetary systems. The game design and mechanics are based on actual theorizations and research about space warfare in real life.",
+      "image_url": "https://img.codeday.org/w=1920;h=1080;fit=clip/5/4/544qttnsnxi36xt3eviosbyrn52uwtxe5fw5a28w5rzddvn373rp57p81ixb9cqyyq.png",
+      "code_url": null,
+      "submission_url": {
+        "name": "CodeDay Showcase",
+        "url": "https://showcase.codeday.org/project/ckpq51xml154743910qu7dvjnc5g"
+      },
+      "demo_url": null,
+      "is_winner": true
+    },
+    {
+      "name": "BookXchange",
+      "summary": "A platform for renting a buying college textbooks.",
+      "description": "BookXchange is the premier college textbook rental and buying platform where students looking to acquire textbooks and students looking to make money off of their old textbooks can connect.",
+      "image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/474/337/datas/medium.png",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/bookXchange"
+      },
+      "submission_url": {
+        "name": "Devpost",
+        "url": "https://devpost.com/software/textbook-exchange-zm50k9"
+      },
+      "demo_url": null,
+      "is_winner": false
+    },
+    {
+      "name": "Webitor",
+      "summary": "A platform to quickly build, test, and deploy websites.",
+      "description": "Webitor is a site builder, tester, and hosting platform whose goal is to assist people in making a website, without the stress of writing a lot of code. Webitor includes an interactive code editor and live preview, along with tons of auto-generated code snippets that use Bootstrap, a very popular web framework. And once you are done using Webitor to easily create your site, webitor also includes support for hosting your site as a subdomain on the platform.",
+      "image_url": "https://raw.githubusercontent.com/KrishnanS2006/Webitor/main/src/static/full.png",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/Webitor"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "is_winner": false
+    },
+    {
+      "name": "What Should I Wear?",
+      "summary": "A website that tells you exactly what you need to wear.",
+      "description": "What Should I Wear is a website that uses your current location's weather to determine exactly what clothing you should be wearing when you go outside! It can tell you to wear a T-Shirt, a Sweater, a Jacket, or even to carry an Umbrella. And all of this is displayed in a simple, glanceable, page.",
+      "image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/217/809/datas/medium.png",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/WhatShouldIWear"
+      },
+      "submission_url": {
+        "name": "Devpost",
+        "url": "https://devpost.com/software/whatshouldiwear/"
+      },
+      "demo_url": {
+        "name": "Glitch",
+        "url": "https://what-should-i-wear.glitch.me/"
+      },
+      "is_winner": false
+    },
+    {
+      "name": "PollCOVID",
+      "summary": "Find the safest stores to visit during the pandemic.",
+      "description": "PollCOVID is a website that lets you rate and view ratings for various stores and businesses in your area. Using Google Maps Autocomplete, you can select a location and view its ratings for Crowd, Social Distancing, and Masks. You can also submit your own ratings to help others stay safe during the pandemic.",
+      "image_url": "https://res.cloudinary.com/devpost/image/fetch/s--aKd6kbgz--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://cdn.glitch.com/c7cf1d55-e3f0-4ad1-88bd-e752316f85bf%252FpollCOVID.gif%3Fv%3D1606778729441",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/PollCOVID"
+      },
+      "submission_url": {
+        "name": "Devpost",
+        "url": "https://devpost.com/software/pollcovid"
+      },
+      "demo_url": {
+        "name": "Glitch",
+        "url": "https://poll-covid.glitch.me/"
+      },
+      "is_winner": false
+    }
+  ]
+}
