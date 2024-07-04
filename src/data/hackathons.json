@@ -57,7 +57,7 @@
       },
       "demo_url": {
         "name": "Glitch",
-        "url": "https://what-should-i-wear.glitch.me/"
+        "url": "https://what-should-i-wear.glitch.me"
       },
       "is_winner": false
     },
@@ -76,7 +76,7 @@
       },
       "demo_url": {
         "name": "Glitch",
-        "url": "https://poll-covid.glitch.me/"
+        "url": "https://poll-covid.glitch.me"
       },
       "is_winner": false
     },
@@ -140,6 +140,73 @@
       "submission_url": {
         "name": "CodeDay Showcase",
         "url": "https://codeday.sh/spacey"
+      },
+      "demo_url": null,
+      "is_winner": false
+    },
+    {
+      "name": "YouTube Party",
+      "summary": "Watch YouTube videos with friends and chat in real-time.",
+      "description": "YouTube Party is a platform where you and your friends can watch a YouTube video together, and chat about it the entire time! With support for team rooms and invites, YouTube Party allows you and your friends to watch a YouTube video and chat with your friends real-time while watching it!",
+      "image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/452/775/datas/medium.png",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/YouTube-Party"
+      },
+      "submission_url": {
+        "name": "Devpost",
+        "url": "https://devpost.com/software/tbd-d1f2lu"
+      },
+      "demo_url": null,
+      "is_winner": false
+    },
+    {
+      "name": "CalTracker",
+      "summary": "Track your calories with AI.",
+      "description": "Using your diet and activity history, CalTracker can calculate the calories you have consumed and burned. Then, using your past activity choices, it can suggest possible activities and durations to ﬁnish burning off the rest of your calories!",
+      "image_url": "https://res.cloudinary.com/devpost/image/fetch/s--d6jbi9zW--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://cdn.glitch.com/187701c8-e333-4af5-bbc1-7f3bd83c84b0%252Fcatracker.png%3Fv%3D1607868628032",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/CalTracker"
+      },
+      "submission_url": {
+        "name": "Devpost",
+        "url": "https://devpost.com/software/hack-tj-project-k9ulmx"
+      },
+      "demo_url": {
+        "name": "Glitch",
+        "url": "https://cal-tracker.glitch.me"
+      },
+      "is_winner": false
+    },
+    {
+      "name": "Stay Healthy During COVID-19",
+      "summary": "Practice your COVID prevention skills with a fun game.",
+      "description": "A Game where you battle the Coronavirus to stay healthy by wearing masks and using soap.",
+      "image_url": "https://www.un.org/sites/un2.un.org/files/field/image/1583952355.1997.jpg",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/StopCOVIDTheGame"
+      },
+      "submission_url": {
+        "name": "Devpost",
+        "url": "https://devpost.com/software/stay-healthy-during-covid-19"
+      },
+      "demo_url": null,
+      "is_winner": false
+    },
+    {
+      "name": "Food For Everyone During COVID-19",
+      "summary": "Prevent food waste and feed the homeless at the same time.",
+      "description": "A way for supermarkets, individual donors, food banks, and recipients to connect!",
+      "image_url": "https://cdn.who.int/media/images/default-source/mca/mca-covid-19/coronavirus-2.tmb-479v.jpg",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/Food-For-Everyone"
+      },
+      "submission_url": {
+        "name": "Devpost",
+        "url": "https://devpost.com/software/food-for-everyone-during-covid-19-otkhlj"
       },
       "demo_url": null,
       "is_winner": false
