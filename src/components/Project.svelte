@@ -21,7 +21,7 @@
 	export let project: Project;
 </script>
 
-<Card.Root class="w-[500px]">
+<Card.Root>
 	<Card.Header>
 		<Card.Title>{project.name}</Card.Title>
 		<Card.Description>{project.summary}</Card.Description>

@@ -14,7 +14,9 @@
 
 <div class="flex min-h-screen w-full flex-col">
 	<Navbar routes={data.routes}></Navbar>
-	<slot></slot>
+	<div class="container mx-auto px-4">
+		<slot></slot>
+	</div>
 </div>
 
 <style></style>

@@ -25,9 +25,7 @@
 
 	export let projects: Project[] = data.projects;
 
-	console.log(projects);
-
-	let [minColWidth, maxColWidth, gap] = [200, 800, 8];
+	let [minColWidth, maxColWidth, gap] = [400, 600, 8];
 </script>
 
 <Masonry items={projects} {minColWidth} {maxColWidth} {gap} let:item={project} idKey="name">
