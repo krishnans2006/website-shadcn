@@ -25,7 +25,7 @@
 
 	export let projects: Project[] = data.projects;
 
-	let [minColWidth, maxColWidth, gap] = [350, 600, 8];
+	let [minColWidth, maxColWidth, gap] = [350, 600, 12];
 </script>
 
 <div class="my-6">
