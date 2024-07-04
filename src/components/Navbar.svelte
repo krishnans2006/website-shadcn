@@ -62,8 +62,18 @@
 		</Sheet.Content>
 	</Sheet.Root>
 	<div class="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
+		<Button
+			variant="secondary"
+			href="https://raw.githubusercontent.com/krishnans2006/resume/main/Krishnan_Shankar_Resume.pdf"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="ml-auto"
+		>
+			Download My Resume
+		</Button>
+
 		<Button on:click={toggleMode} variant="outline" size="icon"
-						class="ml-auto flex-initial">
+						class="flex-initial">
 			<Sun
 				class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
 			/>
@@ -73,26 +83,26 @@
 			<span class="sr-only">Toggle theme</span>
 		</Button>
 
-		<DropdownMenu.Root>
-			<DropdownMenu.Trigger asChild let:builder>
-				<Button
-					builders={[builder]}
-					variant="secondary"
-					size="icon"
-					class="rounded-full"
-				>
-					<CircleUser class="h-5 w-5" />
-					<span class="sr-only">Toggle user menu</span>
-				</Button>
-			</DropdownMenu.Trigger>
-			<DropdownMenu.Content align="end">
-				<DropdownMenu.Label>My Account</DropdownMenu.Label>
-				<DropdownMenu.Separator />
-				<DropdownMenu.Item>Settings</DropdownMenu.Item>
-				<DropdownMenu.Item>Support</DropdownMenu.Item>
-				<DropdownMenu.Separator />
-				<DropdownMenu.Item>Logout</DropdownMenu.Item>
-			</DropdownMenu.Content>
-		</DropdownMenu.Root>
+		<!--		<DropdownMenu.Root>-->
+		<!--			<DropdownMenu.Trigger asChild let:builder>-->
+		<!--				<Button-->
+		<!--					builders={[builder]}-->
+		<!--					variant="secondary"-->
+		<!--					size="icon"-->
+		<!--					class="rounded-full"-->
+		<!--				>-->
+		<!--					<CircleUser class="h-5 w-5" />-->
+		<!--					<span class="sr-only">Toggle user menu</span>-->
+		<!--				</Button>-->
+		<!--			</DropdownMenu.Trigger>-->
+		<!--			<DropdownMenu.Content align="end">-->
+		<!--				<DropdownMenu.Label>My Account</DropdownMenu.Label>-->
+		<!--				<DropdownMenu.Separator />-->
+		<!--				<DropdownMenu.Item>Settings</DropdownMenu.Item>-->
+		<!--				<DropdownMenu.Item>Support</DropdownMenu.Item>-->
+		<!--				<DropdownMenu.Separator />-->
+		<!--				<DropdownMenu.Item>Logout</DropdownMenu.Item>-->
+		<!--			</DropdownMenu.Content>-->
+		<!--		</DropdownMenu.Root>-->
 	</div>
 </header>
