@@ -1,5 +1,6 @@
 <script lang="ts">
-	import * as Card from "$lib/components/ui/card";
+	import { Button } from '$lib/components/ui/button';
+	import * as Card from '$lib/components/ui/card';
 
 	import type { PageData } from './$types';
 
@@ -24,25 +25,33 @@
 	export let projects: Project[] = data.projects;
 </script>
 
-{#each projects as project}
-	<Card.Root class="w-[350px]">
-		<Card.Header>
-			<Card.Title>{project.name}</Card.Title>
-			<Card.Description>{project.summary}</Card.Description>
-		</Card.Header>
-		<Card.Content>
-			<img src={project.image_url} alt={project.name} />
-		</Card.Content>
-		<Card.Footer>
-			{#if project.code_url}
-				<a href="{project.code_url.url}" target="_blank" rel="noopener noreferrer">Code ({project.code_url.name})</a>
-			{/if}
-			{#if project.submission_url}
-				<a href="{project.submission_url.url}" target="_blank" rel="noopener noreferrer">Submission ({project.submission_url.name})</a>
-			{/if}
-			{#if project.demo_url}
-				<a href="{project.demo_url.url}" target="_blank" rel="noopener noreferrer">Demo ({project.demo_url.name})</a>
-			{/if}
-		</Card.Footer>
-	</Card.Root>
-{/each}
+<div class="flex flex-none flex-wrap gap-4">
+	{#each projects as project}
+		<Card.Root class="w-[500px]">
+			<Card.Header>
+				<Card.Title>{project.name}</Card.Title>
+				<Card.Description>{project.summary}</Card.Description>
+			</Card.Header>
+			<Card.Content>
+				<img src={project.image_url} alt={project.name} />
+			</Card.Content>
+			<Card.Footer class="flex-auto flex-wrap gap-2">
+				{#if project.code_url}
+					<Button variant="secondary" href="{project.code_url.url}" target="_blank"
+									rel="noopener noreferrer">Code ({project.code_url.name})
+					</Button>
+				{/if}
+				{#if project.submission_url}
+					<Button variant="secondary" href="{project.submission_url.url}" target="_blank"
+									rel="noopener noreferrer">Submission ({project.submission_url.name})
+					</Button>
+				{/if}
+				{#if project.demo_url}
+					<Button variant="secondary" href="{project.demo_url.url}" target="_blank"
+									rel="noopener noreferrer">Demo ({project.demo_url.name})
+					</Button>
+				{/if}
+			</Card.Footer>
+		</Card.Root>
+	{/each}
+</div>
