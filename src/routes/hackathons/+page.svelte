@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { Button } from '$lib/components/ui/button';
-	import * as Card from '$lib/components/ui/card';
+  import Masonry from 'svelte-bricks'
+
+	import Project from '../../components/Project.svelte';
 
 	import type { PageData } from './$types';
 
@@ -23,35 +24,12 @@
 	}
 
 	export let projects: Project[] = data.projects;
+
+	console.log(projects);
+
+	let [minColWidth, maxColWidth, gap] = [200, 800, 8];
 </script>
 
-<div class="flex flex-none flex-wrap gap-4">
-	{#each projects as project}
-		<Card.Root class="w-[500px]">
-			<Card.Header>
-				<Card.Title>{project.name}</Card.Title>
-				<Card.Description>{project.summary}</Card.Description>
-			</Card.Header>
-			<Card.Content>
-				<img src={project.image_url} alt={project.name} />
-			</Card.Content>
-			<Card.Footer class="flex-auto flex-wrap gap-2">
-				{#if project.code_url}
-					<Button variant="secondary" href="{project.code_url.url}" target="_blank"
-									rel="noopener noreferrer">Code ({project.code_url.name})
-					</Button>
-				{/if}
-				{#if project.submission_url}
-					<Button variant="secondary" href="{project.submission_url.url}" target="_blank"
-									rel="noopener noreferrer">Submission ({project.submission_url.name})
-					</Button>
-				{/if}
-				{#if project.demo_url}
-					<Button variant="secondary" href="{project.demo_url.url}" target="_blank"
-									rel="noopener noreferrer">Demo ({project.demo_url.name})
-					</Button>
-				{/if}
-			</Card.Footer>
-		</Card.Root>
-	{/each}
-</div>
+<Masonry items={projects} {minColWidth} {maxColWidth} {gap} let:item={project} idKey="name">
+	<Project {project} />
+</Masonry>
