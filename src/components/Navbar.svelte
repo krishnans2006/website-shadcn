@@ -16,12 +16,11 @@
 	export let routes: Route[] = [];
 </script>
 
-<header class="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
+<header class="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 z-50">
 	<nav
 		class="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6"
 	>
-		<a href="/" class="flex items-center gap-2 text-lg font-semibold">
-			<Package2 class="h-6 w-6" />
+		<a href="/" class="flex items-center gap-2 text-lg font-semibold w-40">
 			<p>Krishnan Shankar</p>
 		</a>
 		{#each routes as route}
