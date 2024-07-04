@@ -27,7 +27,7 @@
 		<Card.Description>{project.summary}</Card.Description>
 	</Card.Header>
 	<Card.Content>
-		<img src={project.image_url} alt={project.name} />
+		<img src={project.image_url} alt={project.name} class="w-full" />
 	</Card.Content>
 	<Card.Footer class="flex-auto flex-wrap gap-2">
 		{#if project.code_url}
