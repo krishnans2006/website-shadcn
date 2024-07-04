@@ -23,13 +23,13 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title>{project.name}</Card.Title>
-		<Card.Description>{project.summary}</Card.Description>
+		<Card.Title class="text-center">{project.name}</Card.Title>
+		<Card.Description class="text-center">{project.summary}</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<img src={project.image_url} alt={project.name} class="w-full" />
 	</Card.Content>
-	<Card.Footer class="flex-auto flex-wrap gap-2">
+	<Card.Footer class="flex-auto flex-wrap gap-2 justify-center">
 		{#if project.code_url}
 			<Button variant="secondary" href="{project.code_url.url}" target="_blank"
 							rel="noopener noreferrer">Code ({project.code_url.name})
