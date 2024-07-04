@@ -83,6 +83,7 @@
 			<span class="sr-only">Toggle theme</span>
 		</Button>
 
+		<!-- The below is preserved as a dropdown menu example -->
 		<!--		<DropdownMenu.Root>-->
 		<!--			<DropdownMenu.Trigger asChild let:builder>-->
 		<!--				<Button-->
