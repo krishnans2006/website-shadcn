@@ -56,6 +56,21 @@ const config: Config = {
 			},
 			fontFamily: {
 				sans: [...fontFamily.sans]
+			},
+			keyframes: {
+				"fade-up": {
+					from: {
+						opacity: "0",
+						transform: "translateY(5rem)"
+					},
+					to: {
+						opacity: "1",
+						transform: "translateY(0)"
+					}
+				}
+			},
+			animation: {
+				"fade-up": "fade-up 0.8s ease-out"
 			}
 		}
 	},
