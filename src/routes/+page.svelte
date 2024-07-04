@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Github, Linkedin, Users } from 'lucide-svelte';
+	import { Github, Linkedin, Mail, Phone, MapPin, Users } from 'lucide-svelte';
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button/index.js';
@@ -37,11 +37,35 @@
 			>
 				Resume
 			</Button>
+			<DropdownMenu.Root>
+				<DropdownMenu.Trigger asChild let:builder>
+					<Button builders={[builder]} class="w-32" variant="secondary">Get In Touch</Button>
+				</DropdownMenu.Trigger>
+				<DropdownMenu.Content>
+					<DropdownMenu.Item href="mailto:krishnans2006@gmail.com" class="cursor-pointer"
+														 target="_blank" rel="noopener noreferrer">
+						<Mail class="mr-2 size-4" />
+						<span>krishnans2006@gmail.com</span>
+					</DropdownMenu.Item>
+					<DropdownMenu.Item href="tel:7035590131" class="cursor-pointer" target="_blank"
+														 rel="noopener noreferrer">
+						<Phone class="mr-2 size-4" />
+						<span>(703) 559-0131</span>
+					</DropdownMenu.Item>
+					<DropdownMenu.Item href="https://maps.app.goo.gl/M7TDG89Puvh2tL8i8"
+														 class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+						<MapPin class="mr-2 size-4" />
+						<span>Falls Church, Virginia</span>
+					</DropdownMenu.Item>
+				</DropdownMenu.Content>
+			</DropdownMenu.Root>
 			<div class="ml-2">
-				<Button variant="link" size="icon" href="https://github.com/krishnans2006" target="_blank" rel="noopener noreferrer">
+				<Button variant="link" size="icon" href="https://github.com/krishnans2006" target="_blank"
+								rel="noopener noreferrer">
 					<Github class="size-7" />
 				</Button>
-				<Button variant="link" size="icon" href="https://linkedin.com/in/krishnan-shankar" target="_blank" rel="noopener noreferrer">
+				<Button variant="link" size="icon" href="https://linkedin.com/in/krishnan-shankar"
+								target="_blank" rel="noopener noreferrer">
 					<Linkedin class="size-7" />
 				</Button>
 			</div>
