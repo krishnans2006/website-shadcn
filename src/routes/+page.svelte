@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Github, Linkedin, Mail, Phone, MapPin, Users } from 'lucide-svelte';
+	import { Github, Linkedin, Mail, Phone, MapPin, KeyRound, Users } from 'lucide-svelte';
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button/index.js';
@@ -59,6 +59,11 @@
 														 class="cursor-pointer" target="_blank" rel="noopener noreferrer">
 						<MapPin class="mr-2 size-4" />
 						<span>Falls Church, Virginia</span>
+					</DropdownMenu.Item>
+					<DropdownMenu.Item href="https://github.com/krishnans2006.gpg"
+														 class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+						<KeyRound class="mr-2 size-4" />
+						<span class="font-mono">A30C 1843 F470 4843</span>
 					</DropdownMenu.Item>
 				</DropdownMenu.Content>
 			</DropdownMenu.Root>
