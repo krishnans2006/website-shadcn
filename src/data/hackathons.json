@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Space Warfare: Jovian Conflict",
-      "summary": "A multiplayer space warfare game with an emphasis on realistic physics.",
+      "summary": "A multiplayer space warfare game with an emphasis on realistic physics",
       "description": "In this real time strategy game you can experience space warfare as close to how it would theoretically play out in real life. Command a ﬂeet of warships and battle your friends in unique planetary systems. The game design and mechanics are based on actual theorizations and research about space warfare in real life.",
       "image": "jovianconflict",
       "code_url": null,
@@ -15,7 +15,7 @@
     },
     {
       "name": "BookXchange",
-      "summary": "A platform for renting a buying college textbooks.",
+      "summary": "A platform for renting and buying college textbooks",
       "description": "BookXchange is the premier college textbook rental and buying platform where students looking to acquire textbooks and students looking to make money off of their old textbooks can connect.",
       "image": "bookxchange",
       "code_url": {
@@ -31,7 +31,7 @@
     },
     {
       "name": "Webitor",
-      "summary": "A platform to quickly build, test, and deploy websites.",
+      "summary": "A platform to quickly build, test, and deploy websites",
       "description": "Webitor is a site builder, tester, and hosting platform whose goal is to assist people in making a website, without the stress of writing a lot of code. Webitor includes an interactive code editor and live preview, along with tons of auto-generated code snippets that use Bootstrap, a very popular web framework. And once you are done using Webitor to easily create your site, webitor also includes support for hosting your site as a subdomain on the platform.",
       "image": "webitor",
       "code_url": {
@@ -44,7 +44,7 @@
     },
     {
       "name": "What Should I Wear?",
-      "summary": "A website that tells you exactly what you need to wear.",
+      "summary": "A website that tells you exactly what you need to wear",
       "description": "What Should I Wear is a website that uses your current location's weather to determine exactly what clothing you should be wearing when you go outside! It can tell you to wear a T-Shirt, a Sweater, a Jacket, or even to carry an Umbrella. And all of this is displayed in a simple, glanceable, page.",
       "image": "whatshouldiwear",
       "code_url": {
@@ -63,7 +63,7 @@
     },
     {
       "name": "PollCOVID",
-      "summary": "Find the safest stores to visit during the pandemic.",
+      "summary": "Find the safest stores to visit during the pandemic",
       "description": "PollCOVID is a website that lets you rate and view ratings for various stores and businesses in your area. Using Google Maps Autocomplete, you can select a location and view its ratings for Crowd, Social Distancing, and Masks. You can also submit your own ratings to help others stay safe during the pandemic.",
       "image": "pollcovid",
       "code_url": {
@@ -82,7 +82,7 @@
     },
     {
       "name": "Fluffy Friend Finder",
-      "summary": "Find your next pet to adopt.",
+      "summary": "Find your next pet to adopt",
       "description": "The Fluffy Friend Finder is a simple website that allows users to enter in the different traits which they would like to see in a companion (size, age, etc.) and connects them with rescued animal in a pound which meets those preferences. Since owning a fluffy companion many be a new experience for many families, the Fluffy Friend Finder also has a helpful map which provides people with the ability to easily find pet stores near them. It also includes information about timings and services provided by the store.",
       "image": "fluffyfriendfinder",
       "code_url": {
@@ -98,7 +98,7 @@
     },
     {
       "name": "Meme Review",
-      "summary": "Review memes through a fun multiplayer game.",
+      "summary": "Review memes through a fun multiplayer game",
       "description": "A live multiplayer online game where the goal is to pick a meme that you think that the majority of the other players will pick! It is designed to be played by 3 or even thousands of players.",
       "image": "memereview",
       "code_url": {
@@ -114,7 +114,7 @@
     },
     {
       "name": "TimeXtension",
-      "summary": "Track your time online.",
+      "summary": "Track your time online",
       "description": "TimeXtension is a set of browser extensions designed to help you manage your online browsing time! It records your current tab every minute, determines whether the site is productive using an amazing algorithm, and then displays your browsing data in a simple Pie Chart. The best part is, this data will sync through your browser account and show on all your devices!",
       "image": "timextension",
       "code_url": {
@@ -130,7 +130,7 @@
     },
     {
       "name": "SpaceY",
-      "summary": "Check out the latest NASA images through an interactive story.",
+      "summary": "Check out the latest NASA images through an interactive story",
       "description": "A consolidation of NASA APIs into short, factual, and visually-attractive stories!",
       "image": "spacey",
       "code_url": {
@@ -146,7 +146,7 @@
     },
     {
       "name": "YouTube Party",
-      "summary": "Watch YouTube videos with friends and chat in real-time.",
+      "summary": "Watch YouTube videos with friends and chat in real-time",
       "description": "YouTube Party is a platform where you and your friends can watch a YouTube video together, and chat about it the entire time! With support for team rooms and invites, YouTube Party allows you and your friends to watch a YouTube video and chat with your friends real-time while watching it!",
       "image": "youtubeparty",
       "code_url": {
@@ -162,7 +162,7 @@
     },
     {
       "name": "CalTracker",
-      "summary": "Track your calories with AI.",
+      "summary": "Track your calories with AI",
       "description": "Using your diet and activity history, CalTracker can calculate the calories you have consumed and burned. Then, using your past activity choices, it can suggest possible activities and durations to ﬁnish burning off the rest of your calories!",
       "image": "caltracker",
       "code_url": {
@@ -181,7 +181,7 @@
     },
     {
       "name": "Stay Healthy During COVID-19",
-      "summary": "Practice your COVID prevention skills with a fun game.",
+      "summary": "Practice your COVID prevention skills with a fun game",
       "description": "A Game where you battle the Coronavirus to stay healthy by wearing masks and using soap.",
       "image": "stayhealthduringcovid19",
       "code_url": {
@@ -197,7 +197,7 @@
     },
     {
       "name": "Food For Everyone During COVID-19",
-      "summary": "Prevent food waste and feed the homeless at the same time.",
+      "summary": "Prevent food waste and feed the homeless at the same time",
       "description": "A way for supermarkets, individual donors, food banks, and recipients to connect!",
       "image": "foodforeveryoneduringcovid19",
       "code_url": {
