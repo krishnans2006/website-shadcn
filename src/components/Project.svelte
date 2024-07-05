@@ -11,7 +11,7 @@
 		name: string,
 		summary: string,
 		description: string,
-		image_url: string,
+		image: string,
 		code_url: URL | null,
 		submission_url: URL | null,
 		demo_url: URL | null,
@@ -28,7 +28,10 @@
 			<Card.Description class="text-center">{project.summary}</Card.Description>
 		</Card.Header>
 		<Card.Content>
-			<img src={project.image_url} alt={project.name} class="w-full" />
+			{#await import(`$lib/images/hackathons/${project.image}.png`) then { default: src }}
+				<img src={src} alt="{project.name}"
+						 class="w-full" />
+			{/await}
 		</Card.Content>
 		<Card.Footer class="flex-auto flex-wrap gap-2 justify-center">
 			{#if project.code_url}

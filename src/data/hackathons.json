@@ -4,7 +4,7 @@
       "name": "Space Warfare: Jovian Conflict",
       "summary": "A multiplayer space warfare game with an emphasis on realistic physics.",
       "description": "In this real time strategy game you can experience space warfare as close to how it would theoretically play out in real life. Command a ﬂeet of warships and battle your friends in unique planetary systems. The game design and mechanics are based on actual theorizations and research about space warfare in real life.",
-      "image_url": "https://img.codeday.org/w=1920;h=1080;fit=clip/5/4/544qttnsnxi36xt3eviosbyrn52uwtxe5fw5a28w5rzddvn373rp57p81ixb9cqyyq.png",
+      "image": "jovianconflict",
       "code_url": null,
       "submission_url": {
         "name": "CodeDay Showcase",
@@ -17,7 +17,7 @@
       "name": "BookXchange",
       "summary": "A platform for renting a buying college textbooks.",
       "description": "BookXchange is the premier college textbook rental and buying platform where students looking to acquire textbooks and students looking to make money off of their old textbooks can connect.",
-      "image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/474/337/datas/medium.png",
+      "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/474/337/datas/medium.png",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/bookXchange"
@@ -33,7 +33,7 @@
       "name": "Webitor",
       "summary": "A platform to quickly build, test, and deploy websites.",
       "description": "Webitor is a site builder, tester, and hosting platform whose goal is to assist people in making a website, without the stress of writing a lot of code. Webitor includes an interactive code editor and live preview, along with tons of auto-generated code snippets that use Bootstrap, a very popular web framework. And once you are done using Webitor to easily create your site, webitor also includes support for hosting your site as a subdomain on the platform.",
-      "image_url": "https://raw.githubusercontent.com/KrishnanS2006/Webitor/main/src/static/full.png",
+      "image": "https://raw.githubusercontent.com/KrishnanS2006/Webitor/main/src/static/full.png",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/Webitor"
@@ -46,7 +46,7 @@
       "name": "What Should I Wear?",
       "summary": "A website that tells you exactly what you need to wear.",
       "description": "What Should I Wear is a website that uses your current location's weather to determine exactly what clothing you should be wearing when you go outside! It can tell you to wear a T-Shirt, a Sweater, a Jacket, or even to carry an Umbrella. And all of this is displayed in a simple, glanceable, page.",
-      "image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/217/809/datas/medium.png",
+      "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/217/809/datas/medium.png",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/WhatShouldIWear"
@@ -65,7 +65,7 @@
       "name": "PollCOVID",
       "summary": "Find the safest stores to visit during the pandemic.",
       "description": "PollCOVID is a website that lets you rate and view ratings for various stores and businesses in your area. Using Google Maps Autocomplete, you can select a location and view its ratings for Crowd, Social Distancing, and Masks. You can also submit your own ratings to help others stay safe during the pandemic.",
-      "image_url": "https://res.cloudinary.com/devpost/image/fetch/s--aKd6kbgz--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://cdn.glitch.com/c7cf1d55-e3f0-4ad1-88bd-e752316f85bf%252FpollCOVID.gif%3Fv%3D1606778729441",
+      "image": "https://res.cloudinary.com/devpost/image/fetch/s--aKd6kbgz--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://cdn.glitch.com/c7cf1d55-e3f0-4ad1-88bd-e752316f85bf%252FpollCOVID.gif%3Fv%3D1606778729441",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/PollCOVID"
@@ -84,7 +84,7 @@
       "name": "Fluffy Friend Finder",
       "summary": "Find your next pet to adopt.",
       "description": "The Fluffy Friend Finder is a simple website that allows users to enter in the different traits which they would like to see in a companion (size, age, etc.) and connects them with rescued animal in a pound which meets those preferences. Since owning a fluffy companion many be a new experience for many families, the Fluffy Friend Finder also has a helpful map which provides people with the ability to easily find pet stores near them. It also includes information about timings and services provided by the store.",
-      "image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/567/680/datas/medium.jpeg",
+      "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/567/680/datas/medium.jpeg",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/VarunPatelius/Fluffy-Friend-Finder"
@@ -100,7 +100,7 @@
       "name": "Meme Review",
       "summary": "Review memes through a fun multiplayer game.",
       "description": "A live multiplayer online game where the goal is to pick a meme that you think that the majority of the other players will pick! It is designed to be played by 3 or even thousands of players.",
-      "image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/197/104/datas/medium.png",
+      "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/197/104/datas/medium.png",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/MemeReview"
@@ -116,7 +116,7 @@
       "name": "TimeXtension",
       "summary": "Track your time online.",
       "description": "TimeXtension is a set of browser extensions designed to help you manage your online browsing time! It records your current tab every minute, determines whether the site is productive using an amazing algorithm, and then displays your browsing data in a simple Pie Chart. The best part is, this data will sync through your browser account and show on all your devices!",
-      "image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/556/902/datas/medium.png",
+      "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/556/902/datas/medium.png",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/timextension"
@@ -132,7 +132,7 @@
       "name": "SpaceY",
       "summary": "Check out the latest NASA images through an interactive story.",
       "description": "A consolidation of NASA APIs into short, factual, and visually-attractive stories!",
-      "image_url": "https://img.codeday.org/w=800;h=600;fit=fill;fill=blur/z/8/z863uuzg5ues3fsj7gc49x9hp8sxt7cdabci2d5xtveib2gphbioie3fczmpz8ohdh.png",
+      "image": "https://img.codeday.org/w=800;h=600;fit=fill;fill=blur/z/8/z863uuzg5ues3fsj7gc49x9hp8sxt7cdabci2d5xtveib2gphbioie3fczmpz8ohdh.png",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/SpaceY"
@@ -148,7 +148,7 @@
       "name": "YouTube Party",
       "summary": "Watch YouTube videos with friends and chat in real-time.",
       "description": "YouTube Party is a platform where you and your friends can watch a YouTube video together, and chat about it the entire time! With support for team rooms and invites, YouTube Party allows you and your friends to watch a YouTube video and chat with your friends real-time while watching it!",
-      "image_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/452/775/datas/medium.png",
+      "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/452/775/datas/medium.png",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/YouTube-Party"
@@ -164,7 +164,7 @@
       "name": "CalTracker",
       "summary": "Track your calories with AI.",
       "description": "Using your diet and activity history, CalTracker can calculate the calories you have consumed and burned. Then, using your past activity choices, it can suggest possible activities and durations to ﬁnish burning off the rest of your calories!",
-      "image_url": "https://res.cloudinary.com/devpost/image/fetch/s--d6jbi9zW--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://cdn.glitch.com/187701c8-e333-4af5-bbc1-7f3bd83c84b0%252Fcatracker.png%3Fv%3D1607868628032",
+      "image": "https://res.cloudinary.com/devpost/image/fetch/s--d6jbi9zW--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://cdn.glitch.com/187701c8-e333-4af5-bbc1-7f3bd83c84b0%252Fcatracker.png%3Fv%3D1607868628032",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/CalTracker"
@@ -183,7 +183,7 @@
       "name": "Stay Healthy During COVID-19",
       "summary": "Practice your COVID prevention skills with a fun game.",
       "description": "A Game where you battle the Coronavirus to stay healthy by wearing masks and using soap.",
-      "image_url": "https://www.un.org/sites/un2.un.org/files/field/image/1583952355.1997.jpg",
+      "image": "https://www.un.org/sites/un2.un.org/files/field/image/1583952355.1997.jpg",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/StopCOVIDTheGame"
@@ -199,7 +199,7 @@
       "name": "Food For Everyone During COVID-19",
       "summary": "Prevent food waste and feed the homeless at the same time.",
       "description": "A way for supermarkets, individual donors, food banks, and recipients to connect!",
-      "image_url": "https://cdn.who.int/media/images/default-source/mca/mca-covid-19/coronavirus-2.tmb-479v.jpg",
+      "image": "https://cdn.who.int/media/images/default-source/mca/mca-covid-19/coronavirus-2.tmb-479v.jpg",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/Food-For-Everyone"
