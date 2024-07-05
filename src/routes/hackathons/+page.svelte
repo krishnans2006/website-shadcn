@@ -4,26 +4,11 @@
 	import Project from '../../components/Project.svelte';
 
 	import type { PageData } from './$types';
+	import type { Project as ProjectType } from '../../data/hackathons';
 
 	export let data: PageData;
 
-	interface URL {
-		name: string,
-		url: string
-	}
-
-	interface Project {
-		name: string,
-		summary: string,
-		description: string,
-		image_url: string,
-		code_url: URL | null,
-		submission_url: URL | null,
-		demo_url: URL | null,
-		is_winner: boolean
-	}
-
-	export let projects: Project[] = data.projects;
+	export let projects: ProjectType[] = data.projects;
 
 	let [minColWidth, maxColWidth, gap] = [350, 600, 12];
 </script>

@@ -2,24 +2,9 @@
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 
-	interface URL {
-		name: string,
-		url: string
-	}
+	import type { Project as ProjectType } from '../data/hackathons';
 
-	interface Project {
-		name: string,
-		summary: string,
-		description: string,
-		image: string,
-		image_invert_dark?: boolean,
-		code_url: URL | null,
-		submission_url: URL | null,
-		demo_url: URL | null,
-		is_winner: boolean
-	}
-
-	export let project: Project;
+	export let project: ProjectType;
 </script>
 
 <div class="animate-fade-up delay-1000">
