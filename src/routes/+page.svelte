@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Github, Linkedin, Mail, Phone, MapPin, KeyRound, Users } from 'lucide-svelte';
+	import { Github, Linkedin, Mail, Phone, MapPin, KeyRound, Users, ChevronDown, ArrowDownToLine } from 'lucide-svelte';
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button/index.js';
@@ -19,7 +19,7 @@
 		<div class="flex gap-2 items-center">
 			<DropdownMenu.Root>
 				<DropdownMenu.Trigger asChild let:builder>
-					<Button builders={[builder]} class="w-28">Projects</Button>
+					<Button builders={[builder]} class="w-32">Projects <ChevronDown class="ml-2 size-4" /></Button>
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content class="w-44">
 					<DropdownMenu.Item href="/hackathons" class="cursor-pointer">
@@ -36,13 +36,14 @@
 				href="https://raw.githubusercontent.com/krishnans2006/resume/main/Krishnan_Shankar_Resume.pdf"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="w-28"
+				class="w-32"
 			>
 				Resume
+				<ArrowDownToLine class="ml-2 size-4" />
 			</Button>
 			<DropdownMenu.Root>
 				<DropdownMenu.Trigger asChild let:builder>
-					<Button builders={[builder]} class="w-32" variant="secondary">Get In Touch</Button>
+					<Button builders={[builder]} class="w-36" variant="secondary">Get In Touch <ChevronDown class="ml-2 size-4" /></Button>
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content>
 					<DropdownMenu.Item href="mailto:krishnans2006@gmail.com" class="cursor-pointer"

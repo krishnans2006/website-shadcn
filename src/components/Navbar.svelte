@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Sun, Moon, Package2, CircleUser, Menu } from 'lucide-svelte';
+	import { Sun, Moon, Package2, Menu, ArrowDownToLine } from 'lucide-svelte';
 
 	import { Button } from '$lib/components/ui/button/index.js';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
@@ -69,6 +69,7 @@
 			rel="noopener noreferrer"
 			class="ml-auto"
 		>
+			<ArrowDownToLine class="mr-2 size-4" />
 			Download My Resume
 		</Button>
 
@@ -82,28 +83,5 @@
 			/>
 			<span class="sr-only">Toggle theme</span>
 		</Button>
-
-		<!-- The below is preserved as a dropdown menu example -->
-		<!--		<DropdownMenu.Root>-->
-		<!--			<DropdownMenu.Trigger asChild let:builder>-->
-		<!--				<Button-->
-		<!--					builders={[builder]}-->
-		<!--					variant="secondary"-->
-		<!--					size="icon"-->
-		<!--					class="rounded-full"-->
-		<!--				>-->
-		<!--					<CircleUser class="h-5 w-5" />-->
-		<!--					<span class="sr-only">Toggle user menu</span>-->
-		<!--				</Button>-->
-		<!--			</DropdownMenu.Trigger>-->
-		<!--			<DropdownMenu.Content align="end">-->
-		<!--				<DropdownMenu.Label>My Account</DropdownMenu.Label>-->
-		<!--				<DropdownMenu.Separator />-->
-		<!--				<DropdownMenu.Item>Settings</DropdownMenu.Item>-->
-		<!--				<DropdownMenu.Item>Support</DropdownMenu.Item>-->
-		<!--				<DropdownMenu.Separator />-->
-		<!--				<DropdownMenu.Item>Logout</DropdownMenu.Item>-->
-		<!--			</DropdownMenu.Content>-->
-		<!--		</DropdownMenu.Root>-->
 	</div>
 </header>
