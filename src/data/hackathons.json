@@ -34,6 +34,7 @@
       "summary": "A platform to quickly build, test, and deploy websites",
       "description": "Webitor is a site builder, tester, and hosting platform whose goal is to assist people in making a website, without the stress of writing a lot of code. Webitor includes an interactive code editor and live preview, along with tons of auto-generated code snippets that use Bootstrap, a very popular web framework. And once you are done using Webitor to easily create your site, webitor also includes support for hosting your site as a subdomain on the platform.",
       "image": "webitor",
+      "image_invert_dark": true,
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/Webitor"
@@ -133,6 +134,7 @@
       "summary": "Check out the latest NASA images through an interactive story",
       "description": "A consolidation of NASA APIs into short, factual, and visually-attractive stories!",
       "image": "spacey",
+      "image_invert_dark": true,
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/SpaceY"

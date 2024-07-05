@@ -12,6 +12,7 @@
 		summary: string,
 		description: string,
 		image: string,
+		image_invert_dark?: boolean,
 		code_url: URL | null,
 		submission_url: URL | null,
 		demo_url: URL | null,
@@ -29,8 +30,8 @@
 		</Card.Header>
 		<Card.Content>
 			{#await import(`$lib/images/hackathons/${project.image}.png`) then { default: src }}
-				<img src={src} alt="{project.name}"
-						 class="w-full" />
+				<img src={src} alt="{project.name}" class="w-full"
+						 class:dark:invert={project.image_invert_dark} />
 			{/await}
 		</Card.Content>
 		<Card.Footer class="flex-auto flex-wrap gap-2 justify-center">
