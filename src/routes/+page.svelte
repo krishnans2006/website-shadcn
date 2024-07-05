@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Github, Linkedin, Mail, Phone, MapPin, KeyRound, Users, School, Server, Code, Plane, ChevronDown, ArrowDownToLine } from 'lucide-svelte';
+	import { Github, Linkedin, Mail, Phone, MapPin, KeyRound, Users, School, Server, Code, Plane, BriefcaseBusiness, ChevronDown, ArrowDownToLine } from 'lucide-svelte';
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button/index.js';
@@ -32,7 +32,7 @@
 				<DropdownMenu.Trigger asChild let:builder>
 					<Button builders={[builder]} class="w-36">Experience <ChevronDown class="ml-2 size-4" /></Button>
 				</DropdownMenu.Trigger>
-				<DropdownMenu.Content class="w-44">
+				<DropdownMenu.Content class="w-48">
 					<DropdownMenu.Sub>
 						<DropdownMenu.SubTrigger>
 							<School class="mr-2 size-4" />
@@ -54,6 +54,18 @@
 							<DropdownMenu.Item>
 								<Code class="mr-2 size-4" />
 								<span>Technical Lead @ HackTJ</span>
+							</DropdownMenu.Item>
+						</DropdownMenu.SubContent>
+					</DropdownMenu.Sub>
+					<DropdownMenu.Sub>
+						<DropdownMenu.SubTrigger>
+							<BriefcaseBusiness class="mr-2 size-4" />
+							<span>Work Experience</span>
+						</DropdownMenu.SubTrigger>
+						<DropdownMenu.SubContent class="w-60">
+							<DropdownMenu.Item>
+								<BriefcaseBusiness class="mr-2 size-4" />
+								<span>Student Researcher @ MITRE</span>
 							</DropdownMenu.Item>
 						</DropdownMenu.SubContent>
 					</DropdownMenu.Sub>
