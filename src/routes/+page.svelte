@@ -6,7 +6,7 @@
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 </script>
 
-<div class="flex gap-8 md:gap-12 mt-24 flex-col items-center md:flex-row">
+<div class="flex gap-8 md:gap-12 mt-6 md:mt-24 flex-col items-center md:flex-row">
 	<Avatar.Root class="flex-none size-72 md:size-96">
 		<Avatar.Image
 			src="./picture.png"
@@ -27,7 +27,7 @@
 			<li>System Administration (Linux)</li>
 		</ul>
 
-		<div class="flex gap-2 items-center">
+		<div class="flex gap-2 items-center flex-col md:flex-row">
 			<DropdownMenu.Root>
 				<DropdownMenu.Trigger asChild let:builder>
 					<Button builders={[builder]} class="w-36">Experience <ChevronDown class="ml-2 size-4" /></Button>
