@@ -15,11 +15,21 @@
 	</Avatar.Root>
 	<div class="flex-auto flex flex-col justify-center gap-4">
 		<h1 class="text-4xl font-bold">Hey, I'm Krishnan 🌊</h1>
-		<h3 class="text-lg">I'm a rising freshman at the University of Illinois, Urbana-Champaign.</h3>
+		<h3 class="text-lg mb-3">I'm a rising freshman at the University of Illinois, Urbana-Champaign.</h3>
+
+		<p class="text-md">
+			I specialize in:
+		</p>
+		<ul class="list-disc ml-6 leading-loose mb-1">
+			<li>Full-Stack Web Development (React/Svelte, Flask/Django, SQL/Firebase)</li>
+			<li>Networking and Communications (DNS, Radios/WiFi Links, Cellular/5G)</li>
+			<li>System Administration (Linux)</li>
+		</ul>
+
 		<div class="flex gap-2 items-center">
 			<DropdownMenu.Root>
 				<DropdownMenu.Trigger asChild let:builder>
-					<Button builders={[builder]} class="w-32">Projects <ChevronDown class="ml-2 size-4" /></Button>
+					<Button builders={[builder]} class="w-36">Experience <ChevronDown class="ml-2 size-4" /></Button>
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content class="w-44">
 					<DropdownMenu.Item href="/hackathons" class="cursor-pointer">
