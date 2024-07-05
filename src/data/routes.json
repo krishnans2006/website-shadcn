@@ -2,11 +2,13 @@
   "routes": [
     {
       "name": "Home",
-      "href": "/"
+      "href": "/",
+      "icon": "Home"
     },
     {
       "name": "Hackathons",
-      "href": "/hackathons"
+      "href": "/hackathons",
+      "icon": "Users"
     }
   ]
 }

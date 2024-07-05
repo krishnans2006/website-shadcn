@@ -1,6 +1,6 @@
 interface URL {
 	name: string,
-	url: string
+	url: string,
 }
 
 export interface Project {
@@ -12,5 +12,5 @@ export interface Project {
 	code_url: URL | null,
 	submission_url: URL | null,
 	demo_url: URL | null,
-	is_winner: boolean
+	is_winner: boolean,
 }

@@ -4,6 +4,18 @@
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
+
+	import type { PageData } from './$types';
+	import type { Route as RouteType } from '../data/routes';
+	import type { ComponentType } from 'svelte';
+
+	export let data: PageData;
+
+	let routes: RouteType[] = data.routes;
+
+	let routeIcons: { [key: string]: ComponentType } = {
+		'Users': Users,
+	};
 </script>
 
 <div class="flex gap-8 md:gap-12 mt-24 flex-col items-center md:flex-row">
@@ -32,10 +44,14 @@
 					<Button builders={[builder]} class="w-36">Experience <ChevronDown class="ml-2 size-4" /></Button>
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content class="w-44">
-					<DropdownMenu.Item href="/hackathons" class="cursor-pointer">
-						<Users class="mr-2 size-4" />
-						<span>Hackathons</span>
-					</DropdownMenu.Item>
+					{#each routes as route}
+						{#if route.name !== 'Home'}
+							<DropdownMenu.Item href="{route.href}" class="cursor-pointer">
+								<svelte:component this="{routeIcons[route.icon]}" class="mr-2 size-4" />
+								<span>Hackathons</span>
+							</DropdownMenu.Item>
+						{/if}
+					{/each}
 					<DropdownMenu.Label class="font-light italic">
 						<span>More coming soon...</span>
 					</DropdownMenu.Label>

@@ -8,7 +8,7 @@
 
 	export let data: PageData;
 
-	export let projects: ProjectType[] = data.projects;
+	let projects: ProjectType[] = data.projects;
 
 	let [minColWidth, maxColWidth, gap] = [350, 600, 12];
 </script>

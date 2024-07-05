@@ -7,12 +7,9 @@
 	import { toggleMode } from 'mode-watcher';
 	import { page } from '$app/stores';
 
-	interface Route {
-		name: string;
-		href: string;
-	}
+	import type { Route as RouteType } from '../data/routes';
 
-	export let routes: Route[] = [];
+	export let routes: RouteType[] = [];
 </script>
 
 <header class="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 z-50">
