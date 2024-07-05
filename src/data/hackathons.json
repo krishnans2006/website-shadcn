@@ -167,6 +167,7 @@
       "summary": "Track your calories with AI",
       "description": "Using your diet and activity history, CalTracker can calculate the calories you have consumed and burned. Then, using your past activity choices, it can suggest possible activities and durations to ﬁnish burning off the rest of your calories!",
       "image": "caltracker",
+      "image_invert_dark": true,
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/CalTracker"
