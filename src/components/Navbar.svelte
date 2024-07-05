@@ -2,7 +2,6 @@
 	import { Sun, Moon, Package2, Menu, ArrowDownToLine } from 'lucide-svelte';
 
 	import { Button } from '$lib/components/ui/button/index.js';
-	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 	import * as Sheet from '$lib/components/ui/sheet/index.js';
 
 	import { toggleMode } from 'mode-watcher';
