@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Github, Linkedin, Mail, Phone, MapPin, KeyRound, Users, ChevronDown, ArrowDownToLine } from 'lucide-svelte';
+	import { Github, Linkedin, Mail, Phone, MapPin, KeyRound, Users, School, Server, Code, Plane, ChevronDown, ArrowDownToLine } from 'lucide-svelte';
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button/index.js';
@@ -33,6 +33,30 @@
 					<Button builders={[builder]} class="w-36">Experience <ChevronDown class="ml-2 size-4" /></Button>
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content class="w-44">
+					<DropdownMenu.Sub>
+						<DropdownMenu.SubTrigger>
+							<School class="mr-2 size-4" />
+							<span>High School</span>
+						</DropdownMenu.SubTrigger>
+						<DropdownMenu.SubContent class="w-60">
+							<DropdownMenu.Item>
+								<School class="mr-2 size-4" />
+								<span>Student @ TJHSST</span>
+							</DropdownMenu.Item>
+							<DropdownMenu.Item>
+								<Server class="mr-2 size-4" />
+								<span>Lead Sysadmin @ TJ CSL</span>
+							</DropdownMenu.Item>
+							<DropdownMenu.Item>
+								<Plane class="mr-2 size-4" />
+								<span>President @ TJ UAV</span>
+							</DropdownMenu.Item>
+							<DropdownMenu.Item>
+								<Code class="mr-2 size-4" />
+								<span>Technical Lead @ HackTJ</span>
+							</DropdownMenu.Item>
+						</DropdownMenu.SubContent>
+					</DropdownMenu.Sub>
 					<DropdownMenu.Item href="/hackathons" class="cursor-pointer">
 						<Users class="mr-2 size-4" />
 						<span>Hackathons</span>
