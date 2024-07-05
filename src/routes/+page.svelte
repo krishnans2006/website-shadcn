@@ -4,18 +4,6 @@
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
-
-	import type { PageData } from './$types';
-	import type { Route as RouteType } from '../data/routes';
-	import type { ComponentType } from 'svelte';
-
-	export let data: PageData;
-
-	let routes: RouteType[] = data.routes;
-
-	let routeIcons: { [key: string]: ComponentType } = {
-		'Users': Users,
-	};
 </script>
 
 <div class="flex gap-8 md:gap-12 mt-24 flex-col items-center md:flex-row">
@@ -25,7 +13,7 @@
 			alt="@krishnans2006" />
 		<Avatar.Fallback>KS</Avatar.Fallback>
 	</Avatar.Root>
-	<div class="flex-auto flex flex-col justify-center gap-4">
+	<div class="flex-auto flex flex-col justify-center gap-4 tracking-wide">
 		<h1 class="text-4xl font-bold">Hey, I'm Krishnan 🌊</h1>
 		<h3 class="text-lg mb-3">I'm a rising freshman at the University of Illinois, Urbana-Champaign.</h3>
 
@@ -34,7 +22,8 @@
 		</p>
 		<ul class="list-disc ml-6 leading-loose mb-1">
 			<li>Full-Stack Web Development (React/Svelte, Flask/Django, SQL/Firebase)</li>
-			<li>Networking and Communications (DNS, Radios/WiFi Links, Cellular/5G)</li>
+			<li>Networking and Communications (Radios/WiFi Links, Cellular/5G, DNS/DHCP)</li>
+			<li>Unmanned Aerial Vehicles (Ardupilot/Mission Planner, Dronekit/MAVlink)</li>
 			<li>System Administration (Linux)</li>
 		</ul>
 
@@ -44,14 +33,10 @@
 					<Button builders={[builder]} class="w-36">Experience <ChevronDown class="ml-2 size-4" /></Button>
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content class="w-44">
-					{#each routes as route}
-						{#if route.name !== 'Home'}
-							<DropdownMenu.Item href="{route.href}" class="cursor-pointer">
-								<svelte:component this="{routeIcons[route.icon]}" class="mr-2 size-4" />
-								<span>Hackathons</span>
-							</DropdownMenu.Item>
-						{/if}
-					{/each}
+					<DropdownMenu.Item href="/hackathons" class="cursor-pointer">
+						<Users class="mr-2 size-4" />
+						<span>Hackathons</span>
+					</DropdownMenu.Item>
 					<DropdownMenu.Label class="font-light italic">
 						<span>More coming soon...</span>
 					</DropdownMenu.Label>
