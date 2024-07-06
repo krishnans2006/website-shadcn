@@ -177,26 +177,5 @@
 	</a>
 </div>
 
-<div id="more" class="h-96 scroll-mt-20">
-	hi
-	<br />
-	hi
-	hi
-	hi
-</div>
-
-<div id="more2" class="h-96">
-	hi
-	<br />
-	hi
-	hi
-	hi
-</div>
-
-<div id="more3" class="h-96">
-	hi
-	<br />
-	hi
-	hi
-	hi
+<div id="more" class="h-[2500px] scroll-mt-20">
 </div>
