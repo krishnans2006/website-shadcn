@@ -177,7 +177,7 @@
 	</a>
 </div>
 
-<div id="more" class="h-96">
+<div id="more" class="h-96 scroll-mt-20">
 	hi
 	<br />
 	hi
