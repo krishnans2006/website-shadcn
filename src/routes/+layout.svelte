@@ -12,9 +12,9 @@
 
 <ModeWatcher />
 
-<div class="flex min-h-screen w-full flex-col">
+<div class="flex w-full flex-col">
 	<Navbar routes={data.routes}></Navbar>
-	<div class="container mx-auto px-4 my-2 grow flex flex-col h-dvh">
+	<div class="container mx-auto px-4 my-2 flex flex-col">
 		<slot></slot>
 	</div>
 </div>
