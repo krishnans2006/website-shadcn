@@ -3,7 +3,6 @@
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button/index.js';
-	import { Badge } from "$lib/components/ui/badge/index.js";
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 </script>
 
