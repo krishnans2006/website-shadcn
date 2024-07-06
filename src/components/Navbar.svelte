@@ -43,7 +43,6 @@
 		<Sheet.Content side="left">
 			<nav class="grid gap-6 text-lg font-medium">
 				<a href="/" class="flex items-center gap-2 text-lg font-semibold">
-					<Package2 class="h-6 w-6" />
 					<p>Krishnan Shankar</p>
 				</a>
 				{#each routes as route}
