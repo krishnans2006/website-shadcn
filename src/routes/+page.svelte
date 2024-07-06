@@ -180,18 +180,28 @@
 </div>
 
 <div id="more" class="h-[2500px] scroll-mt-20 flex flex-col items-center">
-	<Carousel.Root class="w-11/12">
+	<Carousel.Root class="w-11/12 max-h-dvh">
 		<Carousel.Content>
 			<!-- Item 1 -->
 			<Carousel.Item>
 				<Card.Root class="p-3">
-					<Card.Content>
-						<h1 class="text-8xl text-center">Test</h1>
+					<Card.Content class="flex flex-row gap-4 items-center p-6">
+						<div class="w-1/3">
+							<img src="https://tin.tjhsst.edu/static/favicon/android-chrome-maskable-512x512.png" alt="Tin Logo" class="object-fill size-full" />
+						</div>
+						<div class="w-2/3">
+							<h1 class="text-3xl font-bold">Turn-In: TJHSST's Code Autograder</h1>
+							<p>
+								Previously, teachers in TJHSST CS classes had to manually run student code.
+								As you can imagine, this was both time consuming and dangerous.
+								In order to solve this problem, Tin was invented to safely run student code submissions.
+							</p>
+						</div>
 					</Card.Content>
 				</Card.Root>
 			</Carousel.Item>
 		</Carousel.Content>
-		<Carousel.Previous class="size-8" />
+		<Carousel.Previous />
 		<Carousel.Next />
 	</Carousel.Root>
 </div>
