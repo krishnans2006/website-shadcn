@@ -19,40 +19,26 @@
 		<h3 class="text-lg mb-3">I'm a rising freshman at the University of Illinois, Urbana-Champaign.</h3>
 
 		<p class="text-md">
-			I specialize in:
+			Skills:
 		</p>
 		<ul class="list-disc ml-6 leading-loose mb-1">
 			<li>
 				Full-Stack Web Development
 				<ul class="list-disc ml-6">
-					<li>Frontend: <Badge>React</Badge> <Badge>Svelte</Badge></li>
-					<li>Backend: <Badge>Flask</Badge> <Badge>Django</Badge></li>
-					<li>Database: <Badge>SQL</Badge> <Badge>Firebase</Badge></li>
+					<li>HTML/CSS/JavaScript, React, <strong>Svelte</strong> + SvelteKit</li>
+					<li><strong>Flask</strong>, <strong>Django</strong>, FastAPI, SocketIO</li>
+					<li>MySQL, PostgreSQL, SQLite, Firestore, MongoDB</li>
 				</ul>
 			</li>
 			<li>
-				Networking and Communications
-				<ul>
-					<li>
-						<Badge>Telemetry Radios</Badge>
-						<Badge>WiFi Links</Badge>
-						<Badge>Cellular/5G Networks</Badge>
-						<Badge>DNS/DHCP Configuration</Badge>
-					</li>
-				</ul>
+				Fluent In: <strong>Python</strong>, JavaScript, Java
 			</li>
 			<li>
-				Unmanned Aerial Vehicles (Ardupilot/Mission Planner, Dronekit/MAVlink)
-				<ul >
-					<li>
-						<Badge>Ardupilot</Badge>
-						<Badge>Mission Planner</Badge>
-						<Badge>Dronekit/MAVlink</Badge>
-						<Badge>PixHawk</Badge>
-					</li>
-				</ul>
+				Development Tools: <strong>Git</strong>, GitHub, <strong>Linux</strong>, Raspberry Pi, Jetbrains IDEs, VSCode
 			</li>
-			<li>System Administration <Badge>Linux</Badge></li>
+			<li>
+				Cloud Services: Amazon (AWS), Google (GCP), Oracle (OCI), Heroku
+			</li>
 		</ul>
 
 		<div class="flex gap-2 items-center flex-col md:flex-row">
