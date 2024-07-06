@@ -188,10 +188,12 @@
 				<Card.Root class="p-3">
 					<Card.Content class="flex flex-row gap-4 items-center p-6">
 						<div class="w-1/3">
-							<img src="https://tin.tjhsst.edu/static/favicon/android-chrome-maskable-512x512.png" alt="Tin Logo" class="object-fill size-full" />
+							<img src="https://tin.tjhsst.edu/static/favicon/android-chrome-maskable-512x512.png" alt="Tin Logo" class="object-fill size-full rounded-3xl" />
 						</div>
 						<div class="w-2/3">
-							<h1 class="text-3xl font-bold">Turn-In: TJHSST's Code Autograder</h1>
+							<h1 class="text-5xl font-bold">Turn-In</h1>
+							<h3 class="text-2xl">TJHSST's Code Autograder</h3>
+							<br />
 							<p>
 								Previously, teachers in TJHSST CS classes had to manually run student code.
 								As you can imagine, this was both time consuming and dangerous.
