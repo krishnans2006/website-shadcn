@@ -6,6 +6,10 @@
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 </script>
 
+<svelte:head>
+	<title>Krishnan Shankar</title>
+</svelte:head>
+
 <div class="flex gap-8 md:gap-12 mt-6 md:mt-24 flex-col items-center md:flex-row">
 	<div class="flex-none basis-1/3 flex justify-center">
 		<Avatar.Root class="size-72 md:size-96">
