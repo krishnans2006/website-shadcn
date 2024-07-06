@@ -19,14 +19,6 @@
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
-
-	function smoothScroll(element: HTMLElement) {
-		const scrollToSelector = element.getAttribute('href');
-		if (!scrollToSelector) return;
-		const scrollTo = document.querySelector(scrollToSelector);
-		if (!scrollTo) return;
-		scrollTo.scrollIntoView({ behavior: 'smooth' });
-	}
 </script>
 
 <svelte:head>
@@ -179,7 +171,7 @@
 		</div>
 	</div>
 
-	<a class="hidden xl:flex flex-col justify-end grow mt-12 mb-24" href="#more" on:click|preventDefault={smoothScroll(this)}>
+	<a class="hidden xl:flex flex-col justify-end grow mt-12 mb-24" href="#more">
 		<span class="text-center">SEE MORE</span>
 		<ChevronDown class="size-8 mx-auto" />
 	</a>
