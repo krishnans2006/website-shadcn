@@ -39,6 +39,7 @@
 	"dependencies": {
 		"bits-ui": "^0.21.10",
 		"clsx": "^2.1.1",
+		"embla-carousel-svelte": "^8.1.6",
 		"lucide-svelte": "^0.395.0",
 		"mode-watcher": "^0.3.0",
 		"svelte-bricks": "^0.2.1",

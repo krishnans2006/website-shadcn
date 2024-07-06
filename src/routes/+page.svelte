@@ -18,6 +18,8 @@
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button/index.js';
+  import * as Card from "$lib/components/ui/card";
+	import * as Carousel from "$lib/components/ui/carousel/index.js";
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 </script>
 
@@ -177,5 +179,19 @@
 	</a>
 </div>
 
-<div id="more" class="h-[2500px] scroll-mt-20">
+<div id="more" class="h-[2500px] scroll-mt-20 flex flex-col items-center">
+	<Carousel.Root class="w-11/12">
+		<Carousel.Content>
+			<!-- Item 1 -->
+			<Carousel.Item>
+				<Card.Root class="p-3">
+					<Card.Content>
+						<h1 class="text-8xl text-center">Test</h1>
+					</Card.Content>
+				</Card.Root>
+			</Carousel.Item>
+		</Carousel.Content>
+		<Carousel.Previous class="size-8" />
+		<Carousel.Next />
+	</Carousel.Root>
 </div>
