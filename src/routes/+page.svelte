@@ -180,6 +180,7 @@
 </div>
 
 <div id="more" class="h-[2500px] scroll-mt-20 flex flex-col items-center">
+	<h1 class="text-4xl mb-6">Here are some of my projects:</h1>
 	<Carousel.Root class="w-11/12 max-h-dvh">
 		<Carousel.Content>
 			<!-- Item 1 -->
