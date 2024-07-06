@@ -8,13 +8,15 @@
 </script>
 
 <div class="flex gap-8 md:gap-12 mt-6 md:mt-24 flex-col items-center md:flex-row">
-	<Avatar.Root class="flex-none size-72 md:size-96">
-		<Avatar.Image
-			src="./picture.png"
-			alt="@krishnans2006" />
-		<Avatar.Fallback>KS</Avatar.Fallback>
-	</Avatar.Root>
-	<div class="flex-auto flex flex-col justify-center gap-4 tracking-wide">
+	<div class="flex-none basis-1/3 flex justify-center">
+		<Avatar.Root class="size-72 md:size-96">
+			<Avatar.Image
+				src="./picture.png"
+				alt="@krishnans2006" />
+			<Avatar.Fallback>KS</Avatar.Fallback>
+		</Avatar.Root>
+	</div>
+	<div class="flex-auto flex flex-col basis-2/3 justify-center gap-3 tracking-wide">
 		<h1 class="text-4xl font-bold">Hey, I'm Krishnan 🌊</h1>
 		<h3 class="text-lg mb-3">I'm a rising freshman at the University of Illinois, Urbana-Champaign.</h3>
 
