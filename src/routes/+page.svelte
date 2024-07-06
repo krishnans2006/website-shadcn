@@ -3,6 +3,7 @@
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button/index.js';
+	import { Badge } from "$lib/components/ui/badge/index.js";
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 </script>
 
@@ -21,10 +22,37 @@
 			I specialize in:
 		</p>
 		<ul class="list-disc ml-6 leading-loose mb-1">
-			<li>Full-Stack Web Development (React/Svelte, Flask/Django, SQL/Firebase)</li>
-			<li>Networking and Communications (Radios/WiFi Links, Cellular/5G, DNS/DHCP)</li>
-			<li>Unmanned Aerial Vehicles (Ardupilot/Mission Planner, Dronekit/MAVlink)</li>
-			<li>System Administration (Linux)</li>
+			<li>
+				Full-Stack Web Development
+				<ul class="list-disc ml-6">
+					<li>Frontend: <Badge>React</Badge> <Badge>Svelte</Badge></li>
+					<li>Backend: <Badge>Flask</Badge> <Badge>Django</Badge></li>
+					<li>Database: <Badge>SQL</Badge> <Badge>Firebase</Badge></li>
+				</ul>
+			</li>
+			<li>
+				Networking and Communications
+				<ul>
+					<li>
+						<Badge>Telemetry Radios</Badge>
+						<Badge>WiFi Links</Badge>
+						<Badge>Cellular/5G Networks</Badge>
+						<Badge>DNS/DHCP Configuration</Badge>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Unmanned Aerial Vehicles (Ardupilot/Mission Planner, Dronekit/MAVlink)
+				<ul >
+					<li>
+						<Badge>Ardupilot</Badge>
+						<Badge>Mission Planner</Badge>
+						<Badge>Dronekit/MAVlink</Badge>
+						<Badge>PixHawk</Badge>
+					</li>
+				</ul>
+			</li>
+			<li>System Administration <Badge>Linux</Badge></li>
 		</ul>
 
 		<div class="flex gap-2 items-center flex-col md:flex-row">
