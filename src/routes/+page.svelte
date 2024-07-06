@@ -25,7 +25,7 @@
 	<title>Krishnan Shankar</title>
 </svelte:head>
 
-<div class="flex flex-col h-full grow items-center">
+<div class="flex flex-col h-full grow flex-none items-center">
 	<div class="flex gap-10 xl:gap-12 mt-6 md:mt-12 lg:mt-24 flex-col items-center xl:flex-row xl:flex-auto">
 		<div class="flex-none basis-1/3 flex justify-center mb-8 xl:mb-0">
 			<Avatar.Root class="size-72 md:size-96">
@@ -171,8 +171,16 @@
 		</div>
 	</div>
 
-	<div class="hidden xl:flex flex-col justify-end grow mt-12">
+	<div class="hidden xl:flex flex-col justify-end grow mt-12 mb-24">
 		<span class="text-center">SEE MORE</span>
 		<ChevronDown class="size-8 mx-auto" />
 	</div>
+</div>
+
+<div class="h-96">
+	hi
+	<br />
+	hi
+	hi
+	hi
 </div>
