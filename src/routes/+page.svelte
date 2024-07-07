@@ -17,6 +17,7 @@
 	} from 'lucide-svelte';
 
 	import * as Avatar from '$lib/components/ui/avatar';
+  import { Badge } from "$lib/components/ui/badge";
 	import { Button } from '$lib/components/ui/button/index.js';
   import * as Card from "$lib/components/ui/card";
 	import * as Carousel from "$lib/components/ui/carousel/index.js";
@@ -209,6 +210,10 @@
 								and give students instant feedback, allowing students to learn from their mistakes
 								while saving teachers time and effort.
 							</p>
+							<br />
+							<Badge>HTML/CSS/JS</Badge>
+							<Badge>Django</Badge>
+							<Badge>PostgreSQL</Badge>
 						</div>
 					</Card.Content>
 				</Card.Root>
@@ -240,6 +245,9 @@
 								implementation of a GCS. It supports almost all of Mission Planner's features, and
 								arguably implements them better.
 							</p>
+							<br />
+							<Badge>React</Badge>
+							<Badge>Flask</Badge>
 						</div>
 					</Card.Content>
 				</Card.Root>
@@ -270,6 +278,10 @@
 								needs. It passed FCPS's security scans and privacy reviews with flying colors, and
 								gave us the secure district-approved hackathon platform we needed.
 							</p>
+							<br />
+							<Badge>HTML/CSS/JS</Badge>
+							<Badge>Django</Badge>
+							<Badge>SQLite</Badge>
 						</div>
 					</Card.Content>
 				</Card.Root>
