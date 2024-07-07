@@ -22,6 +22,7 @@
   import * as Card from "$lib/components/ui/card";
 	import * as Carousel from "$lib/components/ui/carousel/index.js";
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
+  import * as HoverCard from "$lib/components/ui/hover-card";
 </script>
 
 <svelte:head>
@@ -211,7 +212,23 @@
 								while saving teachers time and effort.
 							</p>
 							<br />
-							<Badge class="bg-[#EF662A] hover:bg-[#E34E26] text-white">HTML/CSS/JS</Badge>
+							<HoverCard.Root>
+								<HoverCard.Trigger>
+									<Badge class="bg-[#EF662A] hover:bg-[#E34E26] text-white">HTML/CSS/JS</Badge>
+								</HoverCard.Trigger>
+								<HoverCard.Content class="w-80">
+									<div class="flex flex-row justify-between space-x-4">
+										<Avatar.Root>
+											<Avatar.Image src="https://www.svgrepo.com/show/303500/react-1-logo.svg" alt="React Logo" />
+											<Avatar.Fallback>R</Avatar.Fallback>
+										</Avatar.Root>
+										<div class="space-y-1">
+											<h4 class="text-sm font-semibold">React</h4>
+											<p class="text-sm">The library for web and native user interfaces</p>
+										</div>
+									</div>
+								</HoverCard.Content>
+							</HoverCard.Root>
 							<Badge class="bg-[#0C4C32] hover:bg-[#103E2E] text-white">Django</Badge>
 							<Badge class="bg-[#326690] hover:bg-[#2c5b81] text-white">PostgreSQL</Badge>
 						</div>
