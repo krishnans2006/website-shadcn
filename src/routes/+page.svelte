@@ -27,6 +27,7 @@
 	import Django from '../components/badges/Django.svelte';
 	import PostgreSQL from '../components/badges/PostgreSQL.svelte';
 	import React from '../components/badges/React.svelte';
+	import Flask from '../components/badges/Flask.svelte';
 </script>
 
 <svelte:head>
@@ -256,7 +257,7 @@
 							</p>
 							<br />
 							<React />
-							<Badge class="bg-[#3BABC3] hover:bg-[#3599af]">Flask</Badge>
+							<Flask />
 						</div>
 					</Card.Content>
 				</Card.Root>
