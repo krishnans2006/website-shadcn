@@ -13,8 +13,7 @@
 		Plane,
 		BriefcaseBusiness,
 		ChevronDown,
-		ArrowDownToLine,
-		ExternalLink
+		ArrowDownToLine
 	} from 'lucide-svelte';
 
 	import * as Avatar from '$lib/components/ui/avatar';
@@ -23,7 +22,6 @@
 	import * as Card from '$lib/components/ui/card';
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
-	import * as HoverCard from '$lib/components/ui/hover-card';
 
 	import HTMLCSSJS  from '../components/badges/HTMLCSSJS.svelte'
 	import Django from '../components/badges/Django.svelte';
