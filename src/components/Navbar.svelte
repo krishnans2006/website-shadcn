@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Sun, Moon, Package2, Menu, ArrowDownToLine } from 'lucide-svelte';
+	import { Sun, Moon, Menu, ArrowDownToLine } from 'lucide-svelte';
 
-	import { Button } from '$lib/components/ui/button/index.js';
-	import * as Sheet from '$lib/components/ui/sheet/index.js';
+	import { Button } from '$lib/components/ui/button';
+	import * as Sheet from '$lib/components/ui/sheet';
 
 	import { toggleMode } from 'mode-watcher';
 	import { page } from '$app/stores';

@@ -24,6 +24,10 @@
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 	import * as HoverCard from '$lib/components/ui/hover-card';
+
+	import HTMLCSSJS  from '../components/badges/HTMLCSSJS.svelte'
+	import Django from '../components/badges/Django.svelte';
+	import PostgreSQL from '../components/badges/PostgreSQL.svelte';
 </script>
 
 <svelte:head>
@@ -215,73 +219,9 @@
 								while saving teachers time and effort.
 							</p>
 							<br />
-							<HoverCard.Root>
-								<HoverCard.Trigger>
-									<Badge class="bg-[#EF662A] hover:bg-[#E34E26] text-white">HTML/CSS/JS</Badge>
-								</HoverCard.Trigger>
-								<HoverCard.Content class="w-80">
-									<a class="flex flex-row justify-between space-x-4" href="https://en.wikipedia.org/wiki/HTML"
-										 target="_blank" rel="noopener noreferrer">
-										<Avatar.Root>
-											<Avatar.Image src="https://icons.veryicon.com/png/System/Plex/Other%20html%205.png"
-																		alt="HTML Logo" />
-											<Avatar.Fallback>R</Avatar.Fallback>
-										</Avatar.Root>
-										<div class="space-y-1">
-											<div class="flex">
-												<h4 class="text-sm font-semibold">HTML, CSS, and JavaScript</h4>
-												<ExternalLink class="size-4 ml-2" />
-											</div>
-											<p class="text-sm">The standard markup, styling, and scripting languages for
-												web development</p>
-										</div>
-									</a>
-								</HoverCard.Content>
-							</HoverCard.Root>
-							<HoverCard.Root>
-								<HoverCard.Trigger>
-									<Badge class="bg-[#0C4C32] hover:bg-[#103E2E] text-white">Django</Badge>
-								</HoverCard.Trigger>
-								<HoverCard.Content class="w-80">
-									<a class="flex flex-row justify-between space-x-4" href="https://www.djangoproject.com"
-										 target="_blank" rel="noopener noreferrer">
-										<Avatar.Root>
-											<Avatar.Image src="https://www.svgrepo.com/show/353657/django-icon.svg"
-																		alt="Django Logo" />
-											<Avatar.Fallback>R</Avatar.Fallback>
-										</Avatar.Root>
-										<div class="space-y-1">
-											<div class="flex">
-												<h4 class="text-sm font-semibold">Django</h4>
-												<ExternalLink class="size-4 ml-2" />
-											</div>
-											<p class="text-sm">Django makes it easier to build better web apps more quickly and with less code</p>
-										</div>
-									</a>
-								</HoverCard.Content>
-							</HoverCard.Root>
-							<HoverCard.Root>
-								<HoverCard.Trigger>
-									<Badge class="bg-[#326690] hover:bg-[#2c5b81] text-white">PostgreSQL</Badge>
-								</HoverCard.Trigger>
-								<HoverCard.Content class="w-80">
-									<a class="flex flex-row justify-between space-x-4" href="https://www.postgresql.org"
-										 target="_blank" rel="noopener noreferrer">
-										<Avatar.Root>
-											<Avatar.Image src="https://i.pinimg.com/originals/06/86/c0/0686c0c85407548ea5bd737a572974b6.png"
-																		alt="PostgreSQL Logo" />
-											<Avatar.Fallback>R</Avatar.Fallback>
-										</Avatar.Root>
-										<div class="space-y-1">
-											<div class="flex">
-												<h4 class="text-sm font-semibold">PostgreSQL</h4>
-												<ExternalLink class="size-4 ml-2" />
-											</div>
-											<p class="text-sm">The world's most advanced open source relational database</p>
-										</div>
-									</a>
-								</HoverCard.Content>
-							</HoverCard.Root>
+							<HTMLCSSJS />
+							<Django />
+							<PostgreSQL />
 						</div>
 					</Card.Content>
 				</Card.Root>
