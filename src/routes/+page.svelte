@@ -13,7 +13,8 @@
 		Plane,
 		BriefcaseBusiness,
 		ChevronDown,
-		ArrowDownToLine
+		ArrowDownToLine,
+		ExternalLink
 	} from 'lucide-svelte';
 
 	import * as Avatar from '$lib/components/ui/avatar';
@@ -217,16 +218,19 @@
 									<Badge class="bg-[#EF662A] hover:bg-[#E34E26] text-white">HTML/CSS/JS</Badge>
 								</HoverCard.Trigger>
 								<HoverCard.Content class="w-80">
-									<div class="flex flex-row justify-between space-x-4">
+									<a class="flex flex-row justify-between space-x-4" href="https://react.dev" target="_blank" rel="noopener noreferrer">
 										<Avatar.Root>
 											<Avatar.Image src="https://www.svgrepo.com/show/303500/react-1-logo.svg" alt="React Logo" />
 											<Avatar.Fallback>R</Avatar.Fallback>
 										</Avatar.Root>
 										<div class="space-y-1">
-											<h4 class="text-sm font-semibold">React</h4>
+											<div class="flex">
+												<h4 class="text-sm font-semibold">React</h4>
+												<ExternalLink class="size-4 ml-2" />
+											</div>
 											<p class="text-sm">The library for web and native user interfaces</p>
 										</div>
-									</div>
+									</a>
 								</HoverCard.Content>
 							</HoverCard.Root>
 							<Badge class="bg-[#0C4C32] hover:bg-[#103E2E] text-white">Django</Badge>
