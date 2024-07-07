@@ -195,9 +195,11 @@
 							<h3 class="text-2xl">TJHSST's Code Autograder</h3>
 							<br />
 							<p>
-								Previously, teachers in TJHSST CS classes had to manually run student code.
-								As you can imagine, this was both time consuming and dangerous.
-								In order to solve this problem, Tin was invented to safely run student code submissions.
+								Previously, teachers in TJHSST CS classes had to test student code manually. For
+								example, they would collect student code through an LMS, run the code on their
+								computer, and then analyze the results. They would repeat this process per student,
+								per period, per assignment. As you can imagine, this is both time-consuming and
+								risky from a security standpoint (what if a student submits malicious code?).
 							</p>
 						</div>
 					</Card.Content>
@@ -213,7 +215,7 @@
 						</div>
 						<div class="w-2/3">
 							<h1 class="text-5xl font-bold">TJUAV GroundStation</h1>
-							<h3 class="text-2xl">An Open-Source, Performance-Driven Implementation of Ardupilot GCS</h3>
+							<h3 class="text-2xl">An Open-Source, Performance-Driven Implementation of Ardupilot</h3>
 							<br />
 							<p>
 								The go-to Ardupilot Ground Control Station (GCS) is Mission Planner, an application
@@ -227,7 +229,8 @@
 							<p>
 								TJUAV GroundStation solves this problem by interfacing directly with MAVLink
 								messages from telemetry radios, providing a lightweight, fast, and cross-platform
-								implementation of a GCS.
+								implementation of a GCS. It supports almost all of Mission Planner's features, and
+								arguably implements them better.
 							</p>
 						</div>
 					</Card.Content>
