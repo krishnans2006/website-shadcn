@@ -26,6 +26,7 @@
 	import HTMLCSSJS  from '../components/badges/HTMLCSSJS.svelte'
 	import Django from '../components/badges/Django.svelte';
 	import PostgreSQL from '../components/badges/PostgreSQL.svelte';
+	import React from '../components/badges/React.svelte';
 </script>
 
 <svelte:head>
@@ -254,7 +255,7 @@
 								arguably implements them better.
 							</p>
 							<br />
-							<Badge class="bg-[#61DBFB] hover:bg-[#3fd3fa] text-black">React</Badge>
+							<React />
 							<Badge class="bg-[#3BABC3] hover:bg-[#3599af]">Flask</Badge>
 						</div>
 					</Card.Content>
