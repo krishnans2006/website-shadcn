@@ -211,9 +211,9 @@
 								while saving teachers time and effort.
 							</p>
 							<br />
-							<Badge>HTML/CSS/JS</Badge>
-							<Badge>Django</Badge>
-							<Badge>PostgreSQL</Badge>
+							<Badge class="bg-[#EF662A] hover:bg-[#E34E26] text-white">HTML/CSS/JS</Badge>
+							<Badge class="bg-[#0C4C32] hover:bg-[#103E2E] text-white">Django</Badge>
+							<Badge class="bg-[#326690] hover:bg-[#2c5b81] text-white">PostgreSQL</Badge>
 						</div>
 					</Card.Content>
 				</Card.Root>
@@ -246,8 +246,8 @@
 								arguably implements them better.
 							</p>
 							<br />
-							<Badge>React</Badge>
-							<Badge>Flask</Badge>
+							<Badge class="bg-[#61DBFB] hover:bg-[#3fd3fa] text-black">React</Badge>
+							<Badge class="bg-[#3BABC3] hover:bg-[#3599af]">Flask</Badge>
 						</div>
 					</Card.Content>
 				</Card.Root>
@@ -279,9 +279,9 @@
 								gave us the secure district-approved hackathon platform we needed.
 							</p>
 							<br />
-							<Badge>HTML/CSS/JS</Badge>
-							<Badge>Django</Badge>
-							<Badge>SQLite</Badge>
+							<Badge class="bg-[#EF662A] hover:bg-[#E34E26] text-white">HTML/CSS/JS</Badge>
+							<Badge class="bg-[#0C4C32] hover:bg-[#103E2E] text-white">Django</Badge>
+							<Badge class="bg-[#3E9FDC] hover:bg-[#107FCE] text-white">SQLite</Badge>
 						</div>
 					</Card.Content>
 				</Card.Root>
