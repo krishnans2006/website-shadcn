@@ -30,7 +30,9 @@
 	let carouselAPI: CarouselAPI;
 
 	$: if (carouselAPI) {
-		carouselAPI.scrollTo(2);
+		let count = carouselAPI.scrollSnapList().length;
+		let randomIndex = Math.floor(Math.random() * count);
+		carouselAPI.scrollTo(randomIndex);
 	}
 </script>
 
