@@ -17,18 +17,13 @@
 	} from 'lucide-svelte';
 
 	import * as Avatar from '$lib/components/ui/avatar';
-	import { Badge } from '$lib/components/ui/badge';
-	import { Button } from '$lib/components/ui/button/index.js';
-	import * as Card from '$lib/components/ui/card';
-	import * as Carousel from '$lib/components/ui/carousel/index.js';
-	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
+	import { Button } from '$lib/components/ui/button';
+	import * as Carousel from '$lib/components/ui/carousel';
+	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
 
-	import HTMLCSSJS  from '../components/badges/HTMLCSSJS.svelte'
-	import Django from '../components/badges/Django.svelte';
-	import PostgreSQL from '../components/badges/PostgreSQL.svelte';
-	import React from '../components/badges/React.svelte';
-	import Flask from '../components/badges/Flask.svelte';
-	import SQLite from '../components/badges/SQLite.svelte';
+	import TurnIn from '../components/projects/TurnIn.svelte';
+	import GroundStation from '../components/projects/GroundStation.svelte';
+	import Portal from '../components/projects/Portal.svelte';
 </script>
 
 <svelte:head>
@@ -192,113 +187,9 @@
 	<h1 class="text-4xl mb-6">Here are some of my projects:</h1>
 	<Carousel.Root class="w-11/12 max-h-dvh">
 		<Carousel.Content>
-			<!-- Item 1 -->
-			<Carousel.Item>
-				<Card.Root class="p-3">
-					<Card.Content class="flex flex-row gap-4 items-center p-6">
-						<div class="w-1/3">
-							<img src="https://tin.tjhsst.edu/static/favicon/android-chrome-maskable-512x512.png"
-									 alt="Tin Logo" class="object-fill size-full rounded-3xl" />
-						</div>
-						<div class="w-2/3">
-							<h1 class="text-5xl font-bold">Turn-In</h1>
-							<h3 class="text-2xl">TJHSST's Code Autograder</h3>
-							<br />
-							<p>
-								Previously, teachers in TJHSST CS classes had to test student code manually. For
-								example, they would collect student code through an LMS, run the code on their
-								computer, and then analyze the results. They would repeat this process per student,
-								per period, per assignment. As you can imagine, this is both time-consuming and
-								risky from a security standpoint (what if a student submits malicious code?).
-							</p>
-							<br />
-							<p>
-								Turn-In solves this problem by enabling functionality for code autograders. All a
-								teacher needs to do is write the grader script for an assignment, and students will
-								be able to submit their code to Turn-In for grading. Turn-In will run the grader
-								and give students instant feedback, allowing students to learn from their mistakes
-								while saving teachers time and effort.
-							</p>
-							<br />
-							<HTMLCSSJS />
-							<Django />
-							<PostgreSQL />
-						</div>
-					</Card.Content>
-				</Card.Root>
-			</Carousel.Item>
-
-			<!-- Item 2 -->
-			<Carousel.Item>
-				<Card.Root class="p-3">
-					<Card.Content class="flex flex-row gap-4 items-center p-6">
-						<div class="w-1/3">
-							<img src="https://avatars.githubusercontent.com/u/47068591?s=1200" alt="TJUAV Logo"
-									 class="object-fill size-full rounded-3xl" />
-						</div>
-						<div class="w-2/3">
-							<h1 class="text-5xl font-bold">TJUAV GroundStation</h1>
-							<h3 class="text-2xl">An Open-Source, Performance-Driven Implementation of
-								Ardupilot</h3>
-							<br />
-							<p>
-								The go-to Ardupilot Ground Control Station (GCS) is Mission Planner, an application
-								that supports a variety of features including configuration, mission planning, and
-								live telemetry. However, it's a Windows-only application, and all attempts to run
-								it on Linux have resulted in a buggy mess. Additionally, performance issues result
-								in frame rates as low as 0.2 FPS, which is unacceptable for something as crucial as
-								a GCS.
-							</p>
-							<br />
-							<p>
-								TJUAV GroundStation solves this problem by interfacing directly with MAVLink
-								messages from telemetry radios, providing a lightweight, fast, and cross-platform
-								implementation of a GCS. It supports almost all of Mission Planner's features, and
-								arguably implements them better.
-							</p>
-							<br />
-							<React />
-							<Flask />
-						</div>
-					</Card.Content>
-				</Card.Root>
-			</Carousel.Item>
-
-			<!-- Item 3 -->
-			<Carousel.Item>
-				<Card.Root class="p-3">
-					<Card.Content class="flex flex-row gap-4 items-center p-6">
-						<div class="w-1/3">
-							<img src="https://avatars.githubusercontent.com/u/12674382?s=1200" alt="HackTJ Logo"
-									 class="object-fill size-full rounded-3xl" />
-						</div>
-						<div class="w-2/3">
-							<h1 class="text-5xl font-bold">HackTJ Portal</h1>
-							<h3 class="text-2xl">A Privacy-Focused, FERPA-Compliant Hackathon Submission and
-								Judging Platform</h3>
-							<br />
-							<p>
-								Previously, HackTJ, an annual student-run high school hackathon, used Devpost to
-								manage its project submission and judging needs. However, just mere months before
-								our scheduled event, our school district (Fairfax County Public Schools) banned the
-								use of Devpost due to privacy concerns. This left the HackTJ team scrambling to
-								find a replacement platform that was both privacy-focused and FERPA-compliant.
-							</p>
-							<br />
-							<p>
-								To help solve this problem, I spent the next few months developing and deploying
-								the HackTJ Portal, a custom submission and judging platform that met all of our
-								needs. It passed FCPS's security scans and privacy reviews with flying colors, and
-								gave us the secure district-approved hackathon platform we needed.
-							</p>
-							<br />
-							<HTMLCSSJS />
-							<Django />
-							<SQLite />
-						</div>
-					</Card.Content>
-				</Card.Root>
-			</Carousel.Item>
+			<TurnIn />
+			<GroundStation />
+			<Portal />
 		</Carousel.Content>
 		<Carousel.Previous />
 		<Carousel.Next />
