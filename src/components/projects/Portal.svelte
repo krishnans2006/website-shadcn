@@ -1,6 +1,5 @@
 <script>
 	import * as Card from '$lib/components/ui/card';
-	import * as Carousel from '$lib/components/ui/carousel';
 
 	import Django from '../badges/Django.svelte';
 	import HTMLCSSJS from '../badges/HTMLCSSJS.svelte';

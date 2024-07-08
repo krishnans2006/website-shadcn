@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Masonry from 'svelte-bricks';
 
-	import Project from '../../components/Project.svelte';
+	import SmallProject from '../../components/SmallProject.svelte';
 
 	import type { PageData } from './$types';
 	import type { Project as ProjectType } from '../../data/hackathons';
@@ -23,5 +23,5 @@
 </div>
 
 <Masonry items={projects} {minColWidth} {maxColWidth} {gap} let:item={project} idKey="name">
-	<Project {project} />
+	<SmallProject {project} />
 </Masonry>
