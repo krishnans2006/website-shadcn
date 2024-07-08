@@ -16,6 +16,8 @@
 		ArrowDownToLine
 	} from 'lucide-svelte';
 
+  import { type CarouselAPI } from "$lib/components/ui/carousel/context.js";
+
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button';
 	import * as Carousel from '$lib/components/ui/carousel';
@@ -24,6 +26,12 @@
 	import TurnIn from '../components/projects/TurnIn.svelte';
 	import GroundStation from '../components/projects/GroundStation.svelte';
 	import Portal from '../components/projects/Portal.svelte';
+
+	let carouselAPI: CarouselAPI;
+
+	$: if (carouselAPI) {
+		carouselAPI.scrollTo(2);
+	}
 </script>
 
 <svelte:head>
@@ -185,7 +193,7 @@
 
 <div id="more" class="h-[2500px] scroll-mt-20 flex flex-col items-center">
 	<h1 class="text-4xl mb-6">Here are some of my projects:</h1>
-	<Carousel.Root class="w-11/12 max-h-dvh">
+	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={carouselAPI}>
 		<Carousel.Content>
 			<Carousel.Item><TurnIn /></Carousel.Item>
 			<Carousel.Item><GroundStation /></Carousel.Item>
