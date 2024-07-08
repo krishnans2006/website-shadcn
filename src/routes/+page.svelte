@@ -187,9 +187,9 @@
 	<h1 class="text-4xl mb-6">Here are some of my projects:</h1>
 	<Carousel.Root class="w-11/12 max-h-dvh">
 		<Carousel.Content>
-			<TurnIn />
-			<GroundStation />
-			<Portal />
+			<Carousel.Item><TurnIn /></Carousel.Item>
+			<Carousel.Item><GroundStation /></Carousel.Item>
+			<Carousel.Item><Portal /></Carousel.Item>
 		</Carousel.Content>
 		<Carousel.Previous />
 		<Carousel.Next />
