@@ -8,12 +8,12 @@
 </script>
 
 <Card.Root class="p-3">
-	<Card.Content class="flex flex-row gap-4 items-center p-6">
-		<div class="w-1/3">
+	<Card.Content class="flex flex-col md:flex-row gap-4 items-center p-1 md:p-6">
+		<div class="md:w-1/3">
 			<img src="https://avatars.githubusercontent.com/u/12674382?s=1200" alt="HackTJ Logo"
 					 class="object-fill size-full rounded-3xl" />
 		</div>
-		<div class="w-2/3">
+		<div class="md:w-2/3">
 			<h1 class="text-5xl font-bold">HackTJ Portal</h1>
 			<h3 class="text-2xl">A Privacy-Focused, FERPA-Compliant Hackathon Submission and
 				Judging Platform</h3>
