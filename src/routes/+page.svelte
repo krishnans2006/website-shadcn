@@ -28,6 +28,7 @@
 	import PostgreSQL from '../components/badges/PostgreSQL.svelte';
 	import React from '../components/badges/React.svelte';
 	import Flask from '../components/badges/Flask.svelte';
+	import SQLite from '../components/badges/SQLite.svelte';
 </script>
 
 <svelte:head>
@@ -291,9 +292,9 @@
 								gave us the secure district-approved hackathon platform we needed.
 							</p>
 							<br />
-							<Badge class="bg-[#EF662A] hover:bg-[#E34E26] text-white">HTML/CSS/JS</Badge>
-							<Badge class="bg-[#0C4C32] hover:bg-[#103E2E] text-white">Django</Badge>
-							<Badge class="bg-[#3E9FDC] hover:bg-[#107FCE] text-white">SQLite</Badge>
+							<HTMLCSSJS />
+							<Django />
+							<SQLite />
 						</div>
 					</Card.Content>
 				</Card.Root>
