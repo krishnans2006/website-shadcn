@@ -32,7 +32,7 @@
 	let count: number;
 	let currentSlide: number;
 
-	let autoplay = Autoplay({ delay: 2000 });
+	let autoplay = Autoplay({ delay: 10_000 });
 
 	$: if (carouselAPI) {
 		count = carouselAPI.scrollSnapList().length;
