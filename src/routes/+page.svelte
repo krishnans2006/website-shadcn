@@ -16,8 +16,8 @@
 		ArrowDownToLine
 	} from 'lucide-svelte';
 
-  import { type CarouselAPI } from "$lib/components/ui/carousel/context.js";
-	import Autoplay from "embla-carousel-autoplay";
+	import { type CarouselAPI } from '$lib/components/ui/carousel/context.js';
+	import Autoplay from 'embla-carousel-autoplay';
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button';
@@ -201,16 +201,25 @@
 
 <div id="more" class="h-[2500px] scroll-mt-20 flex flex-col items-center">
 	<h1 class="text-4xl mb-6">Here are some of my projects:</h1>
-	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={carouselAPI} opts="{{ loop: true }}" plugins="{[Autoplay({ delay: 2000 })]}">
+	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={carouselAPI} opts="{{ loop: true }}"
+								 plugins="{[Autoplay({ delay: 2000 })]}">
 		<Carousel.Content>
-			<Carousel.Item><TurnIn /></Carousel.Item>
-			<Carousel.Item><GroundStation /></Carousel.Item>
-			<Carousel.Item><Portal /></Carousel.Item>
+			<Carousel.Item>
+				<TurnIn />
+			</Carousel.Item>
+			<Carousel.Item>
+				<GroundStation />
+			</Carousel.Item>
+			<Carousel.Item>
+				<Portal />
+			</Carousel.Item>
 		</Carousel.Content>
 		<Carousel.Previous />
 		<Carousel.Next />
 	</Carousel.Root>
-	{#each {length: count} as _, i}
-		<Button class="mt-4" on:click={() => carouselAPI.scrollTo(i)}>{i + 1}</Button>
-	{/each}
+	<div class="flex flex-row">
+		{#each { length: count } as _, i}
+			<Button class="mt-4" on:click={() => carouselAPI.scrollTo(i)}>{i + 1}</Button>
+		{/each}
+	</div>
 </div>
