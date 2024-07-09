@@ -27,6 +27,11 @@
 	import TurnIn from '../components/projects/TurnIn.svelte';
 	import GroundStation from '../components/projects/GroundStation.svelte';
 	import Portal from '../components/projects/Portal.svelte';
+	import SmallProject from '../components/SmallProject.svelte';
+
+	export let data: PageData;
+
+	let projects: ProjectType[] = data.projects;
 
 	let carouselAPI: CarouselAPI;
 	let count: number;
@@ -210,7 +215,7 @@
 	</a>
 </div>
 
-<div id="projects" class="h-[2500px] scroll-mt-20 flex flex-col items-center">
+<div id="projects" class="scroll-mt-20 flex flex-col items-center">
 	<h1 class="text-4xl mb-6">Here are some of my projects:</h1>
 	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={carouselAPI} opts="{{ loop: true }}"
 								 plugins="{[autoplay]}">
@@ -239,4 +244,19 @@
 			{/if}
 		{/each}
 	</div>
+</div>
+
+<div id="hackathon-projects" class="scroll-mt-20 flex flex-col items-center mt-20">
+	<h1 class="text-4xl mb-6">And some hackathon projects:</h1>
+	<Carousel.Root class="w-11/12 max-h-dvh" opts="{{ loop: true }}" plugins="{[Autoplay({ delay: 2_300 })]}">
+		<Carousel.Content>
+			{#each projects as project}
+				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+					<SmallProject {project} />
+				</Carousel.Item>
+			{/each}
+		</Carousel.Content>
+		<Carousel.Previous />
+		<Carousel.Next />
+	</Carousel.Root>
 </div>
