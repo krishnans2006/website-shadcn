@@ -36,11 +36,15 @@
 
 	$: if (carouselAPI) {
 		count = carouselAPI.scrollSnapList().length;
-		currentSlide = carouselAPI.selectedScrollSnap();
 
 		// Random start
 		let randomIndex = Math.floor(Math.random() * count);
-		carouselAPI.scrollTo(randomIndex);
+		while (carouselAPI.selectedScrollSnap() !== randomIndex) {
+			carouselAPI.scrollNext();
+		}
+
+		// Set current slide after random start
+		currentSlide = carouselAPI.selectedScrollSnap();
 
 		// Update current slide
 		carouselAPI.on('select', () => {
