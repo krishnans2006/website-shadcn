@@ -32,6 +32,8 @@
 	let count: number;
 	let currentSlide: number;
 
+	let autoplay = Autoplay({ delay: 2000 });
+
 	$: if (carouselAPI) {
 		count = carouselAPI.scrollSnapList().length;
 		currentSlide = carouselAPI.selectedScrollSnap();
@@ -207,7 +209,7 @@
 <div id="more" class="h-[2500px] scroll-mt-20 flex flex-col items-center">
 	<h1 class="text-4xl mb-6">Here are some of my projects:</h1>
 	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={carouselAPI} opts="{{ loop: true }}"
-								 plugins="{[Autoplay({ delay: 2000 })]}">
+								 plugins="{[autoplay]}">
 		<Carousel.Content>
 			<Carousel.Item>
 				<TurnIn />
@@ -225,9 +227,11 @@
 	<div class="flex flex-row gap-2">
 		{#each { length: count } as _, i}
 			{#if i === currentSlide}
-				<Button size="icon" class="mt-4 rounded-full size-3" on:click={() => carouselAPI.scrollTo(i)} ></Button>
+				<Button size="icon" class="mt-4 rounded-full size-3"
+								on:click={() => { autoplay.stop(); carouselAPI.scrollTo(i); }}></Button>
 			{:else}
-				<Button size="icon" variant="secondary" class="mt-4 rounded-full size-3" on:click={() => carouselAPI.scrollTo(i)} ></Button>
+				<Button size="icon" variant="secondary" class="mt-4 rounded-full size-3"
+								on:click={() => { autoplay.stop(); carouselAPI.scrollTo(i); }}></Button>
 			{/if}
 		{/each}
 	</div>
