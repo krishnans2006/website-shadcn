@@ -29,9 +29,14 @@
 	import Portal from '../components/projects/Portal.svelte';
 
 	let carouselAPI: CarouselAPI;
+	let count: number;
+	let currentSlide: number;
 
 	$: if (carouselAPI) {
-		let count = carouselAPI.scrollSnapList().length;
+		count = carouselAPI.scrollSnapList().length;
+		currentSlide = carouselAPI.selectedScrollSnap();
+
+		// Random start
 		let randomIndex = Math.floor(Math.random() * count);
 		carouselAPI.scrollTo(randomIndex);
 	}
@@ -205,4 +210,7 @@
 		<Carousel.Previous />
 		<Carousel.Next />
 	</Carousel.Root>
+	{#each {length: count} as _, i}
+		<Button class="mt-4" on:click={() => carouselAPI.scrollTo(i)}>{i + 1}</Button>
+	{/each}
 </div>

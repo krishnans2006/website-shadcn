@@ -29,5 +29,38 @@ export default [
 	},
 	{
 		ignores: ['build/', '.svelte-kit/', 'dist/']
+	},
+	{
+		rules: {
+			"@typescript-eslint/naming-convention": [
+				"error",
+				{
+					"selector": [
+						"parameter",
+						"variable",
+					],
+					"leadingUnderscore": "require",
+					"format": ["camelCase"],
+					"modifiers": ["unused"]
+				},
+				{
+					"selector": [
+						"parameter",
+						"variable",
+					],
+					"leadingUnderscore": "allowDouble",
+					"format": ["camelCase"],
+				}
+			],
+			"@typescript-eslint/no-unused-vars": [
+				"error",
+				{
+					"args": "all",
+					"argsIgnorePattern": "^_",
+					"varsIgnorePattern": "^_",
+					"caughtErrorsIgnorePattern": "^_",
+				}
+			]
+		}
 	}
 ];
