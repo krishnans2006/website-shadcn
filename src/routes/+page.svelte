@@ -217,9 +217,9 @@
 		<Carousel.Previous />
 		<Carousel.Next />
 	</Carousel.Root>
-	<div class="flex flex-row">
+	<div class="flex flex-row gap-2">
 		{#each { length: count } as _, i}
-			<Button class="mt-4" on:click={() => carouselAPI.scrollTo(i)}>{i + 1}</Button>
+			<button class="mt-4 rounded-full bg-accent" on:click={() => carouselAPI.scrollTo(i)}>&emsp;</button>
 		{/each}
 	</div>
 </div>
