@@ -39,6 +39,11 @@
 		// Random start
 		let randomIndex = Math.floor(Math.random() * count);
 		carouselAPI.scrollTo(randomIndex);
+
+		// Update current slide
+		carouselAPI.on('select', () => {
+			currentSlide = carouselAPI.selectedScrollSnap();
+		});
 	}
 </script>
 
@@ -219,7 +224,11 @@
 	</Carousel.Root>
 	<div class="flex flex-row gap-2">
 		{#each { length: count } as _, i}
-			<button class="mt-4 rounded-full bg-accent" on:click={() => carouselAPI.scrollTo(i)}>&emsp;</button>
+			{#if i === currentSlide}
+				<Button size="icon" class="mt-4 rounded-full size-3" on:click={() => carouselAPI.scrollTo(i)} ></Button>
+			{:else}
+				<Button size="icon" variant="secondary" class="mt-4 rounded-full size-3" on:click={() => carouselAPI.scrollTo(i)} ></Button>
+			{/if}
 		{/each}
 	</div>
 </div>
