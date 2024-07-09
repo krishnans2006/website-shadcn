@@ -32,30 +32,10 @@ export default [
 	},
 	{
 		rules: {
-			"@typescript-eslint/naming-convention": [
-				"error",
-				{
-					"selector": [
-						"parameter",
-						"variable",
-					],
-					"leadingUnderscore": "require",
-					"format": ["camelCase"],
-					"modifiers": ["unused"]
-				},
-				{
-					"selector": [
-						"parameter",
-						"variable",
-					],
-					"leadingUnderscore": "allowDouble",
-					"format": ["camelCase"],
-				}
-			],
+			"no-unused-vars": "off",
 			"@typescript-eslint/no-unused-vars": [
-				"error",
+				"warn",
 				{
-					"args": "all",
 					"argsIgnorePattern": "^_",
 					"varsIgnorePattern": "^_",
 					"caughtErrorsIgnorePattern": "^_",
