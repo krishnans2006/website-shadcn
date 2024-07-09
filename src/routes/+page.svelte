@@ -204,13 +204,13 @@
 		</div>
 	</div>
 
-	<a class="hidden xl:flex flex-col justify-end grow mt-12 mb-24" href="#more">
+	<a class="hidden xl:flex flex-col justify-end grow mt-12 mb-24" href="#projects">
 		<span class="text-center">SEE MORE</span>
 		<ChevronDown class="size-8 mx-auto" />
 	</a>
 </div>
 
-<div id="more" class="h-[2500px] scroll-mt-20 flex flex-col items-center">
+<div id="projects" class="h-[2500px] scroll-mt-20 flex flex-col items-center">
 	<h1 class="text-4xl mb-6">Here are some of my projects:</h1>
 	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={carouselAPI} opts="{{ loop: true }}"
 								 plugins="{[autoplay]}">
