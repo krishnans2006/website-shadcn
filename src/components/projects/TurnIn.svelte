@@ -4,12 +4,13 @@
 	import Django from '../badges/Django.svelte';
 	import PostgreSQL from '../badges/PostgreSQL.svelte';
 	import HTMLCSSJS from '../badges/HTMLCSSJS.svelte';
+
+	import image from '$lib/images/projects/turnin.png';
 </script>
 
 <LargeProject>
 	<svelte:fragment slot="image">
-		<img src="https://tin.tjhsst.edu/static/favicon/android-chrome-maskable-512x512.png"
-				 alt="Tin Logo" class="object-fill size-full rounded-3xl" />
+		<img src={image} alt="Tin Logo" class="object-fill size-full rounded-3xl" />
 	</svelte:fragment>
 	<svelte:fragment slot="text">
 		<h1 class="text-5xl font-bold">Turn-In</h1>

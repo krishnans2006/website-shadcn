@@ -4,12 +4,19 @@
 	import Django from '../badges/Django.svelte';
 	import HTMLCSSJS from '../badges/HTMLCSSJS.svelte';
 	import SQLite from '../badges/SQLite.svelte';
+
+	import imageLight from '$lib/images/projects/hacktj_light.png';
+	import imageDark from '$lib/images/projects/hacktj_dark.png';
 </script>
 
 <LargeProject>
 	<svelte:fragment slot="image">
-		<img src="https://avatars.githubusercontent.com/u/12674382?s=1200" alt="HackTJ Logo"
-				 class="object-fill size-full rounded-3xl" />
+		<img src={imageLight}
+				 alt="HackTJ Logo"
+				 class="object-fill size-full rounded-3xl block dark:hidden" />
+		<img src={imageDark}
+				 alt="HackTJ Logo"
+				 class="object-fill size-full rounded-3xl hidden dark:block" />
 	</svelte:fragment>
 	<svelte:fragment slot="text">
 		<h1 class="text-5xl font-bold">HackTJ Portal</h1>

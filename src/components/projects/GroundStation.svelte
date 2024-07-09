@@ -3,12 +3,13 @@
 
 	import Flask from '../badges/Flask.svelte';
 	import React from '../badges/React.svelte';
+
+	import image from '$lib/images/projects/tjuav.jpeg';
 </script>
 
 <LargeProject>
 	<svelte:fragment slot="image">
-		<img src="https://avatars.githubusercontent.com/u/47068591?s=1200" alt="TJUAV Logo"
-				 class="object-fill size-full rounded-3xl" />
+		<img src={image} alt="TJUAV Logo" class="object-fill size-full rounded-3xl" />
 	</svelte:fragment>
 	<svelte:fragment slot="text">
 		<h1 class="text-5xl font-bold">TJUAV GroundStation</h1>
