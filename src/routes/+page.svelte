@@ -64,8 +64,7 @@
 	// Hackathon Carousel
 	let hackathonCarouselAPI: CarouselAPI;
 	let hackathonCarouselCount: number;
-	let hackathonCarouselCurrent: number;
-	let hackathonCarouselAutoscroll = AutoScroll({ speed: 1, stopOnInteraction: false });
+	let hackathonCarouselAutoscroll = AutoScroll({ speed: 1, startDelay: 2000, stopOnInteraction: false });
 
 	$: if (hackathonCarouselAPI) {
 		hackathonCarouselCount = hackathonCarouselAPI.scrollSnapList().length;
@@ -75,14 +74,6 @@
 		while (hackathonCarouselAPI.selectedScrollSnap() !== randomIndex) {
 			hackathonCarouselAPI.scrollNext();
 		}
-
-		// Set current slide after random start
-		hackathonCarouselCurrent = hackathonCarouselAPI.selectedScrollSnap();
-
-		// Update current slide
-		hackathonCarouselAPI.on('select', () => {
-			hackathonCarouselCurrent = hackathonCarouselAPI.selectedScrollSnap();
-		});
 	}
 </script>
 
