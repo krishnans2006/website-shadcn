@@ -36,11 +36,11 @@
 
 	let projects: ProjectType[] = data.projects;
 
+	// Project Carousel
 	let projectCarouselAPI: CarouselAPI;
 	let projectCarouselCount: number;
 	let projectCarouselCurrent: number;
-
-	let autoplay = Autoplay({ delay: 10_000 });
+	let projectCarouselAutoplay = Autoplay({ delay: 10_000 });
 
 	$: if (projectCarouselAPI) {
 		projectCarouselCount = projectCarouselAPI.scrollSnapList().length;
@@ -57,6 +57,30 @@
 		// Update current slide
 		projectCarouselAPI.on('select', () => {
 			projectCarouselCurrent = projectCarouselAPI.selectedScrollSnap();
+		});
+	}
+
+	// Hackathon Carousel
+	let hackathonCarouselAPI: CarouselAPI;
+	let hackathonCarouselCount: number;
+	let hackathonCarouselCurrent: number;
+	let hackathonCarouselAutoplay = Autoplay({ delay: 2_300 });
+
+	$: if (hackathonCarouselAPI) {
+		hackathonCarouselCount = hackathonCarouselAPI.scrollSnapList().length;
+
+		// Random start
+		let randomIndex = Math.floor(Math.random() * hackathonCarouselCount);
+		while (hackathonCarouselAPI.selectedScrollSnap() !== randomIndex) {
+			hackathonCarouselAPI.scrollNext();
+		}
+
+		// Set current slide after random start
+		hackathonCarouselCurrent = hackathonCarouselAPI.selectedScrollSnap();
+
+		// Update current slide
+		hackathonCarouselAPI.on('select', () => {
+			hackathonCarouselCurrent = hackathonCarouselAPI.selectedScrollSnap();
 		});
 	}
 </script>
@@ -221,7 +245,7 @@
 <div id="projects" class="scroll-mt-20 flex flex-col items-center">
 	<h1 class="text-4xl mb-6">Here are some of my projects:</h1>
 	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={projectCarouselAPI} opts="{{ loop: true }}"
-								 plugins="{[autoplay]}">
+								 plugins="{[projectCarouselAutoplay]}">
 		<Carousel.Content>
 			<Carousel.Item>
 				<TurnIn />
@@ -240,10 +264,10 @@
 		{#each { length: projectCarouselCount } as _, i}
 			{#if i === projectCarouselCurrent}
 				<Button size="icon" class="mt-4 rounded-full size-3"
-								on:click={() => { autoplay.stop(); projectCarouselAPI.scrollTo(i); }}></Button>
+								on:click={() => { projectCarouselAutoplay.stop(); projectCarouselAPI.scrollTo(i); }}></Button>
 			{:else}
 				<Button size="icon" variant="secondary" class="mt-4 rounded-full size-3"
-								on:click={() => { autoplay.stop(); projectCarouselAPI.scrollTo(i); }}></Button>
+								on:click={() => { projectCarouselAutoplay.stop(); projectCarouselAPI.scrollTo(i); }}></Button>
 			{/if}
 		{/each}
 	</div>
@@ -251,7 +275,8 @@
 
 <div id="hackathon-projects" class="scroll-mt-20 flex flex-col items-center mt-20">
 	<h1 class="text-4xl mb-6">And some hackathon projects:</h1>
-	<Carousel.Root class="w-11/12 max-h-dvh" opts="{{ loop: true }}" plugins="{[Autoplay({ delay: 2_300 })]}">
+	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={hackathonCarouselAPI} opts="{{ loop: true }}"
+								 plugins="{[hackathonCarouselAutoplay]}">
 		<Carousel.Content>
 			{#each projects as project}
 				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
