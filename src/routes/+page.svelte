@@ -18,6 +18,7 @@
 
 	import { type CarouselAPI } from '$lib/components/ui/carousel/context.js';
 	import Autoplay from 'embla-carousel-autoplay';
+	import AutoScroll from 'embla-carousel-auto-scroll';
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button';
@@ -64,7 +65,7 @@
 	let hackathonCarouselAPI: CarouselAPI;
 	let hackathonCarouselCount: number;
 	let hackathonCarouselCurrent: number;
-	let hackathonCarouselAutoplay = Autoplay({ delay: 2_300, stopOnInteraction: false });
+	let hackathonCarouselAutoscroll = AutoScroll({ speed: 1, stopOnInteraction: false });
 
 	$: if (hackathonCarouselAPI) {
 		hackathonCarouselCount = hackathonCarouselAPI.scrollSnapList().length;
@@ -276,7 +277,7 @@
 <div id="hackathon-projects" class="scroll-mt-20 flex flex-col items-center mt-36 md:mt-20">
 	<h1 class="text-4xl mb-6">And some hackathon projects:</h1>
 	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={hackathonCarouselAPI} opts="{{ loop: true }}"
-								 plugins="{[hackathonCarouselAutoplay]}">
+								 plugins="{[hackathonCarouselAutoscroll]}">
 		<Carousel.Content>
 			{#each projects as project}
 				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-4">
