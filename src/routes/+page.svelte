@@ -64,7 +64,7 @@
 	let hackathonCarouselAPI: CarouselAPI;
 	let hackathonCarouselCount: number;
 	let hackathonCarouselCurrent: number;
-	let hackathonCarouselAutoplay = Autoplay({ delay: 2_300 });
+	let hackathonCarouselAutoplay = Autoplay({ delay: 2_300, stopOnInteraction: false });
 
 	$: if (hackathonCarouselAPI) {
 		hackathonCarouselCount = hackathonCarouselAPI.scrollSnapList().length;
@@ -242,7 +242,7 @@
 	</a>
 </div>
 
-<div id="projects" class="scroll-mt-20 flex flex-col items-center">
+<div id="projects" class="scroll-mt-36 flex flex-col items-center">
 	<h1 class="text-4xl mb-6">Here are some of my projects:</h1>
 	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={projectCarouselAPI} opts="{{ loop: true }}"
 								 plugins="{[projectCarouselAutoplay]}">
@@ -273,13 +273,13 @@
 	</div>
 </div>
 
-<div id="hackathon-projects" class="scroll-mt-20 flex flex-col items-center mt-20">
+<div id="hackathon-projects" class="scroll-mt-20 flex flex-col items-center mt-36 md:mt-20">
 	<h1 class="text-4xl mb-6">And some hackathon projects:</h1>
 	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={hackathonCarouselAPI} opts="{{ loop: true }}"
 								 plugins="{[hackathonCarouselAutoplay]}">
 		<Carousel.Content>
 			{#each projects as project}
-				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-4">
 					<SmallProject {project} />
 				</Carousel.Item>
 			{/each}
