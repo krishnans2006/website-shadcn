@@ -1,0 +1,15 @@
+{
+  "projects": [
+    {
+      "name": "ChessCord",
+      "summary": "Play chess with your friends on Discord",
+      "description": "This is a Discord Bot I single-handedly coded that allows you to play multiplayer chess games, all within a popular chatting platform. It includes support for almost all features available on professional chess sites, including spectating, takebacks, rating tracking, and much more! Best of all, this is condensed into an amazing look and easy experience.",
+      "image": "chesscord",
+      "code_url": null,
+      "demo_url": {
+        "name": "Invite to your server",
+        "url": "https://bit.ly/chesscord"
+      }
+    }
+  ]
+}
