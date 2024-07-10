@@ -10,6 +10,39 @@
         "name": "Invite to your server",
         "url": "https://bit.ly/chesscord"
       }
+    },
+    {
+      "name": "Find A Tutor",
+      "summary": "Grow together as a community",
+      "description": "Offer to tutor and find other tutors to learn easily, quickly, and more in-depth.",
+      "image": "findatutor",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/FindATutor"
+      },
+      "demo_url": null
+    },
+    {
+      "name": "Activity Marathon",
+      "summary": "Stay active and healthy",
+      "description": "Due to Covid-19, average physical activity has reached an all-time low. Hopefully this website will help make working out more fun and engaging by allowing users to compete for rewards.",
+      "image": "activitymarathon",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/ActivityMarathon"
+      },
+      "demo_url": null
+    },
+    {
+      "name": "My Website",
+      "summary": "This here thing you're looking at right now",
+      "description": "A personal website built using Svelte, SvelteKit, Tailwind CSS, and shadcn/ui.",
+      "image": "mywebsite",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/website-shadcn"
+      },
+      "demo_url": null
     }
   ]
 }
