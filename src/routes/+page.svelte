@@ -29,31 +29,34 @@
 	import Portal from '../components/projects/Portal.svelte';
 	import SmallProject from '../components/SmallProject.svelte';
 
+	import type { PageData } from './$types';
+	import type { Project as ProjectType } from '../data/hackathons';
+
 	export let data: PageData;
 
 	let projects: ProjectType[] = data.projects;
 
-	let carouselAPI: CarouselAPI;
-	let count: number;
-	let currentSlide: number;
+	let projectCarouselAPI: CarouselAPI;
+	let projectCarouselCount: number;
+	let projectCarouselCurrent: number;
 
 	let autoplay = Autoplay({ delay: 10_000 });
 
-	$: if (carouselAPI) {
-		count = carouselAPI.scrollSnapList().length;
+	$: if (projectCarouselAPI) {
+		projectCarouselCount = projectCarouselAPI.scrollSnapList().length;
 
 		// Random start
-		let randomIndex = Math.floor(Math.random() * count);
-		while (carouselAPI.selectedScrollSnap() !== randomIndex) {
-			carouselAPI.scrollNext();
+		let randomIndex = Math.floor(Math.random() * projectCarouselCount);
+		while (projectCarouselAPI.selectedScrollSnap() !== randomIndex) {
+			projectCarouselAPI.scrollNext();
 		}
 
 		// Set current slide after random start
-		currentSlide = carouselAPI.selectedScrollSnap();
+		projectCarouselCurrent = projectCarouselAPI.selectedScrollSnap();
 
 		// Update current slide
-		carouselAPI.on('select', () => {
-			currentSlide = carouselAPI.selectedScrollSnap();
+		projectCarouselAPI.on('select', () => {
+			projectCarouselCurrent = projectCarouselAPI.selectedScrollSnap();
 		});
 	}
 </script>
@@ -217,7 +220,7 @@
 
 <div id="projects" class="scroll-mt-20 flex flex-col items-center">
 	<h1 class="text-4xl mb-6">Here are some of my projects:</h1>
-	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={carouselAPI} opts="{{ loop: true }}"
+	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={projectCarouselAPI} opts="{{ loop: true }}"
 								 plugins="{[autoplay]}">
 		<Carousel.Content>
 			<Carousel.Item>
@@ -234,13 +237,13 @@
 		<Carousel.Next />
 	</Carousel.Root>
 	<div class="flex flex-row gap-2">
-		{#each { length: count } as _, i}
-			{#if i === currentSlide}
+		{#each { length: projectCarouselCount } as _, i}
+			{#if i === projectCarouselCurrent}
 				<Button size="icon" class="mt-4 rounded-full size-3"
-								on:click={() => { autoplay.stop(); carouselAPI.scrollTo(i); }}></Button>
+								on:click={() => { autoplay.stop(); projectCarouselAPI.scrollTo(i); }}></Button>
 			{:else}
 				<Button size="icon" variant="secondary" class="mt-4 rounded-full size-3"
-								on:click={() => { autoplay.stop(); carouselAPI.scrollTo(i); }}></Button>
+								on:click={() => { autoplay.stop(); projectCarouselAPI.scrollTo(i); }}></Button>
 			{/if}
 		{/each}
 	</div>
