@@ -4,7 +4,7 @@
 	import SmallProject from '../../components/SmallProject.svelte';
 
 	import type { PageData } from './$types';
-	import type { Project as ProjectType } from '../../data/hackathons';
+	import type { Project as ProjectType } from '../../data/projects';
 
 	export let data: PageData;
 

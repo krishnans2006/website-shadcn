@@ -10,5 +10,7 @@ export interface Project {
 	image: string,
 	image_invert_dark?: boolean,
 	code_url: URL | null,
+	submission_url?: URL | null,
 	demo_url: URL | null,
+	is_winner?: boolean,
 }
