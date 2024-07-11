@@ -31,7 +31,7 @@
 	import SmallProject from '../components/SmallProject.svelte';
 
 	import type { PageData } from './$types';
-	import type { Project as ProjectType } from '../data/hackathons';
+	import type { Project as ProjectType } from '../data/projects';
 
 	export let data: PageData;
 
@@ -64,7 +64,11 @@
 	// Hackathon Carousel
 	let hackathonCarouselAPI: CarouselAPI;
 	let hackathonCarouselCount: number;
-	let hackathonCarouselAutoscroll = AutoScroll({ speed: 1, startDelay: 2000, stopOnInteraction: false });
+	let hackathonCarouselAutoscroll = AutoScroll({
+		speed: 1,
+		startDelay: 2000,
+		stopOnInteraction: false
+	});
 
 	$: if (hackathonCarouselAPI) {
 		hackathonCarouselCount = hackathonCarouselAPI.scrollSnapList().length;
@@ -228,7 +232,8 @@
 		</div>
 	</div>
 
-	<a class="hidden xl:flex flex-col justify-end grow mt-12 mb-24" href="#projects">
+	<a class="hidden xl:flex flex-col justify-end grow mt-12 mb-24" href="#projects"
+		 on:click={() => { projectCarouselAPI.scrollNext(); projectCarouselAutoplay.reset(); }}>
 		<span class="text-center">SEE MORE</span>
 		<ChevronDown class="size-8 mx-auto" />
 	</a>
