@@ -1,6 +1,5 @@
 <script>
 	import * as Avatar from '$lib/components/ui/avatar';
-	import { Badge } from '$lib/components/ui/badge';
 	import * as HoverCard from '$lib/components/ui/hover-card';
 
 	import { ExternalLink } from 'lucide-svelte';
@@ -9,14 +8,11 @@
 	export let description = '';
 	export let url = '';
 	export let image = '';
-	export let color = '';
-	export let hoverColor = '';
-	export let textColor = '';
 </script>
 
 <HoverCard.Root>
 	<HoverCard.Trigger>
-		<Badge class="bg-[{color}] hover:bg-[{hoverColor}] text-{textColor}">{name}</Badge>
+		<slot name="trigger"></slot>
 	</HoverCard.Trigger>
 	<HoverCard.Content class="w-80">
 		<a class="flex flex-row justify-between space-x-4" href="{url}"

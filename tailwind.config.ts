@@ -5,11 +5,7 @@ const config: Config = {
 	darkMode: ["class"],
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 	safelist: [
-		"dark",
-		{
-			pattern: /bg-\[#[a-f0-9]{3,6}\]/,
-			variants: ['hover'],
-		}
+		"dark"
 	],
 	theme: {
 		container: {
