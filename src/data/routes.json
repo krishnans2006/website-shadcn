@@ -9,6 +9,11 @@
       "name": "Hackathons",
       "href": "/hackathons",
       "icon": "Users"
+    },
+    {
+      "name": "Hobby",
+      "href": "/hobby",
+      "icon": "Heart"
     }
   ]
 }

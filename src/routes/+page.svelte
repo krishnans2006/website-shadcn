@@ -11,6 +11,7 @@
 		Server,
 		Code,
 		Plane,
+		Heart,
 		BriefcaseBusiness,
 		ChevronDown,
 		ArrowDownToLine
@@ -172,6 +173,10 @@
 						<DropdownMenu.Item href="/hackathons" class="cursor-pointer">
 							<Users class="mr-2 size-4" />
 							<span>Hackathons</span>
+						</DropdownMenu.Item>
+						<DropdownMenu.Item href="/hobby" class="cursor-pointer">
+							<Heart class="mr-2 size-4" />
+							<span>Hobby</span>
 						</DropdownMenu.Item>
 						<DropdownMenu.Label class="font-light italic">
 							<span>More coming soon...</span>
