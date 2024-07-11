@@ -4,7 +4,13 @@ import type { Config } from "tailwindcss";
 const config: Config = {
 	darkMode: ["class"],
 	content: ["./src/**/*.{html,js,svelte,ts}"],
-	safelist: ["dark"],
+	safelist: [
+		"dark",
+		{
+			pattern: /bg-\[#[a-f0-9]{3,6}\]/,
+			variants: ['hover'],
+		}
+	],
 	theme: {
 		container: {
 			center: true,
