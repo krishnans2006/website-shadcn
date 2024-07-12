@@ -5,6 +5,8 @@
 	import type { Project as ProjectType } from '../data/projects';
 
 	export let project: ProjectType;
+
+	export let mediaFolder = 'hobby';
 </script>
 
 <div class="animate-fade-up delay-1000">
@@ -14,7 +16,7 @@
 			<Card.Description class="text-center">{project.summary}</Card.Description>
 		</Card.Header>
 		<Card.Content>
-			{#await import(`$lib/images/hackathons/${project.image}.png`) then { default: src }}
+			{#await import(`$lib/images/${mediaFolder}/${project.image}.png`) then { default: src }}
 				<img src={src} alt="{project.name}" class="w-full"
 						 class:dark:invert={project.image_invert_dark} />
 			{/await}

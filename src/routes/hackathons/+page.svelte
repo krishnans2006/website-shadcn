@@ -23,5 +23,5 @@
 </div>
 
 <Masonry items={projects} {minColWidth} {maxColWidth} {gap} let:item={project} idKey="name">
-	<SmallProject {project} />
+	<SmallProject {project} mediaFolder="hackathons" />
 </Masonry>
