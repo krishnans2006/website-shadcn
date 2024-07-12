@@ -6,6 +6,11 @@
       "icon": "Home"
     },
     {
+      "name": "High School",
+      "href": "/high-school",
+      "icon": "School"
+    },
+    {
       "name": "Hackathons",
       "href": "/hackathons",
       "icon": "Users"
