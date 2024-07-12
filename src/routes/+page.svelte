@@ -282,7 +282,7 @@
 		<Carousel.Content>
 			{#each projects as project}
 				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-4">
-					<SmallProject {project} />
+					<SmallProject {project} mediaFolder="hackathons" />
 				</Carousel.Item>
 			{/each}
 		</Carousel.Content>
