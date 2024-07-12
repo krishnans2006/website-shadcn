@@ -16,7 +16,7 @@
 	<nav
 		class="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6"
 	>
-		<a href="/" class="flex items-center gap-2 text-lg font-semibold w-40">
+		<a href="/" class="flex items-center gap-2 text-lg font-semibold mr-3">
 			<p>Krishnan Shankar</p>
 		</a>
 		{#each routes as route}
@@ -56,7 +56,7 @@
 			</nav>
 		</Sheet.Content>
 	</Sheet.Root>
-	<div class="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
+	<div class="flex items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
 		<Button
 			variant="secondary"
 			href="https://raw.githubusercontent.com/krishnans2006/resume/main/Krishnan_Shankar_Resume.pdf"
