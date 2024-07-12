@@ -37,6 +37,11 @@
 								rel="noopener noreferrer">Demo ({project.demo_url.name})
 				</Button>
 			{/if}
+			{#if project.invite_url}
+				<Button variant="secondary" href="{project.invite_url.url}" target="_blank"
+								rel="noopener noreferrer">Invite ({project.invite_url.name})
+				</Button>
+			{/if}
 		</Card.Footer>
 	</Card.Root>
 </div>

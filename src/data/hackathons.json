@@ -11,6 +11,7 @@
         "url": "https://codeday.sh/jovianconflict"
       },
       "demo_url": null,
+      "invite_url": null,
       "is_winner": true
     },
     {
@@ -27,6 +28,7 @@
         "url": "https://devpost.com/software/textbook-exchange-zm50k9"
       },
       "demo_url": null,
+      "invite_url": null,
       "is_winner": false
     },
     {
@@ -41,6 +43,7 @@
       },
       "submission_url": null,
       "demo_url": null,
+      "invite_url": null,
       "is_winner": false
     },
     {
@@ -60,6 +63,7 @@
         "name": "Glitch",
         "url": "https://what-should-i-wear.glitch.me"
       },
+      "invite_url": null,
       "is_winner": false
     },
     {
@@ -79,6 +83,7 @@
         "name": "Glitch",
         "url": "https://poll-covid.glitch.me"
       },
+      "invite_url": null,
       "is_winner": false
     },
     {
@@ -95,6 +100,7 @@
         "url": "https://devpost.com/software/fluffy-friend-finder"
       },
       "demo_url": null,
+      "invite_url": null,
       "is_winner": false
     },
     {
@@ -111,6 +117,7 @@
         "url": "https://devpost.com/software/cyberninjas"
       },
       "demo_url": null,
+      "invite_url": null,
       "is_winner": true
     },
     {
@@ -127,6 +134,7 @@
         "url": "https://devpost.com/software/timextension"
       },
       "demo_url": null,
+      "invite_url": null,
       "is_winner": false
     },
     {
@@ -144,6 +152,7 @@
         "url": "https://codeday.sh/spacey"
       },
       "demo_url": null,
+      "invite_url": null,
       "is_winner": false
     },
     {
@@ -160,6 +169,7 @@
         "url": "https://devpost.com/software/tbd-d1f2lu"
       },
       "demo_url": null,
+      "invite_url": null,
       "is_winner": false
     },
     {
@@ -180,6 +190,7 @@
         "name": "Glitch",
         "url": "https://cal-tracker.glitch.me"
       },
+      "invite_url": null,
       "is_winner": false
     },
     {
@@ -196,6 +207,7 @@
         "url": "https://devpost.com/software/stay-healthy-during-covid-19"
       },
       "demo_url": null,
+      "invite_url": null,
       "is_winner": false
     },
     {
@@ -212,6 +224,7 @@
         "url": "https://devpost.com/software/food-for-everyone-during-covid-19-otkhlj"
       },
       "demo_url": null,
+      "invite_url": null,
       "is_winner": false
     }
   ]
