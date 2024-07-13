@@ -30,3 +30,18 @@
 		</Card.Content>
 	</Card.Root>
 </div>
+
+<div class="animate-fade-up delay-1000 w-1/3">
+	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out hover:scale-105">
+		<Card.Header>
+			<Card.Title class="text-center">Lead Student Sysadmin</Card.Title>
+			<Card.Description class="text-center">TJ Computer Systems Lab</Card.Description>
+		</Card.Header>
+		<Card.Content>
+			<p>Hi</p>
+		</Card.Content>
+		<Card.Footer class="flex-auto flex-wrap gap-2 justify-center">
+
+		</Card.Footer>
+	</Card.Root>
+</div>
