@@ -15,17 +15,18 @@
 
 <div class="animate-fade-up delay-1000">
 	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out hover:scale-105">
-		<Card.Header>
-			<Card.Title class="text-center">Academics</Card.Title>
-			<Card.Description class="text-center">My academics</Card.Description>
-		</Card.Header>
-		<Card.Content>
-			<img src="https://hi.com" alt="TJHSST" class="w-full" />
+		<Card.Content class="flex flex-col md:flex-row gap-4 items-center p-1 md:p-6">
+			<div class="md:w-1/3">
+				<img src="$lib/images/high-school/tjhsst.jpeg" alt="TJHSST Logo" class="object-fill size-full rounded-3xl" />
+			</div>
+			<div class="md:w-2/3">
+				<h1 class="text-5xl font-bold">Academics</h1>
+				<h3 class="text-2xl">As a student @ TJHSST</h3>
+				<br />
+				<p>
+					Test
+				</p>
+			</div>
 		</Card.Content>
-		<Card.Footer class="flex-auto flex-wrap gap-2 justify-center">
-			<Button variant="secondary" href="/" target="_blank"
-							rel="noopener noreferrer">Thing
-			</Button>
-		</Card.Footer>
 	</Card.Root>
 </div>
