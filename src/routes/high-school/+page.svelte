@@ -26,10 +26,21 @@
 				<br />
 				<ul class="list-disc ml-6 leading-loose mb-1">
 					<li>
-						Final GPA (weighted): <Badge>4.484</Badge>
+						Final GPA (weighted): <strong>4.484</strong>
 					</li>
 					<li>
-						Test Scores: <Badge>PSAT 1500</Badge> <Badge>SAT 1530</Badge> <Badge>ACT 36</Badge>
+						Test Scores:
+						<ul class="list-disc ml-6 leading-loose">
+							<li>
+								PSAT: <strong>1500</strong>/1520
+							</li>
+							<li>
+								SAT: <strong>1560</strong>/1600
+							</li>
+							<li>
+								ACT: <strong>36</strong>/36
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
