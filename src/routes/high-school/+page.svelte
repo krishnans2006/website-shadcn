@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
+	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '$lib/components/ui/button';
 </script>
 
@@ -14,17 +15,20 @@
 </div>
 
 <div class="animate-fade-up delay-1000">
-	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out hover:scale-105">
+	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 		<Card.Content class="flex flex-col md:flex-row gap-4 items-center p-1 md:p-6">
-			<div class="md:w-1/3">
+			<div class="md:w-1/4">
 				<img src="$lib/images/high-school/tjhsst.png" alt="TJHSST Logo" class="object-fill size-full rounded-3xl" />
 			</div>
-			<div class="md:w-2/3">
+			<div class="md:w-3/4">
 				<h1 class="text-5xl font-bold">Academics</h1>
 				<h3 class="text-2xl">As a student @ TJHSST</h3>
 				<br />
 				<p>
-					Test
+					Final GPA (weighted): <Badge>4.XX</Badge>
+				</p>
+				<p>
+					Test Scores: <Badge>PSAT 1500</Badge> <Badge>SAT 1530</Badge> <Badge>ACT 36</Badge>
 				</p>
 			</div>
 		</Card.Content>
