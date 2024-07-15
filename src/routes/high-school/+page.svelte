@@ -24,12 +24,14 @@
 				<h1 class="text-5xl font-bold">Academics</h1>
 				<h3 class="text-2xl">As a student @ TJHSST</h3>
 				<br />
-				<p>
-					Final GPA (weighted): <Badge>4.XX</Badge>
-				</p>
-				<p>
-					Test Scores: <Badge>PSAT 1500</Badge> <Badge>SAT 1530</Badge> <Badge>ACT 36</Badge>
-				</p>
+				<ul class="list-disc ml-6 leading-loose mb-1">
+					<li>
+						Final GPA (weighted): <Badge>4.484</Badge>
+					</li>
+					<li>
+						Test Scores: <Badge>PSAT 1500</Badge> <Badge>SAT 1530</Badge> <Badge>ACT 36</Badge>
+					</li>
+				</ul>
 			</div>
 		</Card.Content>
 	</Card.Root>
