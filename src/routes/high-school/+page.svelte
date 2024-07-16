@@ -44,7 +44,7 @@
 							</ul>
 						</li>
 					</ul>
-					<div class="ml-auto">
+					<div class="ml-9">
 						<p>Classes:</p>
 						<ul class="list-disc ml-6 leading-loose mb-1">
 							<li>AP Computer Science A+ (Data Structures)</li>
