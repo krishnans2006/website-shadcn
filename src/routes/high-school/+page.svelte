@@ -2,6 +2,7 @@
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '$lib/components/ui/button';
+	import { Separator } from '$lib/components/ui/separator';
 </script>
 
 <svelte:head>
@@ -18,7 +19,8 @@
 	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 		<Card.Content class="flex flex-col md:flex-row gap-4 items-center p-1 md:p-6">
 			<div class="md:w-1/4">
-				<img src="$lib/images/high-school/tjhsst.png" alt="TJHSST Logo" class="object-fill size-full rounded-3xl" />
+				<img src="$lib/images/high-school/tjhsst.png" alt="TJHSST Logo"
+						 class="object-fill size-full rounded-3xl" />
 			</div>
 			<div class="md:w-3/4">
 				<h1 class="text-5xl font-bold">Academics</h1>
@@ -26,7 +28,7 @@
 				<br />
 				<div class="flex flex-row">
 					<div class="">
-						<p>Classes:</p>
+						<p>Relevant Classes:</p>
 						<ul class="list-disc ml-6 leading-loose mb-1">
 							<li>AP Computer Science A+ (Data Structures)</li>
 							<li>Artificial Intelligence</li>
@@ -34,6 +36,9 @@
 							<li>Robotics Systems and Microsystems</li>
 							<li>Digital and Analog Electronics</li>
 						</ul>
+					</div>
+					<div class="flex">
+						<Separator orientation="vertical" class="ml-9" />
 					</div>
 					<div class="ml-9">
 						Numbers:
