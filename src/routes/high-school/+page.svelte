@@ -18,16 +18,16 @@
 <div class="animate-fade-up delay-1000">
 	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 		<Card.Content class="flex flex-col md:flex-row gap-4 items-center p-1 md:p-6">
-			<div class="md:w-1/4">
+			<div class="md:w-1/5">
 				<img src="$lib/images/high-school/tjhsst.png" alt="TJHSST Logo"
 						 class="object-fill size-full rounded-3xl" />
 			</div>
-			<div class="md:w-3/4">
+			<div class="md:w-4/5">
 				<h1 class="text-5xl font-bold">Academics</h1>
 				<h3 class="text-2xl">As a student @ TJHSST</h3>
 				<br />
 				<div class="flex flex-row">
-					<div class="">
+					<div class="basis-1/2 flex-auto">
 						<p>Relevant Classes:</p>
 						<ul class="list-disc ml-6 leading-loose mb-1">
 							<li>AP Computer Science A+ (Data Structures)</li>
@@ -40,7 +40,21 @@
 					<div class="flex">
 						<Separator orientation="vertical" class="ml-9" />
 					</div>
-					<div class="ml-9">
+					<div class="ml-9 basis-1/2 flex-auto">
+						Honors:
+						<ul class="list-disc ml-6 leading-loose mb-1">
+							<li>
+								2x <strong>Gold President's Volunteer Service Award</strong> (100+ hours of volunteering in a year)
+							</li>
+							<li>
+
+							</li>
+						</ul>
+					</div>
+					<div class="flex">
+						<Separator orientation="vertical" class="ml-9" />
+					</div>
+					<div class="ml-9 basis-1/4 flex-none">
 						Numbers:
 						<ul class="list-disc ml-6 leading-loose mb-1">
 							<li>
