@@ -15,18 +15,18 @@
 		Technology.</h4>
 </div>
 
-<div class="animate-fade-up delay-1000">
+<div class="animate-fade-up delay-1000 mb-5">
 	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
-		<Card.Content class="flex flex-col md:flex-row gap-4 items-center p-1 md:p-6">
-			<div class="md:w-1/5">
+		<Card.Content class="flex flex-col md:flex-row gap-4 items-center p-6">
+			<div class="md:w-1/3 lg:w-1/4 xl:w-1/5">
 				<img src="$lib/images/high-school/tjhsst.png" alt="TJHSST Logo"
 						 class="object-fill size-full rounded-3xl" />
 			</div>
-			<div class="md:w-4/5">
+			<div class="md:w-2/3 lg:w-3/4 xl:w-4/5">
 				<h1 class="text-5xl font-bold">Academics</h1>
 				<h3 class="text-2xl">As a student @ TJHSST</h3>
 				<br />
-				<div class="flex flex-row">
+				<div class="flex flex-col xl:flex-row">
 					<div class="basis-1/2 flex-auto">
 						<p>Relevant Classes:</p>
 						<ul class="list-disc ml-6 leading-loose mb-1">
@@ -38,9 +38,10 @@
 						</ul>
 					</div>
 					<div class="flex">
-						<Separator orientation="vertical" class="ml-9" />
+						<Separator orientation="vertical" class="ml-9 hidden xl:block" />
+						<Separator orientation="horizontal" class="mt-4 block xl:hidden" />
 					</div>
-					<div class="ml-9 basis-1/2 flex-auto">
+					<div class="mt-4 xl:mt-0 xl:ml-9 basis-1/2 flex-auto">
 						Honors:
 						<ul class="list-disc ml-6 leading-loose mb-1">
 							<li>
@@ -58,9 +59,10 @@
 						</ul>
 					</div>
 					<div class="flex">
-						<Separator orientation="vertical" class="ml-9" />
+						<Separator orientation="vertical" class="ml-9 hidden xl:block" />
+						<Separator orientation="horizontal" class="mt-4 block xl:hidden" />
 					</div>
-					<div class="ml-9 basis-1/4 flex-none">
+					<div class="mt-4 xl:mt-0 xl:ml-9 basis-1/4 flex-none">
 						Numbers:
 						<ul class="list-disc ml-6 leading-loose mb-1">
 							<li>
