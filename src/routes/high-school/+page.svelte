@@ -25,26 +25,7 @@
 				<h3 class="text-2xl">As a student @ TJHSST</h3>
 				<br />
 				<div class="flex flex-row">
-					<ul class="list-disc ml-6 leading-loose mb-1">
-						<li>
-							Final GPA (weighted): <strong>4.484</strong>
-						</li>
-						<li>
-							Test Scores:
-							<ul class="list-disc ml-6 leading-loose">
-								<li>
-									PSAT: <strong>1500</strong>/1520
-								</li>
-								<li>
-									SAT: <strong>1560</strong>/1600
-								</li>
-								<li>
-									ACT: <strong>36</strong>/36
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<div class="ml-9">
+					<div class="">
 						<p>Classes:</p>
 						<ul class="list-disc ml-6 leading-loose mb-1">
 							<li>AP Computer Science A+ (Data Structures)</li>
@@ -52,6 +33,28 @@
 							<li>Machine Learning</li>
 							<li>Robotics Systems and Microsystems</li>
 							<li>Digital and Analog Electronics</li>
+						</ul>
+					</div>
+					<div class="ml-9">
+						Numbers:
+						<ul class="list-disc ml-6 leading-loose mb-1">
+							<li>
+								Final GPA (weighted): <strong>4.484</strong>
+							</li>
+							<li>
+								Test Scores:
+								<ul class="list-disc ml-6 leading-loose">
+									<li>
+										PSAT: <strong>1500</strong>/1520
+									</li>
+									<li>
+										SAT: <strong>1560</strong>/1600
+									</li>
+									<li>
+										ACT: <strong>36</strong>/36
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
