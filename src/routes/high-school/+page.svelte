@@ -47,7 +47,13 @@
 								2x <strong>Gold President's Volunteer Service Award</strong> (100+ hours of volunteering in a year)
 							</li>
 							<li>
-
+								Member of the National Honor Society
+							</li>
+							<li>
+								National Merit Scholarship Finalist
+							</li>
+							<li>
+								AP Scholar with Distinction
 							</li>
 						</ul>
 					</div>
