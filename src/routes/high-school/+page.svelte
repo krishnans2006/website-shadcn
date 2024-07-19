@@ -17,7 +17,7 @@
 
 <div class="animate-fade-up delay-1000 mb-5">
 	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
-		<Card.Content class="flex flex-col md:flex-row gap-4 items-center p-6">
+		<Card.Content class="flex flex-col md:flex-row gap-4 items-start xl:items-center p-6">
 			<div class="md:w-1/3 lg:w-1/4 xl:w-1/5">
 				<img src="$lib/images/high-school/tjhsst.png" alt="TJHSST Logo"
 						 class="object-fill size-full rounded-3xl" />
