@@ -36,6 +36,8 @@
 							<li>Robotics Systems and Microsystems</li>
 							<li>Digital and Analog Electronics</li>
 						</ul>
+						<Button variant="secondary" href="$lib/files/high_school_transcript.pdf" target="_blank"
+										rel="noopener noreferrer">View Transcript</Button>
 					</div>
 					<div class="flex">
 						<Separator orientation="vertical" class="ml-9 hidden xl:block" />
