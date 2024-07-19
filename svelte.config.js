@@ -6,7 +6,20 @@ import { importAssets } from 'svelte-preprocess-import-assets'
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
-	preprocess: [vitePreprocess(), importAssets()],
+	preprocess: [
+		vitePreprocess(),
+		importAssets({
+			sources: (defaultSources) => {
+				return [
+					...defaultSources,
+					{
+						tag: 'Button',
+						srcAttributes: ['href'],
+					}
+				]
+			}
+		})
+	],
 
 	kit: {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
