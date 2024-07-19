@@ -36,8 +36,6 @@
 							<li>Robotics Systems and Microsystems</li>
 							<li>Digital and Analog Electronics</li>
 						</ul>
-						<Button variant="secondary" href="$lib/files/High_School_Transcript.pdf" target="_blank"
-										rel="noopener noreferrer">View Transcript</Button>
 					</div>
 					<div class="flex">
 						<Separator orientation="vertical" class="ml-9 hidden xl:block" />
@@ -59,8 +57,6 @@
 								AP Scholar with Distinction
 							</li>
 						</ul>
-						<Button variant="secondary" href="$lib/files/AP_Score_Report.pdf" target="_blank"
-										rel="noopener noreferrer">View AP Score Report</Button>
 					</div>
 					<div class="flex">
 						<Separator orientation="vertical" class="ml-9 hidden xl:block" />
@@ -88,6 +84,20 @@
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div class="pt-3">
+					<Button variant="secondary" href="$lib/files/High_School_Transcript.pdf" target="_blank"
+									rel="noopener noreferrer">View Transcript
+					</Button>
+					<Button variant="secondary" href="$lib/files/AP_Score_Report.pdf" target="_blank"
+									rel="noopener noreferrer">View AP Score Report
+					</Button>
+					<Button variant="secondary" href="$lib/files/PSAT_NMSQT_Score_Report.pdf" target="_blank"
+									rel="noopener noreferrer">View PSAT/NMSQT Score Report
+					</Button>
+					<Button variant="secondary" href="$lib/files/SAT_Score_Report.pdf" target="_blank"
+									rel="noopener noreferrer">View SAT Score Report
+					</Button>
 				</div>
 			</div>
 		</Card.Content>
