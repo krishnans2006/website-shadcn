@@ -122,9 +122,35 @@
 			<p>Managed a team of 5 students to maintain and improve the lab's infrastructure.</p>
 		</svelte:fragment>
 		<svelte:fragment slot="large">
-			<p>
-				As the Lead Sysadmin of the TJ Computer Systems Lab, I was responsible for managing a team of 5 students to maintain and improve the lab's infrastructure. This included managing the lab's servers, network, and services, as well as developing and maintaining the lab's website and internal tools. I also worked on various projects to improve the lab's infrastructure, such as setting up a new server rack, migrating services to new servers, and improving the lab's network security.
-			</p>
+			<div class="flex flex-col md:flex-row">
+				<div class="animate-fade-up delay-1000 md:basis-1/2">
+					<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
+						<Card.Header>
+							<Card.Title>Turn-In</Card.Title>
+							<Card.Description>TJHSST's Code Autograder</Card.Description>
+						</Card.Header>
+						<Card.Content>
+							<p>
+								Turn-In is a fast and secure code autograder for TJ's computer science classes.
+								Previously, teachers had to manually run and grade student code, which was both
+								time-consuming and unsafe (the easiest form of remote code execution!).
+							</p>
+							<br />
+							<p>
+								Turn-In solves this problem by using teacher-provided grader scripts to
+								automatically grade student code, providing students with instant feedback for
+								improvement while letting teachers focus on teaching.
+							</p>
+							<br />
+							<p>
+								Currently, Turn-In is used by every CS class at TJ (classes like APCS, AI, and ML),
+								with over <strong>200,000 graded student submissions</strong> in just the 2023-2024
+								school year.
+							</p>
+						</Card.Content>
+					</Card.Root>
+				</div>
+			</div>
 		</svelte:fragment>
 	</SideProject>
 </div>
