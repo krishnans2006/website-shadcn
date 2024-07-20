@@ -170,23 +170,21 @@
 								store a lot of data reliably and efficiently. For example, we store PII (personal
 								identifiable information) for students (who are minors), <strong>legal records like
 								attendance reports and student grades</strong> (see Turn-In), and much more. This
-								requires a secure and reliable storage solution.
+								requires a secure and reliable storage solution like Ceph, the industry standard.
 							</p>
 							<br />
 							<p>
-								Over the span of a couple years, I configured Ceph, an industry-standard
-								distributed storage system that fit the lab's needs perfectly. Our Ceph cluster is
-								currently spread out across 5 hosts (three physical servers and two VMs), giving us
-								a reliable, triple-replicated storage solution. Data is now protected from power
-								outages, hardware failures, and even server or server rack failures.
+								After my work with Ceph, it now spans 5 hosts (three physical servers and two VMs),
+								giving the lab a reliable, triple-replicated storage solution. Data is protected
+								from power outages, hardware failures, and even server or server rack failures.
 							</p>
 							<br />
 							<p>
-								<strong>Ceph now handles over 55 TB of data</strong>, ranging from VM disks to
-								S3-compatible logs to an entire network filesystem. Besides powering crucial
-								TJ CSL applications, Ceph's filesystem is used by hundreds of students and
-								teachers to conduct research, build large ML models, and even work on personal
-								projects using the lab's resources.
+								Additionally, Ceph is now widely-used, <strong>storing over 55 TB of data</strong>
+								ranging from VM disks to S3-compatible logs to a network filesystem. Besides
+								powering crucial TJ CSL applications, Ceph's filesystem is used by hundreds of
+								students and teachers to conduct research, build large ML models, and even work on
+								personal projects using the lab's resources.
 							</p>
 						</Card.Content>
 					</Card.Root>
