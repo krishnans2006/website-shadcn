@@ -3,6 +3,7 @@
 	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '$lib/components/ui/button';
 	import { Separator } from '$lib/components/ui/separator';
+	import { ArrowDownToLine, ExternalLink } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -45,7 +46,8 @@
 						Honors:
 						<ul class="list-disc ml-6 leading-loose mb-1">
 							<li>
-								2x <strong>Gold President's Volunteer Service Award</strong> (100+ hours of volunteering in a year)
+								2x <strong>Gold President's Volunteer Service Award</strong> (100+ hours of
+								volunteering in a year)
 							</li>
 							<li>
 								Member of the National Honor Society
@@ -87,16 +89,24 @@
 				</div>
 				<div class="pt-3 flex flex-col gap-2 md:flex-row">
 					<Button href="$lib/files/High_School_Transcript.pdf" target="_blank"
-									rel="noopener noreferrer">Transcript
+									rel="noopener noreferrer">
+						<ArrowDownToLine class="size-4 mr-2" />
+						Transcript
 					</Button>
 					<Button variant="secondary" href="$lib/files/AP_Score_Report.pdf" target="_blank"
-									rel="noopener noreferrer">AP Score Report
+									rel="noopener noreferrer">
+						<ArrowDownToLine class="size-4 mr-2" />
+						AP Score Report
 					</Button>
 					<Button variant="secondary" href="$lib/files/PSAT_NMSQT_Score_Report.pdf" target="_blank"
-									rel="noopener noreferrer">PSAT/NMSQT Score Report
+									rel="noopener noreferrer">
+						<ArrowDownToLine class="size-4 mr-2" />
+						PSAT/NMSQT Score Report
 					</Button>
 					<Button variant="secondary" href="$lib/files/SAT_Score_Report.pdf" target="_blank"
-									rel="noopener noreferrer">SAT Score Report
+									rel="noopener noreferrer">
+						<ArrowDownToLine class="size-4 mr-2" />
+						SAT Score Report
 					</Button>
 				</div>
 			</div>
@@ -112,10 +122,14 @@
 				<Card.Description class="text-center text-md">TJ Computer Systems Lab</Card.Description>
 			</Card.Header>
 			<Card.Content>
-				<p>Hi</p>
+				<p>Info</p>
 			</Card.Content>
 			<Card.Footer class="flex-auto flex-wrap gap-2 justify-center">
-
+				<Button href="https://example.com/high-school/tjcsl" target="_blank"
+								rel="noopener noreferrer">
+					See more
+					<ExternalLink class="size-4 ml-2" />
+				</Button>
 			</Card.Footer>
 		</Card.Root>
 	</div>
