@@ -125,9 +125,13 @@
 			<div class="flex flex-col md:flex-row">
 				<div class="animate-fade-up delay-1000 md:basis-1/2">
 					<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
-						<Card.Header>
-							<Card.Title>Turn-In</Card.Title>
-							<Card.Description>TJHSST's Code Autograder</Card.Description>
+						<Card.Header class="flex flex-row">
+							<img src="$lib/images/projects/turnin.png" alt="Turn-In Logo"
+									 class="object-fill size-12 rounded-xl mr-3" />
+							<div class="w-4/5">
+								<Card.Title>Turn-In</Card.Title>
+								<Card.Description>TJHSST's Code Autograder</Card.Description>
+							</div>
 						</Card.Header>
 						<Card.Content>
 							<p>
