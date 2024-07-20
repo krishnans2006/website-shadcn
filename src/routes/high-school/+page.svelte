@@ -89,7 +89,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="pt-3 flex flex-col gap-2 md:flex-row">
+				<div class="pt-3 flex flex-col gap-2 md:flex-row flex-wrap">
 					<Button href="$lib/files/High_School_Transcript.pdf" target="_blank"
 									rel="noopener noreferrer">
 						<ArrowDownToLine class="size-4 mr-2" />

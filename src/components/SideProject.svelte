@@ -14,7 +14,7 @@
 	export let project: Project;
 </script>
 
-<div class="animate-fade-up delay-1000 basis-1/3">
+<div class="animate-fade-up delay-1000 md:basis-1/3">
 	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 		<Card.Header>
 			<Card.Title class="text-center text-2xl">{project.title}</Card.Title>
