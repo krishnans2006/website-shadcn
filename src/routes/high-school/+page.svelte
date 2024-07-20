@@ -122,8 +122,8 @@
 			<p>Managed a team of 5 students to maintain and improve the lab's infrastructure.</p>
 		</svelte:fragment>
 		<svelte:fragment slot="large">
-			<div class="flex flex-col md:flex-row gap-4">
-				<div class="animate-fade-up delay-1000 md:basis-1/2">
+			<div class="flex flex-col lg:flex-row gap-4">
+				<div class="animate-fade-up delay-1000 lg:basis-1/2">
 					<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 						<Card.Header class="flex flex-row">
 							<img src="$lib/images/projects/turnin.png" alt="Turn-In Logo"
@@ -154,7 +154,7 @@
 						</Card.Content>
 					</Card.Root>
 				</div>
-				<div class="animate-fade-up delay-1000 md:basis-1/2">
+				<div class="animate-fade-up delay-1000 lg:basis-1/2">
 					<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 						<Card.Header class="flex flex-row">
 							<img src="$lib/images/badges/ceph.png" alt="Ceph Logo"
@@ -167,20 +167,14 @@
 						<Card.Content>
 							<p>
 								As a vital part of the TJ community, the TJ Computer Systems Lab (TJ CSL) needs to
-								store a lot of data reliably and efficiently. For example, we store PII (personal
-								identifiable information) for students (who are minors), <strong>legal records like
-								attendance reports and student grades</strong> (see Turn-In), and much more. This
-								requires a secure and reliable storage solution like Ceph, the industry standard.
+								store a lot of data reliably. For example, we store PII (personal identifiable
+								information) for students, <strong>legal records like attendance reports and
+								student grades</strong> (see Turn-In), and much more. This requires a secure and
+								reliable storage solution like Ceph, the industry standard.
 							</p>
 							<br />
 							<p>
-								After my work with Ceph, it now spans 5 hosts (three physical servers and two VMs),
-								giving the lab a reliable, triple-replicated storage solution. Data is protected
-								from power outages, hardware failures, and even server or server rack failures.
-							</p>
-							<br />
-							<p>
-								Additionally, Ceph is now widely-used, <strong>storing over 55 TB of data</strong>
+								After my work with Ceph, it now <strong>stores over 55 TB of data</strong>
 								ranging from VM disks to S3-compatible logs to a network filesystem. Besides
 								powering crucial TJ CSL applications, Ceph's filesystem is used by hundreds of
 								students and teachers to conduct research, build large ML models, and even work on

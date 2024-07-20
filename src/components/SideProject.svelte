@@ -31,7 +31,7 @@
 						<MoveRight class="size-4 ml-2" />
 					</Button>
 				</Sheet.Trigger>
-				<Sheet.Content class="md:max-w-xl lg:max-w-4xl">
+				<Sheet.Content class="max-w-full w-full md:max-w-xl lg:max-w-4xl">
 					<Sheet.Header>
 						<Sheet.Title>{project.title}</Sheet.Title>
 						<Sheet.Description>{project.description}</Sheet.Description>
