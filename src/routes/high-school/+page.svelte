@@ -1,8 +1,9 @@
 <script lang="ts">
-	import * as Card from '$lib/components/ui/card';
-	import { Badge } from '$lib/components/ui/badge';
+	import * as AlertDialog from '$lib/components/ui/alert-dialog';
 	import { Button } from '$lib/components/ui/button';
+	import * as Card from '$lib/components/ui/card';
 	import { Separator } from '$lib/components/ui/separator';
+
 	import { ArrowDownToLine, ExternalLink } from 'lucide-svelte';
 </script>
 
@@ -125,11 +126,24 @@
 				<p>Info</p>
 			</Card.Content>
 			<Card.Footer class="flex-auto flex-wrap gap-2 justify-center">
-				<Button href="https://example.com/high-school/tjcsl" target="_blank"
-								rel="noopener noreferrer">
-					See more
-					<ExternalLink class="size-4 ml-2" />
-				</Button>
+				<AlertDialog.Root>
+					<AlertDialog.Trigger asChild let:builder>
+						<Button builders={[builder]}>
+							See more
+							<ExternalLink class="size-4 ml-2" />
+						</Button>
+					</AlertDialog.Trigger>
+					<AlertDialog.Content>
+						<AlertDialog.Header>
+							<AlertDialog.Title>Lead Student Sysadmin</AlertDialog.Title>
+							<AlertDialog.Description>TJ Computer Systems Lab (TJ CSL)</AlertDialog.Description>
+						</AlertDialog.Header>
+						<AlertDialog.Footer>
+							<AlertDialog.Cancel>Back to High School</AlertDialog.Cancel>
+							<AlertDialog.Action>Learn More</AlertDialog.Action>
+						</AlertDialog.Footer>
+					</AlertDialog.Content>
+				</AlertDialog.Root>
 			</Card.Footer>
 		</Card.Root>
 	</div>
