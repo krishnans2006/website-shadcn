@@ -1,10 +1,10 @@
 <script lang="ts">
-	import * as AlertDialog from '$lib/components/ui/alert-dialog';
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 	import { Separator } from '$lib/components/ui/separator';
+  import * as Sheet from "$lib/components/ui/sheet";
 
-	import { ArrowDownToLine, ExternalLink } from 'lucide-svelte';
+	import { ArrowDownToLine, MoveLeft, MoveRight } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -117,7 +117,7 @@
 
 <div class="flex flex-col md:flex-row">
 	<div class="animate-fade-up delay-1000 basis-1/3">
-		<Card.Root class="transition-transform delay-75 duration-300 ease-in-out hover:scale-105">
+		<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 			<Card.Header>
 				<Card.Title class="text-center text-2xl">Lead Student Sysadmin</Card.Title>
 				<Card.Description class="text-center text-md">TJ Computer Systems Lab</Card.Description>
@@ -126,24 +126,28 @@
 				<p>Info</p>
 			</Card.Content>
 			<Card.Footer class="flex-auto flex-wrap gap-2 justify-center">
-				<AlertDialog.Root>
-					<AlertDialog.Trigger asChild let:builder>
+				<Sheet.Root>
+					<Sheet.Trigger asChild let:builder>
 						<Button builders={[builder]}>
 							See more
-							<ExternalLink class="size-4 ml-2" />
+							<MoveRight class="size-4 ml-2" />
 						</Button>
-					</AlertDialog.Trigger>
-					<AlertDialog.Content>
-						<AlertDialog.Header>
-							<AlertDialog.Title>Lead Student Sysadmin</AlertDialog.Title>
-							<AlertDialog.Description>TJ Computer Systems Lab (TJ CSL)</AlertDialog.Description>
-						</AlertDialog.Header>
-						<AlertDialog.Footer>
-							<AlertDialog.Cancel>Back to High School</AlertDialog.Cancel>
-							<AlertDialog.Action>Learn More</AlertDialog.Action>
-						</AlertDialog.Footer>
-					</AlertDialog.Content>
-				</AlertDialog.Root>
+					</Sheet.Trigger>
+					<Sheet.Content>
+						<Sheet.Header>
+							<Sheet.Title>Lead Student Sysadmin</Sheet.Title>
+							<Sheet.Description>TJ Computer Systems Lab (TJ CSL)</Sheet.Description>
+						</Sheet.Header>
+						<Sheet.Footer>
+							<Sheet.Close asChild let:builder>
+								<Button builders={[builder]} variant="secondary" class="mt-2 mr-auto">
+									<MoveLeft class="size-4 mr-2" />
+									Back
+								</Button>
+							</Sheet.Close>
+						</Sheet.Footer>
+					</Sheet.Content>
+				</Sheet.Root>
 			</Card.Footer>
 		</Card.Root>
 	</div>
