@@ -161,21 +161,32 @@
 									 class="object-fill size-12 rounded-xl mr-3" />
 							<div class="w-4/5">
 								<Card.Title>Configured Ceph</Card.Title>
-								<Card.Description>A high-availability, triple-replicated network filesystem</Card.Description>
+								<Card.Description>A high-availability, triple-replicated storage cluster</Card.Description>
 							</div>
 						</Card.Header>
 						<Card.Content>
 							<p>
 								As a vital part of the TJ community, the TJ Computer Systems Lab (TJ CSL) needs to
 								store a lot of data reliably and efficiently. For example, we store PII (personal
-								identifiable information) for students (who are minors), legal records like
-								attendance reports and student grades (see Turn-In), and much more. This requires
-								a secure and reliable storage solution.
+								identifiable information) for students (who are minors), <strong>legal records like
+								attendance reports and student grades</strong> (see Turn-In), and much more. This
+								requires a secure and reliable storage solution.
 							</p>
 							<br />
 							<p>
-								Over the span of a couple years, I set up and configured Ceph, an industry-standard
-								distributed storage system that fit the lab's needs perfectly.
+								Over the span of a couple years, I configured Ceph, an industry-standard
+								distributed storage system that fit the lab's needs perfectly. Our Ceph cluster is
+								currently spread out across 5 hosts (three physical servers and two VMs), giving us
+								a reliable, triple-replicated storage solution. Data is now protected from power
+								outages, hardware failures, and even server or server rack failures.
+							</p>
+							<br />
+							<p>
+								<strong>Ceph now handles over 55 TB of data</strong>, ranging from VM disks to
+								S3-compatible logs to an entire network filesystem. Besides powering crucial
+								TJ CSL applications, Ceph's filesystem is used by hundreds of students and
+								teachers to conduct research, build large ML models, and even work on personal
+								projects using the lab's resources.
 							</p>
 						</Card.Content>
 					</Card.Root>
