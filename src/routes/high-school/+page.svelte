@@ -85,18 +85,18 @@
 						</ul>
 					</div>
 				</div>
-				<div class="pt-3">
-					<Button variant="secondary" href="$lib/files/High_School_Transcript.pdf" target="_blank"
-									rel="noopener noreferrer">View Transcript
+				<div class="pt-3 flex flex-col gap-2 md:flex-row">
+					<Button href="$lib/files/High_School_Transcript.pdf" target="_blank"
+									rel="noopener noreferrer">Transcript
 					</Button>
 					<Button variant="secondary" href="$lib/files/AP_Score_Report.pdf" target="_blank"
-									rel="noopener noreferrer">View AP Score Report
+									rel="noopener noreferrer">AP Score Report
 					</Button>
 					<Button variant="secondary" href="$lib/files/PSAT_NMSQT_Score_Report.pdf" target="_blank"
-									rel="noopener noreferrer">View PSAT/NMSQT Score Report
+									rel="noopener noreferrer">PSAT/NMSQT Score Report
 					</Button>
 					<Button variant="secondary" href="$lib/files/SAT_Score_Report.pdf" target="_blank"
-									rel="noopener noreferrer">View SAT Score Report
+									rel="noopener noreferrer">SAT Score Report
 					</Button>
 				</div>
 			</div>
@@ -104,17 +104,19 @@
 	</Card.Root>
 </div>
 
-<div class="animate-fade-up delay-1000 w-1/3">
-	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out hover:scale-105">
-		<Card.Header>
-			<Card.Title class="text-center text-2xl">Lead Student Sysadmin</Card.Title>
-			<Card.Description class="text-center text-md">TJ Computer Systems Lab</Card.Description>
-		</Card.Header>
-		<Card.Content>
-			<p>Hi</p>
-		</Card.Content>
-		<Card.Footer class="flex-auto flex-wrap gap-2 justify-center">
+<div class="flex flex-col md:flex-row">
+	<div class="animate-fade-up delay-1000 basis-1/3">
+		<Card.Root class="transition-transform delay-75 duration-300 ease-in-out hover:scale-105">
+			<Card.Header>
+				<Card.Title class="text-center text-2xl">Lead Student Sysadmin</Card.Title>
+				<Card.Description class="text-center text-md">TJ Computer Systems Lab</Card.Description>
+			</Card.Header>
+			<Card.Content>
+				<p>Hi</p>
+			</Card.Content>
+			<Card.Footer class="flex-auto flex-wrap gap-2 justify-center">
 
-		</Card.Footer>
-	</Card.Root>
+			</Card.Footer>
+		</Card.Root>
+	</div>
 </div>
