@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
+	import { Separator } from '$lib/components/ui/separator';
   import * as Sheet from "$lib/components/ui/sheet";
 
 	import { MoveLeft, MoveRight } from 'lucide-svelte';
@@ -30,15 +31,17 @@
 						<MoveRight class="size-4 ml-2" />
 					</Button>
 				</Sheet.Trigger>
-				<Sheet.Content>
+				<Sheet.Content class="md:max-w-xl lg:max-w-4xl">
 					<Sheet.Header>
 						<Sheet.Title>{project.title}</Sheet.Title>
 						<Sheet.Description>{project.description}</Sheet.Description>
 					</Sheet.Header>
+					<Separator orientation="horizontal" class="mt-4 mb-4" />
 					<slot name="large"></slot>
+					<Separator orientation="horizontal" class="mt-4 mb-4" />
 					<Sheet.Footer>
 						<Sheet.Close asChild let:builder>
-							<Button builders={[builder]} variant="secondary" class="mt-2 mr-auto">
+							<Button builders={[builder]} variant="secondary" class="mr-auto">
 								<MoveLeft class="size-4 mr-2" />
 								Back
 							</Button>
