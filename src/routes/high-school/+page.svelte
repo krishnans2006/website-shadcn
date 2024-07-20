@@ -122,15 +122,15 @@
 			<p>Managed a team of 5 students to maintain and improve the lab's infrastructure.</p>
 		</svelte:fragment>
 		<svelte:fragment slot="large">
-			<div class="flex flex-col md:flex-row">
+			<div class="flex flex-col md:flex-row gap-4">
 				<div class="animate-fade-up delay-1000 md:basis-1/2">
 					<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 						<Card.Header class="flex flex-row">
 							<img src="$lib/images/projects/turnin.png" alt="Turn-In Logo"
 									 class="object-fill size-12 rounded-xl mr-3" />
 							<div class="w-4/5">
-								<Card.Title>Turn-In</Card.Title>
-								<Card.Description>TJHSST's Code Autograder</Card.Description>
+								<Card.Title>Developed Turn-In</Card.Title>
+								<Card.Description>A fast and secure code autograder</Card.Description>
 							</div>
 						</Card.Header>
 						<Card.Content>
@@ -150,6 +150,32 @@
 								Currently, Turn-In is used by every CS class at TJ (classes like APCS, AI, and ML),
 								with over <strong>200,000 graded student submissions</strong> in just the 2023-2024
 								school year.
+							</p>
+						</Card.Content>
+					</Card.Root>
+				</div>
+				<div class="animate-fade-up delay-1000 md:basis-1/2">
+					<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
+						<Card.Header class="flex flex-row">
+							<img src="$lib/images/badges/ceph.png" alt="Ceph Logo"
+									 class="object-fill size-12 rounded-xl mr-3" />
+							<div class="w-4/5">
+								<Card.Title>Configured Ceph</Card.Title>
+								<Card.Description>A high-availability, triple-replicated network filesystem</Card.Description>
+							</div>
+						</Card.Header>
+						<Card.Content>
+							<p>
+								As a vital part of the TJ community, the TJ Computer Systems Lab (TJ CSL) needs to
+								store a lot of data reliably and efficiently. For example, we store PII (personal
+								identifiable information) for students (who are minors), legal records like
+								attendance reports and student grades (see Turn-In), and much more. This requires
+								a secure and reliable storage solution.
+							</p>
+							<br />
+							<p>
+								Over the span of a couple years, I set up and configured Ceph, an industry-standard
+								distributed storage system that fit the lab's needs perfectly.
 							</p>
 						</Card.Content>
 					</Card.Root>
