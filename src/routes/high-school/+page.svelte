@@ -2,10 +2,9 @@
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 	import { Separator } from '$lib/components/ui/separator';
-  import * as Sheet from "$lib/components/ui/sheet";
 
-	import { ArrowDownToLine, MoveLeft, MoveRight } from 'lucide-svelte';
-	import SideProject from '../../components/SideProject.svelte';
+	import { ArrowDownToLine } from 'lucide-svelte';
+	import SidePopup from '../../components/SidePopup.svelte';
 </script>
 
 <svelte:head>
@@ -117,9 +116,9 @@
 </div>
 
 <div class="flex flex-col md:flex-row">
-	<SideProject project={{ title: "Lead Sysadmin", description: "TJ Computer Systems Lab" }}>
+	<SidePopup project={{ title: "Lead Sysadmin", description: "TJ Computer Systems Lab" }}>
 		<svelte:fragment slot="small">
-			<p>Managed a team of 5 students to maintain and improve the lab's infrastructure.</p>
+			<p>Led a team of 15 students building apps that power the school community.</p>
 		</svelte:fragment>
 		<svelte:fragment slot="large">
 			<div class="flex flex-col lg:flex-row gap-4">
@@ -185,5 +184,5 @@
 				</div>
 			</div>
 		</svelte:fragment>
-	</SideProject>
+	</SidePopup>
 </div>
