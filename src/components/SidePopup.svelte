@@ -31,17 +31,17 @@
 						<MoveRight class="size-4 ml-2" />
 					</Button>
 				</Sheet.Trigger>
-				<Sheet.Content class="max-w-full w-full md:max-w-xl lg:max-w-4xl">
+				<Sheet.Content class="max-w-full w-full md:max-w-xl lg:max-w-4xl flex flex-col">
 					<Sheet.Header>
 						<Sheet.Title>{project.title}</Sheet.Title>
 						<Sheet.Description>{project.description}</Sheet.Description>
-						<Separator orientation="horizontal" class="mt-4 mb-4" />
+						<Separator orientation="horizontal" class="mt-4" />
 					</Sheet.Header>
 
-					<div class="overflow-y-auto max-h-dvh">
+					<div class="overflow-y-auto max-h-dvh flex-initial">
 						<slot name="large"></slot>
 					</div>
-					<Separator orientation="horizontal" class="mt-4 mb-4" />
+					<Separator orientation="horizontal" class="" />
 				</Sheet.Content>
 			</Sheet.Root>
 		</Card.Footer>
