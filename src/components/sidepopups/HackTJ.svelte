@@ -13,71 +13,38 @@
 	</svelte:fragment>
 	<svelte:fragment slot="large">
 		<p>
-			As a Lead Sysadmin, I managed apps and services used by almost every student and teacher in
-			the school. This includes a school-wide intranet, a code autograder for CS classes,
-			self-hosted	mailservers for the @tjhsst.edu domain, free static and dynamic website hosting,
-			10 signage TVs around the school, over 60 desktop workstations, a 50-node compute/GPU
-			cluster, and much more.	Some of my largest projects as a sysadmin are below.
+			HackTJ is the east coast's largest high school hackathon, with over 400 participants building
+			fully-functional websites and apps in just 24 hours. Besides managing HackTJ's website
+			(written in Svelte), my main project as the Technical Lead is singlehandedly building the
+			HackTJ Portal, from scratch (see below).
 		</p>
 		<div class="flex flex-col lg:flex-row gap-4 mt-4">
-			<div class="animate-fade-up delay-1000 lg:basis-1/2">
+			<div class="animate-fade-up delay-1000 w-full">
 				<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 					<Card.Header class="flex flex-row">
-						<img src="$lib/images/projects/turnin.png" alt="Turn-In Logo"
-								 class="object-fill size-12 rounded-xl mr-3" />
+						<img src="$lib/images/projects/hacktj_light.png" alt="Turn-In Logo"
+								 class="object-fill size-12 rounded-xl mr-3 block dark:hidden" />
+						<img src="$lib/images/projects/hacktj_dark.png" alt="Turn-In Logo"
+								 class="object-fill size-12 rounded-xl mr-3 hidden dark:block" />
 						<div class="w-4/5">
-							<Card.Title>Developed Turn-In</Card.Title>
-							<Card.Description>A fast and secure code autograder</Card.Description>
+							<Card.Title>Built the HackTJ Portal</Card.Title>
+							<Card.Description>A privacy-focused, FERPA-compliant hackathon solution</Card.Description>
 						</div>
 					</Card.Header>
 					<Card.Content>
 						<p>
-							Turn-In is a fast and secure code autograder for TJ's computer science classes.
-							Previously, teachers had to manually run and grade student code, which was both
-							time-consuming and unsafe (the easiest form of remote code execution!).
+							Previously, HackTJ, an annual student-run high school hackathon, used Devpost to
+							manage its project submission and judging needs. However, just mere months before
+							our scheduled event, our school district (Fairfax County Public Schools) banned the
+							use of Devpost due to privacy concerns. This left the HackTJ team scrambling to
+							find a replacement platform that was both privacy-focused and FERPA-compliant.
 						</p>
 						<br />
 						<p>
-							Turn-In solves this problem by using teacher-provided grader scripts to
-							automatically grade student code, providing students with instant feedback for
-							improvement while letting teachers focus on teaching.
-						</p>
-						<br />
-						<p>
-							Currently, Turn-In is used by every CS class at TJ, with over <strong>200,000 graded
-							student submissions</strong> in just the 2023-2024 school year. Some notable classes
-							at TJ that rely heavily on Turn-In include AP Computer Science A+ (APCS), Artificial
-							Intelligence (AI), and Computer Vision (CV).
-						</p>
-					</Card.Content>
-				</Card.Root>
-			</div>
-			<div class="animate-fade-up delay-1000 lg:basis-1/2">
-				<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
-					<Card.Header class="flex flex-row">
-						<img src="$lib/images/badges/ceph.png" alt="Ceph Logo"
-								 class="object-fill size-12 rounded-xl mr-3" />
-						<div class="w-4/5">
-							<Card.Title>Configured Ceph</Card.Title>
-							<Card.Description>A high-availability, triple-replicated storage cluster
-							</Card.Description>
-						</div>
-					</Card.Header>
-					<Card.Content>
-						<p>
-							As a vital part of the TJ community, the TJ Computer Systems Lab (TJ CSL) needs to
-							store a lot of data reliably. For example, we store PII (personal identifiable
-							information) for students, <strong>legal records like attendance reports and
-							student grades</strong> (see Turn-In), and much more. This requires a secure and
-							reliable storage solution like Ceph, the industry standard.
-						</p>
-						<br />
-						<p>
-							After carefully configuring and migrating data to Ceph, it now <strong>stores over 55
-							TB of data</strong> ranging from VM disks to S3-compatible logs to a network
-							filesystem. Along with powering crucial TJ CSL applications, Ceph's filesystem is
-							used by hundreds of students and teachers to conduct research, build large ML models,
-							and even work on personal projects using the lab's compute/GPU resources.
+							To help solve this problem, I spent the next few months developing and deploying
+							the HackTJ Portal, a custom submission and judging platform that met all of our
+							needs. It passed FCPS's security scans and privacy reviews with flying colors, and
+							gave us the secure district-approved hackathon platform we needed.
 						</p>
 					</Card.Content>
 				</Card.Root>
