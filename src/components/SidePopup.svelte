@@ -39,14 +39,6 @@
 					<Separator orientation="horizontal" class="mt-4 mb-4" />
 					<slot name="large"></slot>
 					<Separator orientation="horizontal" class="mt-4 mb-4" />
-					<Sheet.Footer>
-						<Sheet.Close asChild let:builder>
-							<Button builders={[builder]} variant="secondary" class="mr-auto">
-								<MoveLeft class="size-4 mr-2" />
-								Back
-							</Button>
-						</Sheet.Close>
-					</Sheet.Footer>
 				</Sheet.Content>
 			</Sheet.Root>
 		</Card.Footer>

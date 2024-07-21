@@ -6,10 +6,17 @@
 
 <SidePopup project={{ title: "Lead Sysadmin", description: "TJ Computer Systems Lab" }}>
 	<svelte:fragment slot="small">
-		<p>Led a team of 15 students building apps that power the school community.</p>
+		<p>Led a team of 15 students building apps that power the entire school.</p>
 	</svelte:fragment>
 	<svelte:fragment slot="large">
-		<div class="flex flex-col lg:flex-row gap-4">
+		<p>
+			As a Lead Sysadmin, I managed apps and services used by almost every student and teacher in
+			the school. This includes a school-wide intranet, a code autograder for CS classes,
+			self-hosted	mailservers for the @tjhsst.edu domain, free static and dynamic website hosting,
+			10 signage TVs around the school, over 60 desktop workstations, a 50-node compute/GPU
+			cluster, and much more.	Some of my largest projects as a sysadmin are below.
+		</p>
+		<div class="flex flex-col lg:flex-row gap-4 mt-4">
 			<div class="animate-fade-up delay-1000 lg:basis-1/2">
 				<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 					<Card.Header class="flex flex-row">
@@ -34,9 +41,10 @@
 						</p>
 						<br />
 						<p>
-							Currently, Turn-In is used by every CS class at TJ (classes like APCS, AI, and ML),
-							with over <strong>200,000 graded student submissions</strong> in just the 2023-2024
-							school year.
+							Currently, Turn-In is used by every CS class at TJ, with over <strong>200,000 graded
+							student submissions</strong> in just the 2023-2024 school year. Some notable classes
+							at TJ that rely heavily on Turn-In include AP Computer Science A+ (APCS), Artificial
+							Intelligence (AI), and Computer Vision (CV).
 						</p>
 					</Card.Content>
 				</Card.Root>
@@ -48,7 +56,8 @@
 								 class="object-fill size-12 rounded-xl mr-3" />
 						<div class="w-4/5">
 							<Card.Title>Configured Ceph</Card.Title>
-							<Card.Description>A high-availability, triple-replicated storage cluster</Card.Description>
+							<Card.Description>A high-availability, triple-replicated storage cluster
+							</Card.Description>
 						</div>
 					</Card.Header>
 					<Card.Content>
@@ -61,11 +70,11 @@
 						</p>
 						<br />
 						<p>
-							After my work with Ceph, it now <strong>stores over 55 TB of data</strong>
-							ranging from VM disks to S3-compatible logs to a network filesystem. Besides
-							powering crucial TJ CSL applications, Ceph's filesystem is used by hundreds of
-							students and teachers to conduct research, build large ML models, and even work on
-							personal projects using the lab's resources.
+							After carefully configuring and migrating data to Ceph, it now <strong>stores over 55
+							TB of data</strong> ranging from VM disks to S3-compatible logs to a network
+							filesystem. Along with powering crucial TJ CSL applications, Ceph's filesystem is
+							used by hundreds of students and teachers to conduct research, build large ML models,
+							and even work on personal projects using the lab's compute/GPU resources.
 						</p>
 					</Card.Content>
 				</Card.Root>
