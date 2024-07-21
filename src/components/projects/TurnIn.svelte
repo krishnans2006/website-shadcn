@@ -1,9 +1,9 @@
 <script>
-	import LargeProject from '../LargeProject.svelte';
+	import LargeProject from '../project-layouts/LargeProject.svelte';
 
-	import Django from '../badges/Django.svelte';
-	import PostgreSQL from '../badges/PostgreSQL.svelte';
-	import HTMLCSSJS from '../badges/HTMLCSSJS.svelte';
+	import Django from '../language-badges/Django.svelte';
+	import PostgreSQL from '../language-badges/PostgreSQL.svelte';
+	import HTMLCSSJS from '../language-badges/HTMLCSSJS.svelte';
 
 	import image from '$lib/images/projects/turnin.png';
 </script>

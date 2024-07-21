@@ -4,9 +4,9 @@
 	import { Separator } from '$lib/components/ui/separator';
 
 	import { ArrowDownToLine } from 'lucide-svelte';
-	import TJCSL from '../../components/sidepopups/TJCSL.svelte';
-	import TJUAV from '../../components/sidepopups/TJUAV.svelte';
-	import HackTJ from '../../components/sidepopups/HackTJ.svelte';
+	import TJCSL from '../../components/side-popups/TJCSL.svelte';
+	import TJUAV from '../../components/side-popups/TJUAV.svelte';
+	import HackTJ from '../../components/side-popups/HackTJ.svelte';
 </script>
 
 <svelte:head>

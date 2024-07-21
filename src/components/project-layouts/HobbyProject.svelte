@@ -2,7 +2,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 
-	import type { Project as ProjectType } from '../data/projects';
+	import type { Project as ProjectType } from '../../data/projects';
 
 	export let project: ProjectType;
 

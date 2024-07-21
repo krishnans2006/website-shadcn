@@ -1,8 +1,8 @@
 <script>
-	import LargeProject from '../LargeProject.svelte';
+	import LargeProject from '../project-layouts/LargeProject.svelte';
 
-	import Flask from '../badges/Flask.svelte';
-	import React from '../badges/React.svelte';
+	import Flask from '../language-badges/Flask.svelte';
+	import React from '../language-badges/React.svelte';
 
 	import image from '$lib/images/projects/tjuav.jpeg';
 </script>

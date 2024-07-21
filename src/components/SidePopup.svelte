@@ -4,7 +4,7 @@
 	import { Separator } from '$lib/components/ui/separator';
   import * as Sheet from "$lib/components/ui/sheet";
 
-	import { MoveLeft, MoveRight } from 'lucide-svelte';
+	import { MoveRight } from 'lucide-svelte';
 
 	interface Project {
 		title: string;

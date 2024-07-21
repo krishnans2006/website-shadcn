@@ -1,9 +1,9 @@
 <script>
-	import LargeProject from '../LargeProject.svelte';
+	import LargeProject from '../project-layouts/LargeProject.svelte';
 
-	import Django from '../badges/Django.svelte';
-	import HTMLCSSJS from '../badges/HTMLCSSJS.svelte';
-	import SQLite from '../badges/SQLite.svelte';
+	import Django from '../language-badges/Django.svelte';
+	import HTMLCSSJS from '../language-badges/HTMLCSSJS.svelte';
+	import SQLite from '../language-badges/SQLite.svelte';
 
 	import imageLight from '$lib/images/projects/hacktj_light.png';
 	import imageDark from '$lib/images/projects/hacktj_dark.png';

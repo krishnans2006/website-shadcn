@@ -29,7 +29,7 @@
 	import TurnIn from '../components/projects/TurnIn.svelte';
 	import GroundStation from '../components/projects/GroundStation.svelte';
 	import Portal from '../components/projects/Portal.svelte';
-	import SmallProject from '../components/SmallProject.svelte';
+	import HackathonProject from '../components/project-layouts/HackathonProject.svelte';
 
 	import type { PageData } from './$types';
 	import type { Project as ProjectType } from '../data/projects';
@@ -282,7 +282,7 @@
 		<Carousel.Content>
 			{#each projects as project}
 				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-4">
-					<SmallProject {project} mediaFolder="hackathons" />
+					<HackathonProject {project} />
 				</Carousel.Item>
 			{/each}
 		</Carousel.Content>
