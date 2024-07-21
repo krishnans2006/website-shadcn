@@ -10,7 +10,7 @@
 
 	let projects: ProjectType[] = data.projects;
 
-	let [minColWidth, maxColWidth, gap] = [350, 600, 12];
+	let [minColWidth, maxColWidth, gap] = [300, 500, 12];
 </script>
 
 <svelte:head>
