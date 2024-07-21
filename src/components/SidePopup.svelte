@@ -31,15 +31,20 @@
 						<MoveRight class="size-4 ml-2" />
 					</Button>
 				</Sheet.Trigger>
-				<Sheet.Content class="max-w-full w-full md:max-w-xl lg:max-w-4xl">
-					<Sheet.Header>
+				<Sheet.Content class="max-w-full w-full md:max-w-xl lg:max-w-4xl overflow-y-auto">
+					<Sheet.Header class="fixed">
 						<Sheet.Title>{project.title}</Sheet.Title>
 						<Sheet.Description>{project.description}</Sheet.Description>
+						<Separator orientation="horizontal" class="mt-4 mb-4" />
 					</Sheet.Header>
-					<Separator orientation="horizontal" class="mt-4 mb-4" />
-					<div class="overflow-y-auto">
-						<slot name="large"></slot>
-					</div>
+					<!-- Below will not be rendered, it's for spacing -->
+					<Sheet.Header class="invisible">
+						<Sheet.Title>{project.title}</Sheet.Title>
+						<Sheet.Description>{project.description}</Sheet.Description>
+						<Separator orientation="horizontal" class="mt-4 mb-4" />
+					</Sheet.Header>
+					<!-- End of spacing -->
+					<slot name="large"></slot>
 					<Separator orientation="horizontal" class="mt-4 mb-4" />
 				</Sheet.Content>
 			</Sheet.Root>
