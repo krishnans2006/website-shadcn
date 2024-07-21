@@ -23,8 +23,10 @@
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button';
+  import * as Card from "$lib/components/ui/card/index.js";
 	import * as Carousel from '$lib/components/ui/carousel';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
+  import * as Tabs from "$lib/components/ui/tabs";
 
 	import TurnIn from '../components/projects/TurnIn.svelte';
 	import GroundStation from '../components/projects/GroundStation.svelte';
@@ -289,4 +291,43 @@
 		<Carousel.Previous />
 		<Carousel.Next />
 	</Carousel.Root>
+</div>
+
+<div>
+	<Tabs.Root value="account" class="">
+		<Tabs.List class="grid w-full grid-cols-2">
+			<Tabs.Trigger value="account">Account</Tabs.Trigger>
+			<Tabs.Trigger value="password">Password</Tabs.Trigger>
+		</Tabs.List>
+		<Tabs.Content value="account">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Account</Card.Title>
+					<Card.Description>
+						Make changes to your account here. Click save when you're done.
+					</Card.Description>
+				</Card.Header>
+				<Card.Content class="space-y-2">
+				</Card.Content>
+				<Card.Footer>
+					<Button>Save changes</Button>
+				</Card.Footer>
+			</Card.Root>
+		</Tabs.Content>
+		<Tabs.Content value="password">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Password</Card.Title>
+					<Card.Description>
+						Change your password here. After saving, you'll be logged out.
+					</Card.Description>
+				</Card.Header>
+				<Card.Content class="space-y-2">
+				</Card.Content>
+				<Card.Footer>
+					<Button>Save password</Button>
+				</Card.Footer>
+			</Card.Root>
+		</Tabs.Content>
+	</Tabs.Root>
 </div>
