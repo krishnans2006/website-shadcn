@@ -15,14 +15,7 @@
 		<img src={image} alt="TJUAV Logo" class="object-fill size-full rounded-3xl" />
 	</svelte:fragment>
 	<svelte:fragment slot="text">
-		<h1 class="text-5xl font-bold">
-			TJUAV GroundStation
-			<Button variant="link" size="icon" href="https://github.com/tj-uav/GroundStation"
-							target="_blank"
-							rel="noopener noreferrer">
-				<Github class="size-9 ml-2" />
-			</Button>
-		</h1>
+		<h1 class="text-5xl font-bold">TJUAV GroundStation</h1>
 		<h3 class="text-2xl">An Open-Source, Performance-Driven Implementation of
 			Ardupilot</h3>
 		<br />
@@ -44,5 +37,12 @@
 		<br />
 		<React />
 		<Flask />
+	</svelte:fragment>
+	<svelte:fragment slot="links">
+		<Button variant="link" size="icon" href="https://github.com/tj-uav/GroundStation"
+						target="_blank"
+						rel="noopener noreferrer">
+			<Github class="size-9 ml-2" />
+		</Button>
 	</svelte:fragment>
 </LargeProject>
