@@ -49,6 +49,54 @@
       "submission_url": null,
       "demo_url": null,
       "invite_url": null
+    },
+    {
+      "name": "Self-Playing Guitar",
+      "summary": "Pretty self-explanatory if you ask me",
+      "description": "Scripts and a web UI to automatically play the guitar using a Raspberry Pi and a whole bunch of solenoids.",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/gitar"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "Better StudentVUE",
+      "summary": "Everything you want to see when checking your grades",
+      "description": "Better StudentVUE calculates helpful numbers for you based on your grade report, allowing you to easily predict and plan for the future.",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/better-studentvue"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "Discord Event Manager",
+      "summary": "Manage your Discord events with ease",
+      "description": "A Discord bot that makes it easy to manage and schedule events, including recurring events and ones synced to cloud calendars.",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/discord-event-manager"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "YouTube Downloader",
+      "summary": "Download YouTube videos with ease",
+      "description": "A simple way to download YouTube videos as audio files with metadata.",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/youtube-downloader"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
     }
   ]
 }
