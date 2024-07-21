@@ -11,7 +11,7 @@
 			<slot name="text"></slot>
 		</div>
 	</Card.Content>
-	<div class="absolute right-10 bottom-7">
+	<div class="absolute right-7 bottom-5">
 		<slot name="links"></slot>
 	</div>
 </Card.Root>
