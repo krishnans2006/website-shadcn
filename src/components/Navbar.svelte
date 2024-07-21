@@ -56,7 +56,7 @@
 			</nav>
 		</Sheet.Content>
 	</Sheet.Root>
-	<div class="flex items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
+	<div class="flex items-center gap-4 md:ml-auto md:gap-2 lg:gap-4 flex-grow">
 		<Button
 			variant="secondary"
 			href="https://raw.githubusercontent.com/krishnans2006/resume/main/Krishnan_Shankar_Resume.pdf"
