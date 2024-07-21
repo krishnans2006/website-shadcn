@@ -12,7 +12,7 @@
 		<p>
 			As the President of TJ Unmanned Aerial Vehicle (TJ UAV), I led a team to design, build, and
 			fly a 10ft-wingspan, 50lb fixed-wing plane for the SUAS Competition, an international college
-			competition held in Maryland. Some of the capabilities I helped develop include:
+			competition held in Maryland. Some of the competition requirements include:
 		</p>
 		<ul class="list-disc ml-6 leading-loose mt-2">
 			<li>Fully autonomous flight</li>
@@ -20,35 +20,36 @@
 			<li>Object detection, localization, and classification</li>
 			<li>Up to 5 precise payload drops</li>
 		</ul>
+		<p>
+			Our team placed <strong>2nd in the world</strong> in the 2023 mission demonstration, beating
+			colleges like UMich, UC Berkeley, Purdue, and IIT Bombay. Besides leading the team, I spent
+			most of my time working on programming and communications systems (see below).
+		</p>
 		<div class="flex flex-col lg:flex-row gap-4 mt-4">
 			<div class="animate-fade-up delay-1000 lg:basis-1/2">
 				<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 					<Card.Header class="flex flex-row">
-						<img src="$lib/images/projects/turnin.png" alt="Turn-In Logo"
+						<img src="$lib/images/projects/tjuav.jpeg" alt="TJ UAV Logo"
 								 class="object-fill size-12 rounded-xl mr-3" />
 						<div class="w-4/5">
-							<Card.Title>Developed Turn-In</Card.Title>
-							<Card.Description>A fast and secure code autograder</Card.Description>
+							<Card.Title>Built the TJ UAV GroundStation</Card.Title>
+							<Card.Description>A fast and reliable ArduPilot GCS</Card.Description>
 						</div>
 					</Card.Header>
 					<Card.Content>
 						<p>
-							Turn-In is a fast and secure code autograder for TJ's computer science classes.
-							Previously, teachers had to manually run and grade student code, which was both
-							time-consuming and unsafe (the easiest form of remote code execution!).
+							Although the ArduPilot-built Mission Planner GCS is powerful, it was quite limiting
+							for our needs. Performance issues resulted in frame rates as low as 0.2 FPS, and
+							getting it to run on our preferred operating system (Linux) left us with nothing but
+							a buggy mess.
 						</p>
 						<br />
 						<p>
-							Turn-In solves this problem by using teacher-provided grader scripts to
-							automatically grade student code, providing students with instant feedback for
-							improvement while letting teachers focus on teaching.
-						</p>
-						<br />
-						<p>
-							Currently, Turn-In is used by every CS class at TJ, with over <strong>200,000 graded
-							student submissions</strong> in just the 2023-2024 school year. Some notable classes
-							at TJ that rely heavily on Turn-In include AP Computer Science A+ (APCS), Artificial
-							Intelligence (AI), and Computer Vision (CV).
+							So, I built the TJ UAV GroundStation, a lightweight, fast, and cross-platform
+							implementation of a GCS. It interfaces directly with MAVLink messages from telemetry
+							radios, providing almost all of Mission Planner's features. Additionally, I was able
+							to integrate camera and drop payload controls directly into the GroundStation, making
+							it a lot simpler on flight day.
 						</p>
 					</Card.Content>
 				</Card.Root>
@@ -56,29 +57,27 @@
 			<div class="animate-fade-up delay-1000 lg:basis-1/2">
 				<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 					<Card.Header class="flex flex-row">
-						<img src="$lib/images/badges/ceph.png" alt="Ceph Logo"
+						<img src="$lib/images/projects/tjuav.jpeg" alt="Ceph Logo"
 								 class="object-fill size-12 rounded-xl mr-3" />
 						<div class="w-4/5">
-							<Card.Title>Configured Ceph</Card.Title>
-							<Card.Description>A high-availability, triple-replicated storage cluster
-							</Card.Description>
+							<Card.Title>Designed a Communications System</Card.Title>
+							<Card.Description>Using 3 different frequencies for the best results</Card.Description>
 						</div>
 					</Card.Header>
 					<Card.Content>
 						<p>
-							As a vital part of the TJ community, the TJ Computer Systems Lab (TJ CSL) needs to
-							store a lot of data reliably. For example, we store PII (personal identifiable
-							information) for students, <strong>legal records like attendance reports and
-							student grades</strong> (see Turn-In), and much more. This requires a secure and
-							reliable storage solution like Ceph, the industry standard.
+							To meet the competition requirements, the plane needed 3 different channels of
+							reliable communication. First, telemetry data needed to be streamed to our custom
+							GroundStation in real-time. Second, manual control inputs needed to be sent to the
+							plane for takeoffs, landings, and emergencies. Finally, image data needed to be sent
+							through a high bandwidth link for object detection and localization.
 						</p>
 						<br />
 						<p>
-							After carefully configuring and migrating data to Ceph, it now <strong>stores over 55
-							TB of data</strong> ranging from VM disks to S3-compatible logs to a network
-							filesystem. Along with powering crucial TJ CSL applications, Ceph's filesystem is
-							used by hundreds of students and teachers to conduct research, build large ML models,
-							and even work on personal projects using the lab's compute/GPU resources.
+							To solve this problem, I designed a clever communications system using 900MHz,
+							2.4GHz, and 5GHz radios. I set up an RFD900x radio for telemetry, a 2.4GHz
+							transmitter and double-receiver for manual control, and a 5GHz WiFi link for image
+							transfer, optimizing each link for its specific use case.
 						</p>
 					</Card.Content>
 				</Card.Root>
