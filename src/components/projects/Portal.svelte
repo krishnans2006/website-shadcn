@@ -1,4 +1,6 @@
 <script>
+	import { Button } from '$lib/components/ui/button';
+
 	import LargeProject from '../project-layouts/LargeProject.svelte';
 
 	import Django from '../language-badges/Django.svelte';
@@ -7,6 +9,7 @@
 
 	import imageLight from '$lib/images/projects/hacktj_light.png';
 	import imageDark from '$lib/images/projects/hacktj_dark.png';
+	import { Github } from 'lucide-svelte';
 </script>
 
 <LargeProject>
@@ -19,7 +22,14 @@
 				 class="object-fill size-full rounded-3xl hidden dark:block" />
 	</svelte:fragment>
 	<svelte:fragment slot="text">
-		<h1 class="text-5xl font-bold">HackTJ Portal</h1>
+		<h1 class="text-5xl font-bold">
+			HackTJ Portal
+			<Button variant="link" size="icon" href="https://github.com/HackTJ/portal"
+							target="_blank"
+							rel="noopener noreferrer">
+				<Github class="size-9 ml-2" />
+			</Button>
+		</h1>
 		<h3 class="text-2xl">A Privacy-Focused, FERPA-Compliant Hackathon Submission and
 			Judging Platform</h3>
 		<br />

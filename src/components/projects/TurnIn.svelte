@@ -1,4 +1,6 @@
 <script>
+	import { Button } from '$lib/components/ui/button';
+
 	import LargeProject from '../project-layouts/LargeProject.svelte';
 
 	import Django from '../language-badges/Django.svelte';
@@ -6,6 +8,7 @@
 	import HTMLCSSJS from '../language-badges/HTMLCSSJS.svelte';
 
 	import image from '$lib/images/projects/turnin.png';
+	import { Github } from 'lucide-svelte';
 </script>
 
 <LargeProject>
@@ -13,7 +16,14 @@
 		<img src={image} alt="Tin Logo" class="object-fill size-full rounded-3xl" />
 	</svelte:fragment>
 	<svelte:fragment slot="text">
-		<h1 class="text-5xl font-bold">Turn-In</h1>
+		<h1 class="text-5xl font-bold">
+			Turn-In
+			<Button variant="link" size="icon" href="https://github.com/tjcsl/tin"
+							target="_blank"
+							rel="noopener noreferrer">
+				<Github class="size-9 ml-2" />
+			</Button>
+		</h1>
 		<h3 class="text-2xl">TJHSST's Code Autograder</h3>
 		<br />
 		<p>

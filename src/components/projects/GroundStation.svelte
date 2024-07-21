@@ -1,10 +1,13 @@
 <script>
+	import { Button } from '$lib/components/ui/button';
+
 	import LargeProject from '../project-layouts/LargeProject.svelte';
 
 	import Flask from '../language-badges/Flask.svelte';
 	import React from '../language-badges/React.svelte';
 
 	import image from '$lib/images/projects/tjuav.jpeg';
+	import { Github } from 'lucide-svelte';
 </script>
 
 <LargeProject>
@@ -12,7 +15,14 @@
 		<img src={image} alt="TJUAV Logo" class="object-fill size-full rounded-3xl" />
 	</svelte:fragment>
 	<svelte:fragment slot="text">
-		<h1 class="text-5xl font-bold">TJUAV GroundStation</h1>
+		<h1 class="text-5xl font-bold">
+			TJUAV GroundStation
+			<Button variant="link" size="icon" href="https://github.com/tj-uav/GroundStation"
+							target="_blank"
+							rel="noopener noreferrer">
+				<Github class="size-9 ml-2" />
+			</Button>
+		</h1>
 		<h3 class="text-2xl">An Open-Source, Performance-Driven Implementation of
 			Ardupilot</h3>
 		<br />
