@@ -32,12 +32,11 @@
 					</Button>
 				</Sheet.Trigger>
 				<Sheet.Content class="max-w-full w-full md:max-w-xl lg:max-w-4xl overflow-y-auto">
-					<Sheet.Header class="fixed w-[87%] md:w-[68.5%] lg:w-[83%]">
+					<Sheet.Header class="fixed top-4 left-0 right-0">
 						<Sheet.Title>{project.title}</Sheet.Title>
 						<Sheet.Description>{project.description}</Sheet.Description>
 						<Separator orientation="horizontal" class="mt-4 mb-4" />
 					</Sheet.Header>
-
 					<!-- Below will not be rendered, it's for spacing -->
 					<div class="invisible">
 						<Sheet.Title>{project.title}</Sheet.Title>
