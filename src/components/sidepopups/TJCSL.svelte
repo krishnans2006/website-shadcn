@@ -6,7 +6,10 @@
 
 <SidePopup project={{ title: "Lead Sysadmin", description: "TJ Computer Systems Lab" }}>
 	<svelte:fragment slot="small">
-		<p>Led a team of 15 students building apps that power the entire school.</p>
+		<p>
+			Led a team of 15 students building and maintaining crucial school services. Built a
+			widely-used code autograder and set up a massive 50TB storage cluster and network filesystem.
+		</p>
 	</svelte:fragment>
 	<svelte:fragment slot="large">
 		<p>

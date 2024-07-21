@@ -6,15 +6,18 @@
 
 <SidePopup project={{ title: "President", description: "TJ Unmanned Aerial Vehicle" }}>
 	<svelte:fragment slot="small">
-		<p>Led a team building a fixed-wing plane for an international college competition.</p>
+		<p>
+			Led a team building a fixed-wing plane for an international college competition. Built an
+			ArduPilot GroundStation from scratch and designed a 3-part real-time communications system.
+		</p>
 	</svelte:fragment>
 	<svelte:fragment slot="large">
 		<p>
 			As the President of TJ Unmanned Aerial Vehicle (TJ UAV), I led a team to design, build, and
 			fly a 10ft-wingspan, 50lb fixed-wing plane for the SUAS Competition, an international college
-			competition held in Maryland. Some of the competition requirements include:
+			competition. Some competition requirements include:
 		</p>
-		<ul class="list-disc ml-6 leading-loose mt-2">
+		<ul class="list-disc ml-6 mt-2 mb-2">
 			<li>Fully autonomous flight</li>
 			<li>Real-time image capture and transmission</li>
 			<li>Object detection, localization, and classification</li>
@@ -22,8 +25,8 @@
 		</ul>
 		<p>
 			Our team placed <strong>2nd in the world</strong> in the 2023 mission demonstration, beating
-			colleges like UMich, UC Berkeley, Purdue, and IIT Bombay. Besides leading the team, I spent
-			most of my time working on programming and communications systems (see below).
+			colleges like UC Berkeley, Purdue, UMich, and IIT Bombay. Aside from leading the team, I
+			spent most of my time working on programming and communications systems (see below).
 		</p>
 		<div class="flex flex-col lg:flex-row gap-4 mt-4">
 			<div class="animate-fade-up delay-1000 lg:basis-1/2">
@@ -57,11 +60,9 @@
 			<div class="animate-fade-up delay-1000 lg:basis-1/2">
 				<Card.Root class="transition-transform delay-75 duration-300 ease-in-out">
 					<Card.Header class="flex flex-row">
-						<img src="$lib/images/projects/tjuav.jpeg" alt="Ceph Logo"
-								 class="object-fill size-12 rounded-xl mr-3" />
 						<div class="w-4/5">
 							<Card.Title>Designed a Communications System</Card.Title>
-							<Card.Description>Using 3 different frequencies for the best results</Card.Description>
+							<Card.Description>Using 3 highly-optimized radios</Card.Description>
 						</div>
 					</Card.Header>
 					<Card.Content>
@@ -74,10 +75,9 @@
 						</p>
 						<br />
 						<p>
-							To solve this problem, I designed a clever communications system using 900MHz,
-							2.4GHz, and 5GHz radios. I set up an RFD900x radio for telemetry, a 2.4GHz
-							transmitter and double-receiver for manual control, and a 5GHz WiFi link for image
-							transfer, optimizing each link for its specific use case.
+							To solve this problem, I designed a clever communications system using a 900MHz
+							RFD900x for telemetry, a 2.4GHz transmitter and double-receiver combo for manual
+							override, and a 5GHz Ubiquity WiFi link for image transfer.
 						</p>
 					</Card.Content>
 				</Card.Root>
