@@ -4,7 +4,8 @@
 	import { Separator } from '$lib/components/ui/separator';
 
 	import { ArrowDownToLine } from 'lucide-svelte';
-	import LeadSysadmin from '../../components/sidepopups/LeadSysadmin.svelte';
+	import TJCSL from '../../components/sidepopups/TJCSL.svelte';
+	import TJUAV from '../../components/sidepopups/TJUAV.svelte';
 </script>
 
 <svelte:head>
@@ -115,6 +116,7 @@
 	</Card.Root>
 </div>
 
-<div class="flex flex-col md:flex-row">
-	<LeadSysadmin />
+<div class="flex flex-col md:flex-row gap-3">
+	<TJCSL />
+	<TJUAV />
 </div>
