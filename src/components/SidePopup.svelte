@@ -32,18 +32,20 @@
 					</Button>
 				</Sheet.Trigger>
 				<Sheet.Content class="max-w-full w-full md:max-w-xl lg:max-w-4xl overflow-y-auto">
-					<Sheet.Header class="fixed">
+					<Sheet.Header class="fixed w-[87%] md:w-[68.5%] lg:w-[83%]">
 						<Sheet.Title>{project.title}</Sheet.Title>
 						<Sheet.Description>{project.description}</Sheet.Description>
 						<Separator orientation="horizontal" class="mt-4 mb-4" />
 					</Sheet.Header>
+
 					<!-- Below will not be rendered, it's for spacing -->
-					<Sheet.Header class="invisible">
+					<div class="invisible">
 						<Sheet.Title>{project.title}</Sheet.Title>
 						<Sheet.Description>{project.description}</Sheet.Description>
 						<Separator orientation="horizontal" class="mt-4 mb-4" />
-					</Sheet.Header>
+					</div>
 					<!-- End of spacing -->
+
 					<slot name="large"></slot>
 					<Separator orientation="horizontal" class="mt-4 mb-4" />
 				</Sheet.Content>
