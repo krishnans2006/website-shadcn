@@ -6,6 +6,7 @@
 	import { ArrowDownToLine } from 'lucide-svelte';
 	import TJCSL from '../../components/sidepopups/TJCSL.svelte';
 	import TJUAV from '../../components/sidepopups/TJUAV.svelte';
+	import HackTJ from '../../components/sidepopups/HackTJ.svelte';
 </script>
 
 <svelte:head>
@@ -119,4 +120,5 @@
 <div class="flex flex-col md:flex-row gap-3">
 	<TJCSL />
 	<TJUAV />
+	<HackTJ />
 </div>
