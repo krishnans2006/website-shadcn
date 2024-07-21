@@ -40,8 +40,9 @@
     },
     {
       "name": "My Website",
-      "summary": "This here thing you're looking at right now",
+      "summary": "What you're looking at right now",
       "description": "A personal website built using Svelte, SvelteKit, Tailwind CSS, and shadcn/ui.",
+      "image": "mywebsite",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/website-shadcn"
@@ -52,7 +53,7 @@
     },
     {
       "name": "Self-Playing Guitar",
-      "summary": "Pretty self-explanatory if you ask me",
+      "summary": "It's self-explanatory",
       "description": "Scripts and a web UI to automatically play the guitar using a Raspberry Pi and a whole bunch of solenoids.",
       "code_url": {
         "name": "GitHub",
@@ -66,6 +67,7 @@
       "name": "Better StudentVUE",
       "summary": "Everything you want to see when checking your grades",
       "description": "Better StudentVUE calculates helpful numbers for you based on your grade report, allowing you to easily predict and plan for the future.",
+      "image": "betterstudentvue",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/better-studentvue"
@@ -78,6 +80,7 @@
       "name": "Discord Event Manager",
       "summary": "Manage your Discord events with ease",
       "description": "A Discord bot that makes it easy to manage and schedule events, including recurring events and ones synced to cloud calendars.",
+      "image": "discordeventmanager",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/discord-event-manager"
@@ -90,6 +93,7 @@
       "name": "YouTube Downloader",
       "summary": "Download your favorite music",
       "description": "A simple way to download YouTube videos as audio files with metadata.",
+      "image": "youtubedownloader",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/youtube-downloader"

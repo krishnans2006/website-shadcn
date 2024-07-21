@@ -11,13 +11,13 @@
 
 <div class="animate-fade-up delay-1000">
 	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out hover:scale-105">
-		<Card.Header class="flex flex-col items-center">
+		<Card.Header class="flex flex-col items-center pb-4">
 			{#await import(`$lib/images/${mediaFolder}/${project.image}.png`) then { default: src }}
 				<img src={src} alt="{project.name}" class="object-fill size-12 rounded-full mb-2"
 						 class:dark:invert={project.image_invert_dark} />
 			{/await}
 			<div class="w-4/5">
-				<Card.Title class="text-center">{project.name}</Card.Title>
+				<Card.Title class="text-center mb-1">{project.name}</Card.Title>
 				<Card.Description class="text-center">{project.summary}</Card.Description>
 			</div>
 		</Card.Header>
