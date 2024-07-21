@@ -37,7 +37,9 @@
 						<Sheet.Description>{project.description}</Sheet.Description>
 					</Sheet.Header>
 					<Separator orientation="horizontal" class="mt-4 mb-4" />
-					<slot name="large"></slot>
+					<div class="overflow-y-auto">
+						<slot name="large"></slot>
+					</div>
 					<Separator orientation="horizontal" class="mt-4 mb-4" />
 				</Sheet.Content>
 			</Sheet.Root>
