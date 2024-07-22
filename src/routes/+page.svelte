@@ -35,6 +35,7 @@
 
 	import type { PageData } from './$types';
 	import type { Project as ProjectType } from '../data/projects';
+	import GitHubBadge from '../components/GitHubBadge.svelte';
 
 	export let data: PageData;
 
@@ -313,12 +314,14 @@
 			<Tabs.Content value="python">
 				<Card.Root>
 					<Card.Header>
-						<Card.Title>Account</Card.Title>
+						<Card.Title>Python</Card.Title>
 						<Card.Description>
-							Make changes to your account here. Click save when you're done.
+							I've worked with Python since 7th grade, building everything from web apps to
+							games to neural networks.
 						</Card.Description>
 					</Card.Header>
-					<Card.Content class="space-y-2">
+					<Card.Content class="space-y-2 flex flex-col xl:flex-row">
+						<GitHubBadge title="PacMan" description="in pygame" url="https://github.com/krishnans2006/PacMan" />
 					</Card.Content>
 				</Card.Root>
 			</Tabs.Content>
