@@ -298,14 +298,14 @@
 	<Tabs.Root value="python" class="w-11/12 min-h-96">
 		<div class="flex flex-row gap-3 mb-1">
 			<div class="basis-1/2 text-center text-muted-foreground flex flex-row gap-3 items-end">
-				<div class="flex-grow border-t border-muted-foreground h-1/2"></div>
+				<div class="flex-grow h-1/3 mb-1 border-t border-muted-foreground"></div>
 				<p class="flex-shrink">LANGUAGES</p>
-				<div class="flex-grow border-t border-muted-foreground h-1/2"></div>
+				<div class="flex-grow h-1/3 mb-1 border-t border-muted-foreground"></div>
 			</div>
 			<div class="basis-1/2 text-center text-muted-foreground flex flex-row gap-3 items-end">
-				<div class="flex-grow border-t border-muted-foreground h-1/2"></div>
+				<div class="flex-grow h-1/3 mb-1 border-t border-l rounded-tl border-muted-foreground"></div>
 				<p class="flex-shrink">FRAMEWORKS</p>
-				<div class="flex-grow border-t border-muted-foreground h-1/2"></div>
+				<div class="flex-grow h-1/3 mb-1 border-t border-r rounded-tr border-muted-foreground"></div>
 			</div>
 		</div>
 		<div class="flex flex-row gap-3">

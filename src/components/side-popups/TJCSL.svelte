@@ -67,9 +67,8 @@
 						<p>
 							As a vital part of the TJ community, the TJ Computer Systems Lab (TJ CSL) needs to
 							store a lot of data reliably. For example, we store PII (personal identifiable
-							information) for students, <strong>legal records like attendance reports and
-							student grades</strong> (see Turn-In), and much more. This requires a secure and
-							reliable storage solution like Ceph, the industry standard.
+							information) for students, <strong>legal records like attendance reports</strong>,
+							and much more. This requires a secure and	reliable storage solution like Ceph, the industry standard.
 						</p>
 						<br />
 						<p>

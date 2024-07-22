@@ -3,7 +3,7 @@
 </script>
 
 <Card.Root class="p-3 relative">
-	<Card.Content class="flex flex-col md:flex-row gap-4 items-center p-1 md:p-6">
+	<Card.Content class="flex flex-col md:flex-row gap-6 items-center p-1 md:p-6">
 		<div class="md:w-1/3">
 			<slot name="image"></slot>
 		</div>
