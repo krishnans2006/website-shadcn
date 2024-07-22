@@ -295,128 +295,128 @@
 
 <div id="specialties" class="scroll-mt-20 flex flex-col items-center mt-24 md:mt-14">
 	<h1 class="text-4xl mb-6">I work with:</h1>
-	<Tabs.Root value="python" class="w-11/12 min-h-96">
-		<div class="flex flex-row gap-3 mb-0.5">
-			<div class="basis-1/2 text-center text-muted-foreground flex flex-row gap-3 items-end">
+	<div class="flex flex-row gap-3 mb-0.5">
+		<Tabs.Root class="basis-1/2">
+			<div class="text-center text-muted-foreground flex flex-row gap-3 items-end">
 				<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
 				<p class="flex-shrink">LANGUAGES</p>
 				<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
 			</div>
-			<div class="basis-1/2 text-center text-muted-foreground flex flex-row gap-3 items-end">
-				<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
-				<p class="flex-shrink">FRAMEWORKS</p>
-				<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
-			</div>
-		</div>
-		<div class="flex flex-row gap-3">
 			<Tabs.List class="grid basis-1/2 grid-cols-4">
 				<Tabs.Trigger value="python">Python</Tabs.Trigger>
 				<Tabs.Trigger value="htmlcssjs">HTML/CSS/JS</Tabs.Trigger>
 				<Tabs.Trigger value="java">Java</Tabs.Trigger>
 				<Tabs.Trigger value="rust">Rust</Tabs.Trigger>
 			</Tabs.List>
+			<Tabs.Content value="python">
+				<Card.Root>
+					<Card.Header>
+						<Card.Title>Account</Card.Title>
+						<Card.Description>
+							Make changes to your account here. Click save when you're done.
+						</Card.Description>
+					</Card.Header>
+					<Card.Content class="space-y-2">
+					</Card.Content>
+				</Card.Root>
+			</Tabs.Content>
+			<Tabs.Content value="htmlcssjs">
+				<Card.Root>
+					<Card.Header>
+						<Card.Title>Account</Card.Title>
+						<Card.Description>
+							Make changes to your account here. Click save when you're done.
+						</Card.Description>
+					</Card.Header>
+					<Card.Content class="space-y-2">
+					</Card.Content>
+				</Card.Root>
+			</Tabs.Content>
+			<Tabs.Content value="java">
+				<Card.Root>
+					<Card.Header>
+						<Card.Title>Account</Card.Title>
+						<Card.Description>
+							Make changes to your account here. Click save when you're done.
+						</Card.Description>
+					</Card.Header>
+					<Card.Content class="space-y-2">
+					</Card.Content>
+				</Card.Root>
+			</Tabs.Content>
+			<Tabs.Content value="rust">
+				<Card.Root>
+					<Card.Header>
+						<Card.Title>Account</Card.Title>
+						<Card.Description>
+							Make changes to your account here. Click save when you're done.
+						</Card.Description>
+					</Card.Header>
+					<Card.Content class="space-y-2">
+					</Card.Content>
+				</Card.Root>
+			</Tabs.Content>
+		</Tabs.Root>
+		<Tabs.Root class="basis-1/2">
+			<div class="text-center text-muted-foreground flex flex-row gap-3 items-end">
+				<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
+				<p class="flex-shrink">FRAMEWORKS</p>
+				<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
+			</div>
 			<Tabs.List class="grid basis-1/2 grid-cols-4">
 				<Tabs.Trigger value="django">Django</Tabs.Trigger>
 				<Tabs.Trigger value="flask">Flask</Tabs.Trigger>
 				<Tabs.Trigger value="svelte">Svelte/SvelteKit</Tabs.Trigger>
 				<Tabs.Trigger value="pycord">PyCord</Tabs.Trigger>
 			</Tabs.List>
-		</div>
-		<Tabs.Content value="python">
-			<Card.Root>
-				<Card.Header>
-					<Card.Title>Account</Card.Title>
-					<Card.Description>
-						Make changes to your account here. Click save when you're done.
-					</Card.Description>
-				</Card.Header>
-				<Card.Content class="space-y-2">
-				</Card.Content>
-			</Card.Root>
-		</Tabs.Content>
-		<Tabs.Content value="htmlcssjs">
-			<Card.Root>
-				<Card.Header>
-					<Card.Title>Account</Card.Title>
-					<Card.Description>
-						Make changes to your account here. Click save when you're done.
-					</Card.Description>
-				</Card.Header>
-				<Card.Content class="space-y-2">
-				</Card.Content>
-			</Card.Root>
-		</Tabs.Content>
-		<Tabs.Content value="java">
-			<Card.Root>
-				<Card.Header>
-					<Card.Title>Account</Card.Title>
-					<Card.Description>
-						Make changes to your account here. Click save when you're done.
-					</Card.Description>
-				</Card.Header>
-				<Card.Content class="space-y-2">
-				</Card.Content>
-			</Card.Root>
-		</Tabs.Content>
-		<Tabs.Content value="rust">
-			<Card.Root>
-				<Card.Header>
-					<Card.Title>Account</Card.Title>
-					<Card.Description>
-						Make changes to your account here. Click save when you're done.
-					</Card.Description>
-				</Card.Header>
-				<Card.Content class="space-y-2">
-				</Card.Content>
-			</Card.Root>
-		</Tabs.Content>
-		<Tabs.Content value="django">
-			<Card.Root>
-				<Card.Header>
-					<Card.Title>Account</Card.Title>
-					<Card.Description>
-						Make changes to your account here. Click save when you're done.
-					</Card.Description>
-				</Card.Header>
-				<Card.Content class="space-y-2">
-				</Card.Content>
-			</Card.Root>
-		</Tabs.Content>
-		<Tabs.Content value="flask">
-			<Card.Root>
-				<Card.Header>
-					<Card.Title>Account</Card.Title>
-					<Card.Description>
-						Make changes to your account here. Click save when you're done.
-					</Card.Description>
-				</Card.Header>
-				<Card.Content class="space-y-2">
-				</Card.Content>
-			</Card.Root>
-		</Tabs.Content>
-		<Tabs.Content value="svelte">
-			<Card.Root>
-				<Card.Header>
-					<Card.Title>Account</Card.Title>
-					<Card.Description>
-						Make changes to your account here. Click save when you're done.
-					</Card.Description>
-				</Card.Header>
-				<Card.Content class="space-y-2">
-				</Card.Content>
-			</Card.Root>
-		</Tabs.Content>
-		<Tabs.Content value="pycord">
-			<Card.Root>
-				<Card.Header>
-					<Card.Title>Account</Card.Title>
-					<Card.Description>
-						Make changes to your account here. Click save when you're done.
-					</Card.Description>
-				</Card.Header>
-				<Card.Content class="space-y-2">
-				</Card.Content>
-			</Card.Root>
-		</Tabs.Content>
-	</Tabs.Root>
+			<Tabs.Content value="django">
+				<Card.Root>
+					<Card.Header>
+						<Card.Title>Account</Card.Title>
+						<Card.Description>
+							Make changes to your account here. Click save when you're done.
+						</Card.Description>
+					</Card.Header>
+					<Card.Content class="space-y-2">
+					</Card.Content>
+				</Card.Root>
+			</Tabs.Content>
+			<Tabs.Content value="flask">
+				<Card.Root>
+					<Card.Header>
+						<Card.Title>Account</Card.Title>
+						<Card.Description>
+							Make changes to your account here. Click save when you're done.
+						</Card.Description>
+					</Card.Header>
+					<Card.Content class="space-y-2">
+					</Card.Content>
+				</Card.Root>
+			</Tabs.Content>
+			<Tabs.Content value="svelte">
+				<Card.Root>
+					<Card.Header>
+						<Card.Title>Account</Card.Title>
+						<Card.Description>
+							Make changes to your account here. Click save when you're done.
+						</Card.Description>
+					</Card.Header>
+					<Card.Content class="space-y-2">
+					</Card.Content>
+				</Card.Root>
+			</Tabs.Content>
+			<Tabs.Content value="pycord">
+				<Card.Root>
+					<Card.Header>
+						<Card.Title>Account</Card.Title>
+						<Card.Description>
+							Make changes to your account here. Click save when you're done.
+						</Card.Description>
+					</Card.Header>
+					<Card.Content class="space-y-2">
+					</Card.Content>
+				</Card.Root>
+			</Tabs.Content>
+		</Tabs.Root>
+	</div>
 </div>
