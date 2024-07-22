@@ -4,9 +4,12 @@
 	export let title: string = '';
 	export let description: string = '';
 	export let url: string = '';
+
+	let className: string = '';
+	export { className as class };
 </script>
 
-<a href={url}>
+<a href={url} class={className}>
 	<Card.Root>
 		<Card.Header>
 			<Card.Title>{title}</Card.Title>

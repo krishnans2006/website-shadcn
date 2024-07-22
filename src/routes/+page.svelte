@@ -320,8 +320,8 @@
 							games to neural networks.
 						</Card.Description>
 					</Card.Header>
-					<Card.Content class="space-y-2 flex flex-col xl:flex-row">
-						<GitHubBadge title="PacMan" description="in pygame" url="https://github.com/krishnans2006/PacMan" />
+					<Card.Content class="space-y-2 flex flex-col lg:flex-row">
+						<GitHubBadge title="PacMan" description="in pygame" url="https://github.com/krishnans2006/PacMan" class="lg:basis-1/2" />
 					</Card.Content>
 				</Card.Root>
 			</Tabs.Content>
