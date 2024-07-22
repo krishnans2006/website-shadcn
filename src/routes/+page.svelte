@@ -294,16 +294,34 @@
 </div>
 
 <div id="specialties" class="scroll-mt-20 flex flex-col items-center mt-24 md:mt-14">
-	<h1 class="text-4xl mb-6">I'm experienced with:</h1>
+	<h1 class="text-4xl mb-6">I work with:</h1>
 	<Tabs.Root value="python" class="w-11/12 min-h-96">
-		<Tabs.List class="grid w-full grid-cols-6">
-			<Tabs.Trigger value="python">Pure Python</Tabs.Trigger>
-			<Tabs.Trigger value="django">Django</Tabs.Trigger>
-			<Tabs.Trigger value="flask">Flask</Tabs.Trigger>
-			<Tabs.Trigger value="htmlcssjs">HTML/CSS/JS</Tabs.Trigger>
-			<Tabs.Trigger value="svelte">Svelte/SvelteKit</Tabs.Trigger>
-			<Tabs.Trigger value="pycord">PyCord</Tabs.Trigger>
-		</Tabs.List>
+		<div class="flex flex-row gap-3 mb-1">
+			<div class="basis-1/2 text-center text-muted-foreground flex flex-row gap-3 items-end">
+				<div class="flex-grow border-t border-muted-foreground h-1/2"></div>
+				<p class="flex-shrink">LANGUAGES</p>
+				<div class="flex-grow border-t border-muted-foreground h-1/2"></div>
+			</div>
+			<div class="basis-1/2 text-center text-muted-foreground flex flex-row gap-3 items-end">
+				<div class="flex-grow border-t border-muted-foreground h-1/2"></div>
+				<p class="flex-shrink">FRAMEWORKS</p>
+				<div class="flex-grow border-t border-muted-foreground h-1/2"></div>
+			</div>
+		</div>
+		<div class="flex flex-row gap-3">
+			<Tabs.List class="grid basis-1/2 grid-cols-4">
+				<Tabs.Trigger value="python">Python</Tabs.Trigger>
+				<Tabs.Trigger value="htmlcssjs">HTML/CSS/JS</Tabs.Trigger>
+				<Tabs.Trigger value="java">Java</Tabs.Trigger>
+				<Tabs.Trigger value="rust">Rust</Tabs.Trigger>
+			</Tabs.List>
+			<Tabs.List class="grid basis-1/2 grid-cols-4">
+				<Tabs.Trigger value="django">Django</Tabs.Trigger>
+				<Tabs.Trigger value="flask">Flask</Tabs.Trigger>
+				<Tabs.Trigger value="svelte">Svelte/SvelteKit</Tabs.Trigger>
+				<Tabs.Trigger value="pycord">PyCord</Tabs.Trigger>
+			</Tabs.List>
+		</div>
 		<Tabs.Content value="python">
 			<Card.Root>
 				<Card.Header>
