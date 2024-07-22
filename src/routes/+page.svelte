@@ -293,13 +293,18 @@
 	</Carousel.Root>
 </div>
 
-<div>
-	<Tabs.Root value="account" class="">
-		<Tabs.List class="grid w-full grid-cols-2">
-			<Tabs.Trigger value="account">Account</Tabs.Trigger>
-			<Tabs.Trigger value="password">Password</Tabs.Trigger>
+<div id="specialties" class="scroll-mt-20 flex flex-col items-center mt-24 md:mt-14">
+	<h1 class="text-4xl mb-6">I'm experienced with:</h1>
+	<Tabs.Root value="python" class="w-11/12 min-h-96">
+		<Tabs.List class="grid w-full grid-cols-6">
+			<Tabs.Trigger value="python">Pure Python</Tabs.Trigger>
+			<Tabs.Trigger value="django">Django</Tabs.Trigger>
+			<Tabs.Trigger value="flask">Flask</Tabs.Trigger>
+			<Tabs.Trigger value="htmlcssjs">HTML/CSS/JS</Tabs.Trigger>
+			<Tabs.Trigger value="svelte">Svelte/SvelteKit</Tabs.Trigger>
+			<Tabs.Trigger value="pycord">PyCord</Tabs.Trigger>
 		</Tabs.List>
-		<Tabs.Content value="account">
+		<Tabs.Content value="python">
 			<Card.Root>
 				<Card.Header>
 					<Card.Title>Account</Card.Title>
@@ -309,24 +314,66 @@
 				</Card.Header>
 				<Card.Content class="space-y-2">
 				</Card.Content>
-				<Card.Footer>
-					<Button>Save changes</Button>
-				</Card.Footer>
 			</Card.Root>
 		</Tabs.Content>
-		<Tabs.Content value="password">
+		<Tabs.Content value="django">
 			<Card.Root>
 				<Card.Header>
-					<Card.Title>Password</Card.Title>
+					<Card.Title>Account</Card.Title>
 					<Card.Description>
-						Change your password here. After saving, you'll be logged out.
+						Make changes to your account here. Click save when you're done.
 					</Card.Description>
 				</Card.Header>
 				<Card.Content class="space-y-2">
 				</Card.Content>
-				<Card.Footer>
-					<Button>Save password</Button>
-				</Card.Footer>
+			</Card.Root>
+		</Tabs.Content>
+		<Tabs.Content value="flask">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Account</Card.Title>
+					<Card.Description>
+						Make changes to your account here. Click save when you're done.
+					</Card.Description>
+				</Card.Header>
+				<Card.Content class="space-y-2">
+				</Card.Content>
+			</Card.Root>
+		</Tabs.Content>
+		<Tabs.Content value="htmlcssjs">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Account</Card.Title>
+					<Card.Description>
+						Make changes to your account here. Click save when you're done.
+					</Card.Description>
+				</Card.Header>
+				<Card.Content class="space-y-2">
+				</Card.Content>
+			</Card.Root>
+		</Tabs.Content>
+		<Tabs.Content value="svelte">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Account</Card.Title>
+					<Card.Description>
+						Make changes to your account here. Click save when you're done.
+					</Card.Description>
+				</Card.Header>
+				<Card.Content class="space-y-2">
+				</Card.Content>
+			</Card.Root>
+		</Tabs.Content>
+		<Tabs.Content value="pycord">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Account</Card.Title>
+					<Card.Description>
+						Make changes to your account here. Click save when you're done.
+					</Card.Description>
+				</Card.Header>
+				<Card.Content class="space-y-2">
+				</Card.Content>
 			</Card.Root>
 		</Tabs.Content>
 	</Tabs.Root>
