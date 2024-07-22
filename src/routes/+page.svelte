@@ -295,12 +295,14 @@
 
 <div id="specialties" class="scroll-mt-20 flex flex-col items-center mt-24 md:mt-14">
 	<h1 class="text-4xl mb-6">I work with:</h1>
-	<div class="flex flex-row gap-3 mb-0.5">
+	<div class="flex flex-row gap-3 mb-0.5 w-11/12 min-h-96">
 		<Tabs.Root class="basis-1/2">
-			<div class="text-center text-muted-foreground flex flex-row gap-3 items-end">
-				<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
-				<p class="flex-shrink">LANGUAGES</p>
-				<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
+			<div class="flex flex-row gap-3 mb-0.5">
+				<div class="basis-full text-center text-muted-foreground flex flex-row gap-3 items-end">
+					<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
+					<p class="flex-shrink">LANGUAGES</p>
+					<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
+				</div>
 			</div>
 			<Tabs.List class="grid basis-1/2 grid-cols-4">
 				<Tabs.Trigger value="python">Python</Tabs.Trigger>
@@ -358,16 +360,18 @@
 			</Tabs.Content>
 		</Tabs.Root>
 		<Tabs.Root class="basis-1/2">
-			<div class="text-center text-muted-foreground flex flex-row gap-3 items-end">
-				<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
-				<p class="flex-shrink">FRAMEWORKS</p>
-				<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
+			<div class="flex flex-row gap-3 mb-0.5">
+				<div class="basis-full text-center text-muted-foreground flex flex-row gap-3 items-end">
+					<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
+					<p class="flex-shrink">FRAMEWORKS</p>
+					<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
+				</div>
 			</div>
 			<Tabs.List class="grid basis-1/2 grid-cols-4">
 				<Tabs.Trigger value="django">Django</Tabs.Trigger>
 				<Tabs.Trigger value="flask">Flask</Tabs.Trigger>
 				<Tabs.Trigger value="svelte">Svelte/SvelteKit</Tabs.Trigger>
-				<Tabs.Trigger value="pycord">PyCord</Tabs.Trigger>
+				<Tabs.Trigger value="pycord">Pycord</Tabs.Trigger>
 			</Tabs.List>
 			<Tabs.Content value="django">
 				<Card.Root>
