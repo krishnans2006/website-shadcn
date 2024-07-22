@@ -334,6 +334,42 @@
 				</Card.Content>
 			</Card.Root>
 		</Tabs.Content>
+		<Tabs.Content value="htmlcssjs">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Account</Card.Title>
+					<Card.Description>
+						Make changes to your account here. Click save when you're done.
+					</Card.Description>
+				</Card.Header>
+				<Card.Content class="space-y-2">
+				</Card.Content>
+			</Card.Root>
+		</Tabs.Content>
+		<Tabs.Content value="java">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Account</Card.Title>
+					<Card.Description>
+						Make changes to your account here. Click save when you're done.
+					</Card.Description>
+				</Card.Header>
+				<Card.Content class="space-y-2">
+				</Card.Content>
+			</Card.Root>
+		</Tabs.Content>
+		<Tabs.Content value="rust">
+			<Card.Root>
+				<Card.Header>
+					<Card.Title>Account</Card.Title>
+					<Card.Description>
+						Make changes to your account here. Click save when you're done.
+					</Card.Description>
+				</Card.Header>
+				<Card.Content class="space-y-2">
+				</Card.Content>
+			</Card.Root>
+		</Tabs.Content>
 		<Tabs.Content value="django">
 			<Card.Root>
 				<Card.Header>
@@ -347,18 +383,6 @@
 			</Card.Root>
 		</Tabs.Content>
 		<Tabs.Content value="flask">
-			<Card.Root>
-				<Card.Header>
-					<Card.Title>Account</Card.Title>
-					<Card.Description>
-						Make changes to your account here. Click save when you're done.
-					</Card.Description>
-				</Card.Header>
-				<Card.Content class="space-y-2">
-				</Card.Content>
-			</Card.Root>
-		</Tabs.Content>
-		<Tabs.Content value="htmlcssjs">
 			<Card.Root>
 				<Card.Header>
 					<Card.Title>Account</Card.Title>
