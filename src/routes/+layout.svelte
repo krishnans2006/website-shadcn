@@ -17,10 +17,13 @@
 	<div class="container mx-auto px-4 my-2 flex flex-col">
 		<slot></slot>
 	</div>
-	<div class="w-full min-h-8 flex flex-col items-center justify-center mt-1">
+	<div class="w-full min-h-8 flex flex-col items-center justify-center mt-1 mb-3">
 		<div class="w-1/2 h-1 bg-border rounded-3xl"></div>
-		<p class="text-card-foreground">
-			See more:
+		<p class="text-gray-500 text-sm mt-1">
+			Built by Krishnan Shankar with Svelte, SvelteKit, TailwindCSS, and shadcn/ui
+		</p>
+		<p class="text-gray-500 text-sm">
+			See more on GitHub
 		</p>
 	</div>
 </div>
