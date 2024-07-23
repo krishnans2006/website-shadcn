@@ -305,11 +305,12 @@
 					<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
 				</div>
 			</div>
-			<Tabs.List class="grid basis-1/2 grid-cols-4">
+			<Tabs.List class="grid basis-1/2 grid-cols-5">
 				<Tabs.Trigger value="python">Python</Tabs.Trigger>
 				<Tabs.Trigger value="htmlcssjs">HTML/CSS/JS</Tabs.Trigger>
-				<Tabs.Trigger value="java">Java</Tabs.Trigger>
 				<Tabs.Trigger value="rust">Rust</Tabs.Trigger>
+				<Tabs.Trigger value="bash">Bash</Tabs.Trigger>
+				<Tabs.Trigger value="java">Java</Tabs.Trigger>
 			</Tabs.List>
 			<Tabs.Content value="python">
 				<Card.Root>
@@ -337,7 +338,7 @@
 					</Card.Content>
 				</Card.Root>
 			</Tabs.Content>
-			<Tabs.Content value="java">
+			<Tabs.Content value="rust">
 				<Card.Root>
 					<Card.Header>
 						<Card.Title>Account</Card.Title>
@@ -349,7 +350,19 @@
 					</Card.Content>
 				</Card.Root>
 			</Tabs.Content>
-			<Tabs.Content value="rust">
+			<Tabs.Content value="bash">
+				<Card.Root>
+					<Card.Header>
+						<Card.Title>Account</Card.Title>
+						<Card.Description>
+							Make changes to your account here. Click save when you're done.
+						</Card.Description>
+					</Card.Header>
+					<Card.Content class="space-y-2">
+					</Card.Content>
+				</Card.Root>
+			</Tabs.Content>
+			<Tabs.Content value="java">
 				<Card.Root>
 					<Card.Header>
 						<Card.Title>Account</Card.Title>
@@ -370,11 +383,12 @@
 					<div class="flex-grow h-1/2 border-t border-muted-foreground"></div>
 				</div>
 			</div>
-			<Tabs.List class="grid basis-1/2 grid-cols-4">
+			<Tabs.List class="grid basis-1/2 grid-cols-5">
 				<Tabs.Trigger value="django">Django</Tabs.Trigger>
 				<Tabs.Trigger value="flask">Flask</Tabs.Trigger>
-				<Tabs.Trigger value="svelte">Svelte/SvelteKit</Tabs.Trigger>
+				<Tabs.Trigger value="svelte">Svelte</Tabs.Trigger>
 				<Tabs.Trigger value="pycord">Pycord</Tabs.Trigger>
+				<Tabs.Trigger value="pygame">Pygame</Tabs.Trigger>
 			</Tabs.List>
 			<Tabs.Content value="django">
 				<Card.Root>
@@ -413,6 +427,18 @@
 				</Card.Root>
 			</Tabs.Content>
 			<Tabs.Content value="pycord">
+				<Card.Root>
+					<Card.Header>
+						<Card.Title>Account</Card.Title>
+						<Card.Description>
+							Make changes to your account here. Click save when you're done.
+						</Card.Description>
+					</Card.Header>
+					<Card.Content class="space-y-2">
+					</Card.Content>
+				</Card.Root>
+			</Tabs.Content>
+			<Tabs.Content value="pygame">
 				<Card.Root>
 					<Card.Header>
 						<Card.Title>Account</Card.Title>
