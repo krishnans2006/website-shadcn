@@ -17,8 +17,11 @@
 	<div class="container mx-auto px-4 my-2 flex flex-col">
 		<slot></slot>
 	</div>
-	<div class="w-full min-h-8 flex flex-col items-center justify-center">
-		<div class="w-1/2 h-1 bg-primary rounded-3xl"></div>
+	<div class="w-full min-h-8 flex flex-col items-center justify-center mt-1">
+		<div class="w-1/2 h-1 bg-border rounded-3xl"></div>
+		<p class="text-card-foreground">
+			See more:
+		</p>
 	</div>
 </div>
 
