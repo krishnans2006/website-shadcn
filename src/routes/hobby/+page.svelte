@@ -3,12 +3,24 @@
 
 	import HobbyProject from '../../components/project-layouts/HobbyProject.svelte';
 
+	import { shuffle } from '../../data/data_utils.ts';
+
 	import type { PageData } from './$types';
 	import type { Project as ProjectType } from '../../data/projects';
 
 	export let data: PageData;
 
 	let projects: ProjectType[] = data.projects;
+
+	shuffle(projects);
+
+	// TODO: replace with
+	/*
+	let shuffled = unshuffled
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value)
+	 */
 
 	let [minColWidth, maxColWidth, gap] = [300, 500, 12];
 </script>
