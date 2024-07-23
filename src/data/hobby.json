@@ -140,6 +140,58 @@
       "submission_url": null,
       "demo_url": null,
       "invite_url": null
+    },
+    {
+      "name": "Space Invaders",
+      "summary": "Defend the Earth",
+      "description": "A simple implementation of the classic game Space Invaders.",
+      "image": "spaceinvaders",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/SpaceInvaders"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "Cricket World Cup",
+      "summary": "1v1 your friends",
+      "description": "A simple implementation of a cricket game where you can play against your friends.",
+      "image": "cricketworldcup",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/CricketWorldCup"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "Sniper Game",
+      "summary": "An first-person shooter",
+      "description": "A simple implementation of a first-person shooter game.",
+      "image": "snipergame",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/SniperGame"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "Jeopardy!",
+      "summary": "Run your own game show",
+      "description": "Play Jeopardy! with your friends.",
+      "image": "jeopardy",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/Jeopardy"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
     }
   ]
 }
