@@ -285,7 +285,7 @@
 		<Carousel.Content>
 			{#each projects as project}
 				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-4">
-					<HackathonProject {project} />
+					<HackathonProject {project} fixedHeight={true} />
 				</Carousel.Item>
 			{/each}
 		</Carousel.Content>
@@ -294,6 +294,7 @@
 	</Carousel.Root>
 </div>
 
+<!--
 <div id="specialties" class="scroll-mt-20 flex flex-col items-center mt-24 md:mt-14">
 	<h1 class="text-4xl mb-6">I work with:</h1>
 	<div class="flex flex-row gap-3 mb-0.5 w-11/12 min-h-96">
@@ -453,3 +454,4 @@
 		</Tabs.Root>
 	</div>
 </div>
+-->
