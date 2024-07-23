@@ -10,6 +10,11 @@
 
 	let projects: ProjectType[] = data.projects;
 
+	projects = projects
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value)
+
 	let [minColWidth, maxColWidth, gap] = [350, 600, 12];
 </script>
 
