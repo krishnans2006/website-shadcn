@@ -7,7 +7,7 @@
 
 	import type { LayoutData } from './$types';
 	import { Button } from '$lib/components/ui/button';
-	import { Github, Linkedin, Mail, Phone } from 'lucide-svelte';
+	import { Github, KeyRound, Linkedin, Mail, Phone } from 'lucide-svelte';
 
 	export let data: LayoutData;
 
@@ -41,6 +41,10 @@
 			<Button variant="link" size="icon" href="https://linkedin.com/in/krishnan-shankar"
 							target="_blank" rel="noopener noreferrer">
 				<Linkedin class="size-7" />
+			</Button>
+			<Button variant="link" size="icon" href="https://github.com/krishnans2006.gpg"
+							target="_blank" rel="noopener noreferrer">
+				<KeyRound class="size-7" />
 			</Button>
 		</div>
 	</div>
