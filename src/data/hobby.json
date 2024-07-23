@@ -101,6 +101,45 @@
       "submission_url": null,
       "demo_url": null,
       "invite_url": null
+    },
+    {
+      "name": "Mine Sweeper",
+      "summary": "Play the classic game",
+      "description": "A simple implementation of the classic game Minesweeper.",
+      "image": "minesweeper",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/MineSweeper"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "PacMan",
+      "summary": "I love pellets",
+      "description": "A simple implementation of the classic game PacMan.",
+      "image": "pacman",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/PacMan"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "Sudoku Solver",
+      "summary": "Exploring the backtracking algorithm",
+      "description": "A simple implementation of a Sudoku solver using the backtracking algorithm.",
+      "image": "sudokusolver",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/SudokuSolver"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
     }
   ]
 }
