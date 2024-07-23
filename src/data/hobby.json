@@ -169,7 +169,7 @@
     },
     {
       "name": "Sniper Game",
-      "summary": "An first-person shooter",
+      "summary": "A first-person shooter",
       "description": "A simple implementation of a first-person shooter game.",
       "image": "snipergame",
       "code_url": {

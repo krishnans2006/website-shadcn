@@ -3,14 +3,28 @@
 
 	import HobbyProject from '../../components/project-layouts/HobbyProject.svelte';
 
-	import { shuffle } from '../../data/data_utils.ts';
-
 	import type { PageData } from './$types';
 	import type { Project as ProjectType } from '../../data/projects';
 
 	export let data: PageData;
 
 	let projects: ProjectType[] = data.projects;
+
+	function shuffle(array: ProjectType[]): void {
+		let currentIndex = array.length;
+
+		// While there remain elements to shuffle...
+		while (currentIndex != 0) {
+
+			// Pick a remaining element...
+			const randomIndex = Math.floor(Math.random() * currentIndex);
+			currentIndex--;
+
+			// And swap it with the current element.
+			[array[currentIndex], array[randomIndex]] = [
+				array[randomIndex], array[currentIndex]];
+		}
+	}
 
 	shuffle(projects);
 
