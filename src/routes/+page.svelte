@@ -6,13 +6,6 @@
 		Phone,
 		MapPin,
 		KeyRound,
-		Users,
-		School,
-		Server,
-		Code,
-		Plane,
-		Heart,
-		BriefcaseBusiness,
 		ChevronDown,
 		ArrowDownToLine
 	} from 'lucide-svelte';
@@ -23,10 +16,8 @@
 
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { Button } from '$lib/components/ui/button';
-  import * as Card from "$lib/components/ui/card/index.js";
 	import * as Carousel from '$lib/components/ui/carousel';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
-  import * as Tabs from "$lib/components/ui/tabs";
 
 	import TurnIn from '../components/projects/TurnIn.svelte';
 	import GroundStation from '../components/projects/GroundStation.svelte';
@@ -35,7 +26,6 @@
 
 	import type { PageData } from './$types';
 	import type { Project as ProjectType } from '../data/projects';
-	import GitHubBadge from '../components/GitHubBadge.svelte';
 
 	export let data: PageData;
 
