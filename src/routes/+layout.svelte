@@ -23,7 +23,7 @@
 		<slot></slot>
 	</div>
 	<div class="w-full min-h-8 flex flex-col items-center justify-center mt-1 mb-3">
-		<div class="w-1/2 md:w-1/4 h-1 bg-border rounded-3xl mb-2"></div>
+		<div class="w-3/4 sm:w-1/2 md:w-1/4 h-1 bg-border rounded-3xl mb-2"></div>
 		<div class="flex flex-row gap-1">
 			<Button variant="link" size="icon" href={mailUrl}
 							target="_blank" rel="noopener noreferrer">

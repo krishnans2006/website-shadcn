@@ -178,6 +178,7 @@
 		<span class="text-center">SEE MORE</span>
 		<ChevronDown class="size-8 mx-auto" />
 	</a>
+	<div class="block xl:hidden mt-12"></div>
 </div>
 
 <div id="projects" class="scroll-mt-36 flex flex-col items-center">
