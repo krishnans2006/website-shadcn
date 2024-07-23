@@ -55,6 +55,7 @@
       "name": "Self-Playing Guitar",
       "summary": "It's self-explanatory",
       "description": "Scripts and a web UI to automatically play the guitar using a Raspberry Pi and a whole bunch of solenoids.",
+      "image": "selfplayingguitar",
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/gitar"
@@ -188,6 +189,45 @@
       "code_url": {
         "name": "GitHub",
         "url": "https://github.com/krishnans2006/Jeopardy"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "Image To ASCII",
+      "summary": "An ASCII art generator",
+      "description": "Convert images to ASCII art.",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/ImageToASCII"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "HomeServer",
+      "summary": "A raspberry pi security system",
+      "description": "Uses a Raspberry Pi Camera and the picamera module to stream video feed to a webserver.",
+      "image": "homeserver",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/HomeServer"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "Hangman",
+      "summary": "Guess the word",
+      "description": "A simple implementation of the classic game Hangman.",
+      "image": "hangman",
+      "image_invert_dark": true,
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/Hangman"
       },
       "submission_url": null,
       "demo_url": null,
