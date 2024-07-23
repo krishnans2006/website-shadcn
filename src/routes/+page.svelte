@@ -195,8 +195,8 @@
 				<Portal />
 			</Carousel.Item>
 		</Carousel.Content>
-		<Carousel.Previous />
-		<Carousel.Next />
+		<Carousel.Previous class="hidden lg:flex" />
+		<Carousel.Next class="hidden lg:flex" />
 	</Carousel.Root>
 	<div class="flex flex-row gap-2">
 		{#each { length: projectCarouselCount } as _, i}
@@ -222,8 +222,8 @@
 				</Carousel.Item>
 			{/each}
 		</Carousel.Content>
-		<Carousel.Previous />
-		<Carousel.Next />
+		<Carousel.Previous class="hidden lg:flex" />
+		<Carousel.Next class="hidden lg:flex" />
 	</Carousel.Root>
 </div>
 
