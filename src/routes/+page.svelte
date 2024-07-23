@@ -185,13 +185,13 @@
 	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={projectCarouselAPI} opts="{{ loop: true }}"
 								 plugins="{[projectCarouselAutoplay]}">
 		<Carousel.Content>
-			<Carousel.Item>
+			<Carousel.Item class="max-h-dvh">
 				<TurnIn />
 			</Carousel.Item>
-			<Carousel.Item>
+			<Carousel.Item class="max-h-dvh">
 				<GroundStation />
 			</Carousel.Item>
-			<Carousel.Item>
+			<Carousel.Item class="max-h-dvh">
 				<Portal />
 			</Carousel.Item>
 		</Carousel.Content>
@@ -217,7 +217,7 @@
 								 plugins="{[hackathonCarouselAutoscroll]}">
 		<Carousel.Content>
 			{#each projects as project}
-				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-4">
+				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-4 max-h-dvh">
 					<HackathonProject {project} fixedHeight={true} />
 				</Carousel.Item>
 			{/each}
