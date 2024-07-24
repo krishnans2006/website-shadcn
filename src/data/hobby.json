@@ -336,6 +336,19 @@
         "name": "To your Discord server",
         "url": "https://discord.com/oauth2/authorize?client_id=1244410547781369856"
       }
+    },
+    {
+      "name": "TJCSL Discord Bot",
+      "summary": "A downtime notification system",
+      "description": "A Discord bot that notifies users of BetterUptime status changes.",
+      "image": "tjcslbot",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/tjcsl-discord-bot"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
     }
   ]
 }
