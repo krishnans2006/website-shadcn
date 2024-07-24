@@ -60,9 +60,10 @@
 	let hackathonCarouselCount: number;
 	let hackathonCarouselAutoscroll = AutoScroll({
 		speed: 1,
-		startDelay: 500,
-		stopOnInteraction: false
+		startDelay: 0,
+		stopOnInteraction: true
 	});
+	let hackathonCarouselIsPlaying = true;
 
 	$: if (hackathonCarouselAPI) {
 		hackathonCarouselCount = hackathonCarouselAPI.scrollSnapList().length;
@@ -72,6 +73,14 @@
 		while (hackathonCarouselAPI.selectedScrollSnap() !== randomIndex) {
 			hackathonCarouselAPI.scrollNext();
 		}
+
+		hackathonCarouselAPI.on("autoScroll:play", () => {
+			hackathonCarouselIsPlaying = true;
+		});
+
+		hackathonCarouselAPI.on("autoScroll:stop", () => {
+			hackathonCarouselIsPlaying = false;
+		});
 	}
 </script>
 
@@ -224,7 +233,7 @@
 			{/each}
 		</Carousel.Content>
 		<div class="absolute right-5 top-8 opacity-90">
-			{#if hackathonCarouselAutoscroll.isPlaying()}
+			{#if hackathonCarouselIsPlaying}
 				<Button size="icon" variant="secondary" on:click={() => hackathonCarouselAutoscroll.stop()}>
 					<Pause class="size-6" />
 				</Button>
@@ -234,10 +243,10 @@
 				</Button>
 			{/if}
 		</div>
-		<div class:hidden={() => hackathonCarouselAutoscroll.isPlaying()}>
+		<div class:hidden={() => hackathonCarouselIsPlaying}>
 			<Carousel.Previous class="hidden lg:flex" />
 		</div>
-		<div class:hidden={() => hackathonCarouselAutoscroll.isPlaying()}>
+		<div class:hidden={() => hackathonCarouselIsPlaying}>
 			<Carousel.Next class="hidden lg:flex" />
 		</div>
 	</Carousel.Root>
