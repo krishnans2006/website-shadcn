@@ -7,7 +7,7 @@
 		MapPin,
 		KeyRound,
 		ChevronDown,
-		ArrowDownToLine
+		ArrowDownToLine, Play, Pause
 	} from 'lucide-svelte';
 
 	import { type CarouselAPI } from '$lib/components/ui/carousel/context.js';
@@ -60,7 +60,7 @@
 	let hackathonCarouselCount: number;
 	let hackathonCarouselAutoscroll = AutoScroll({
 		speed: 1,
-		startDelay: 2000,
+		startDelay: 500,
 		stopOnInteraction: false
 	});
 
@@ -216,15 +216,30 @@
 	<h1 class="text-4xl mb-6">And some hackathon projects:</h1>
 	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={hackathonCarouselAPI} opts="{{ loop: true }}"
 								 plugins="{[hackathonCarouselAutoscroll]}">
-		<Carousel.Content>
+		<Carousel.Content class="relative">
 			{#each projects as project}
 				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-4 max-h-dvh">
 					<HackathonProject {project} fixedHeight={true} />
 				</Carousel.Item>
 			{/each}
+			<div class="absolute right-5 top-5 opacity-60">
+				{#if hackathonCarouselAutoscroll.isPlaying()}
+					<Button size="icon" variant="secondary" on:click={() => hackathonCarouselAutoscroll.stop()}>
+						<Pause class="size-6" />
+					</Button>
+				{:else}
+					<Button size="icon" variant="secondary" on:click={() => hackathonCarouselAutoscroll.play()}>
+						<Play class="size-6" />
+					</Button>
+				{/if}
+			</div>
 		</Carousel.Content>
-		<Carousel.Previous class="hidden lg:flex" />
-		<Carousel.Next class="hidden lg:flex" />
+		<div class:hidden={() => hackathonCarouselAutoscroll.isPlaying()}>
+			<Carousel.Previous class="hidden lg:flex" />
+		</div>
+		<div class:hidden={() => hackathonCarouselAutoscroll.isPlaying()}>
+			<Carousel.Next class="hidden lg:flex" />
+		</div>
 	</Carousel.Root>
 </div>
 
