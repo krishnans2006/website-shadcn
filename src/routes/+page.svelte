@@ -214,26 +214,26 @@
 
 <div id="hackathon-projects" class="scroll-mt-20 flex flex-col items-center mt-36 md:mt-20">
 	<h1 class="text-4xl mb-6">And some hackathon projects:</h1>
-	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={hackathonCarouselAPI} opts="{{ loop: true }}"
+	<Carousel.Root class="w-11/12 max-h-dvh relative" bind:api={hackathonCarouselAPI} opts="{{ loop: true }}"
 								 plugins="{[hackathonCarouselAutoscroll]}">
-		<Carousel.Content class="relative">
+		<Carousel.Content>
 			{#each projects as project}
 				<Carousel.Item class="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-4 max-h-dvh">
 					<HackathonProject {project} fixedHeight={true} />
 				</Carousel.Item>
 			{/each}
-			<div class="absolute right-5 top-5 opacity-60">
-				{#if hackathonCarouselAutoscroll.isPlaying()}
-					<Button size="icon" variant="secondary" on:click={() => hackathonCarouselAutoscroll.stop()}>
-						<Pause class="size-6" />
-					</Button>
-				{:else}
-					<Button size="icon" variant="secondary" on:click={() => hackathonCarouselAutoscroll.play()}>
-						<Play class="size-6" />
-					</Button>
-				{/if}
-			</div>
 		</Carousel.Content>
+		<div class="absolute right-5 top-8 opacity-90">
+			{#if hackathonCarouselAutoscroll.isPlaying()}
+				<Button size="icon" variant="secondary" on:click={() => hackathonCarouselAutoscroll.stop()}>
+					<Pause class="size-6" />
+				</Button>
+			{:else}
+				<Button size="icon" variant="secondary" on:click={() => hackathonCarouselAutoscroll.play()}>
+					<Play class="size-6" />
+				</Button>
+			{/if}
+		</div>
 		<div class:hidden={() => hackathonCarouselAutoscroll.isPlaying()}>
 			<Carousel.Previous class="hidden lg:flex" />
 		</div>
