@@ -232,6 +232,57 @@
       "submission_url": null,
       "demo_url": null,
       "invite_url": null
+    },
+    {
+      "name": "Flappy Bird",
+      "summary": "Fly through the pipes",
+      "description": "A simple implementation of the classic game Flappy Bird.",
+      "image": "flappybird",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/FlappyBird"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "Flappy Bird AI",
+      "summary": "Watch the AI learn to play",
+      "description": "A NEAT (Neuro-Evolution of Augmenting Topologies) AI algorithm to master Flappy Bird.",
+      "image": "flappybird",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/FlappyBirdAI"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "Basic Platformer",
+      "summary": "A starting point for platformer games",
+      "description": "A simple platformer game to serve as a starting point for more complex games.",
+      "image": "basicplatformer",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/BasicPlatformer"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "Trie",
+      "summary": "An implementation of my favorite data structure",
+      "description": "A simple implementation of a trie data structure (not to be confused with a tree).",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/Trie"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
     }
   ]
 }
