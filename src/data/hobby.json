@@ -283,6 +283,59 @@
       "submission_url": null,
       "demo_url": null,
       "invite_url": null
+    },
+    {
+      "name": "Chat App",
+      "summary": "Experimenting with websockets",
+      "description": "A simple chat application using websockets.",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/chat-app"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "SOBot",
+      "summary": "Practice your Science Olympiad events",
+      "description": "A Discord bot that allows you to practice Science Olympiad events.",
+      "image": "sobot",
+      "code_url": null,
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": {
+        "name": "To your Discord server",
+        "url": "https://discord.com/oauth2/authorize?client_id=786778420008583198&scope=bot&permissions=8"
+      }
+    },
+    {
+      "name": "Text Input",
+      "summary": "A simple pygame textbox",
+      "description": "A simple textbox for Pygame.",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/TextInput"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": null
+    },
+    {
+      "name": "GitCord",
+      "summary": "Quickly reference GitHub repos in Discord",
+      "description": "Use /r to quickly reference repositories, issues, and pull requests across GitHub and GitLab.",
+      "image": "gitcord",
+      "code_url": {
+        "name": "GitHub",
+        "url": "https://github.com/krishnans2006/gitcord"
+      },
+      "submission_url": null,
+      "demo_url": null,
+      "invite_url": {
+        "name": "To your Discord server",
+        "url": "https://discord.com/oauth2/authorize?client_id=1244410547781369856"
+      }
     }
   ]
 }
