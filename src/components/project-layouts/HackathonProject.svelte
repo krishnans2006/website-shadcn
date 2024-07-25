@@ -12,7 +12,7 @@
 </script>
 
 <div class="animate-fade-up delay-1000" class:h-full={fixedHeight} class:max-h-[40rem]={fixedHeight}>
-	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out hover:scale-105 flex flex-col h-full">
+	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out md:hover:scale-105 flex flex-col h-full">
 		<Card.Header class="flex-none">
 			<Card.Title class="text-center">{project.name}</Card.Title>
 			<Card.Description class="text-center">{project.summary}</Card.Description>

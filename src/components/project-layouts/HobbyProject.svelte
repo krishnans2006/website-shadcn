@@ -10,7 +10,7 @@
 </script>
 
 <div class="animate-fade-up delay-1000">
-	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out hover:scale-105">
+	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out sm:hover:scale-105">
 		<Card.Header class="flex flex-col items-center pb-4">
 			{#await import(`$lib/images/${mediaFolder}/${project.image}.png`) then { default: src }}
 				<img src={src} alt="{project.name}" class="object-fill size-12 rounded-full mb-2"

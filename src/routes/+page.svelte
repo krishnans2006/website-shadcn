@@ -195,13 +195,13 @@
 	<Carousel.Root class="w-11/12 max-h-dvh" bind:api={projectCarouselAPI} opts="{{ loop: true }}"
 								 plugins="{[projectCarouselAutoplay]}">
 		<Carousel.Content>
-			<Carousel.Item class="max-h-dvh">
+			<Carousel.Item class="max-h-[80vh] overflow-y-auto">
 				<TurnIn />
 			</Carousel.Item>
-			<Carousel.Item class="max-h-dvh">
+			<Carousel.Item class="max-h-[80vh] overflow-y-auto">
 				<GroundStation />
 			</Carousel.Item>
-			<Carousel.Item class="max-h-dvh">
+			<Carousel.Item class="max-h-[80vh] overflow-y-auto">
 				<Portal />
 			</Carousel.Item>
 		</Carousel.Content>
