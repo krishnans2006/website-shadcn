@@ -42,6 +42,7 @@
 		"embla-carousel-auto-scroll": "^8.1.6",
 		"embla-carousel-autoplay": "^8.1.6",
 		"embla-carousel-svelte": "^8.1.6",
+		"gh-pages": "^6.1.1",
 		"lucide-svelte": "^0.395.0",
 		"mode-watcher": "^0.3.0",
 		"svelte-bricks": "^0.2.1",
