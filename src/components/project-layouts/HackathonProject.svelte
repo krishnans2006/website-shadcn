@@ -11,15 +11,15 @@
 	export let fixedHeight = false;
 </script>
 
-<div class="animate-fade-up delay-1000" class:h-full={fixedHeight}>
+<div class="animate-fade-up delay-1000" class:h-full={fixedHeight} class:max-h-[40rem]={fixedHeight}>
 	<Card.Root class="transition-transform delay-75 duration-300 ease-in-out hover:scale-105 flex flex-col h-full">
-		<Card.Header>
+		<Card.Header class="flex-none">
 			<Card.Title class="text-center">{project.name}</Card.Title>
 			<Card.Description class="text-center">{project.summary}</Card.Description>
 		</Card.Header>
-		<Card.Content class="flex-grow flex items-center">
+		<Card.Content class="flex-auto flex items-center">
 			{#await import(`$lib/images/${mediaFolder}/${project.image}.png`) then { default: src }}
-				<img src={src} alt="{project.name}" class="w-full object-scale-down" class:max-h-48={fixedHeight}
+				<img src={src} alt="{project.name}" class="w-full object-scale-down"
 						 class:dark:invert={project.image_invert_dark} />
 			{/await}
 		</Card.Content>
