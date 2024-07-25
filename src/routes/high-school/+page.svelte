@@ -96,6 +96,11 @@
 						<ArrowDownToLine class="size-4 mr-2" />
 						Transcript
 					</Button>
+					<Button variant="secondary" href="$lib/files/Dual_Enrollment_Transcript.pdf" target="_blank"
+									rel="noopener noreferrer">
+						<ArrowDownToLine class="size-4 mr-2" />
+						Dual Enrollment Transcript
+					</Button>
 					<Button variant="secondary" href="$lib/files/AP_Score_Report.pdf" target="_blank"
 									rel="noopener noreferrer">
 						<ArrowDownToLine class="size-4 mr-2" />
