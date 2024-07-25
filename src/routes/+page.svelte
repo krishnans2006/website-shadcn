@@ -243,10 +243,10 @@
 				</Button>
 			{/if}
 		</div>
-		<div class:hidden={() => hackathonCarouselIsPlaying}>
+		<div class:hidden={hackathonCarouselIsPlaying}>
 			<Carousel.Previous class="hidden lg:flex" />
 		</div>
-		<div class:hidden={() => hackathonCarouselIsPlaying}>
+		<div class:hidden={hackathonCarouselIsPlaying}>
 			<Carousel.Next class="hidden lg:flex" />
 		</div>
 	</Carousel.Root>
