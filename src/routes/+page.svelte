@@ -232,7 +232,7 @@
 				</Carousel.Item>
 			{/each}
 		</Carousel.Content>
-		<div class="absolute right-5 top-8 opacity-90">
+		<div class="absolute right-5 -top-10 md:top-8 opacity-90">
 			{#if hackathonCarouselIsPlaying}
 				<Button size="icon" variant="secondary" on:click={() => hackathonCarouselAutoscroll.stop()}>
 					<Pause class="size-6" />
