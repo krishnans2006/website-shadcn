@@ -65,7 +65,12 @@
 			class="ml-auto"
 		>
 			<ArrowDownToLine class="mr-2 size-4" />
-			Download My Resume
+			<div class="hidden md:block lg:hidden">
+				Resume
+			</div>
+			<div class="block md:hidden lg:block">
+				Download My Resume
+			</div>
 		</Button>
 
 		<Button on:click={toggleMode} variant="outline" size="icon"
