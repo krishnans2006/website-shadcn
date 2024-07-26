@@ -42,16 +42,20 @@
 		</Sheet.Trigger>
 		<Sheet.Content side="left">
 			<nav class="grid gap-6 text-lg font-medium">
-				<a href="/" class="flex items-center gap-2 text-lg font-semibold">
-					<p>Krishnan Shankar</p>
-				</a>
-				{#each routes as route}
-					<a href={route.href}
-						 class:text-foreground={$page.url.pathname === route.href}
-						 class:text-muted-foreground={$page.url.pathname !== route.href}
-						 class="transition-colors hover:text-foreground">
-						{route.name}
+				<Sheet.Close class="text-left">
+					<a href="/" class="flex items-center gap-2 text-lg font-semibold">
+						<p>Krishnan Shankar</p>
 					</a>
+				</Sheet.Close>
+				{#each routes as route}
+					<Sheet.Close class="text-left">
+						<a href={route.href}
+							 class:text-foreground={$page.url.pathname === route.href}
+							 class:text-muted-foreground={$page.url.pathname !== route.href}
+							 class="transition-colors hover:text-foreground">
+							{route.name}
+						</a>
+					</Sheet.Close>
 				{/each}
 			</nav>
 		</Sheet.Content>
