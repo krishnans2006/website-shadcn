@@ -155,8 +155,7 @@
 							<Phone class="mr-2 size-4" />
 							<span>(703) 559-0131</span>
 						</DropdownMenu.Item>
-						<DropdownMenu.Item href="https://maps.app.goo.gl/M7TDG89Puvh2tL8i8"
-															 class="cursor-pointer" target="_blank" rel="noopener noreferrer">
+						<DropdownMenu.Item>
 							<MapPin class="mr-2 size-4" />
 							<span>Falls Church, Virginia</span>
 						</DropdownMenu.Item>
