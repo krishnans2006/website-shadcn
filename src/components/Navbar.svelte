@@ -63,7 +63,7 @@
 	<div class="flex items-center gap-4 md:ml-auto md:gap-2 lg:gap-4 flex-grow">
 		<Button
 			variant="secondary"
-			href="$lib/files/Krishnan_Shankar_Resume.pdf"
+			href="https://raw.githubusercontent.com/krishnans2006/resume/main/Krishnan_Shankar_Resume.pdf"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="ml-auto"
