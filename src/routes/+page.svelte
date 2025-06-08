@@ -101,8 +101,7 @@
 		</div>
 		<div class="flex-auto flex flex-col basis-2/3 justify-center gap-3 tracking-wide">
 			<h1 class="text-4xl font-bold">Hey, I'm Krishnan 🌊</h1>
-			<h3 class="text-lg mb-3">I'm a rising freshman at the University of Illinois,
-				Urbana-Champaign.</h3>
+			<h3 class="text-lg mb-3">I'm a sophomore in computer engineering at the University of Illinois (UIUC).</h3>
 
 			<p class="text-md">
 				Skills:
